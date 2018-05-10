@@ -42,17 +42,6 @@
         </div>
         <a href="#" class="sign d-none d-md-block mr-4"><span>John Doe</span>&nbsp;&nbsp;<img src="images/profile.png"/></a>
     </nav>
-    <!-- Side Navigation Menu on Small Viewports -->
-    <nav class="nav flex-column side-nav text-center d-md-none">
-        <a class="nav-link menu-tab" href="#">Trending</a>
-        <a class="nav-link menu-tab" href="#">Gallery</a>
-        <a class="nav-link menu-tab" href="#">Opportunities</a>
-        <a class="nav-link menu-tab" href="#">Blog</a>
-        <a class="nav-link menu-tab" href="#">About Us</a>
-        <hr>
-        <a class="nav-link" href="#">Sign Up</a>
-        <a class="nav-link" href="logged_in.html">Sign In</a>
-    </nav>
     <!-- Advertisement Banner across all viewports -->
     <div class="container-fluid Ads">
         <div class="row">
@@ -70,208 +59,55 @@
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#Ads-Banner" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-plug-metrics" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#Ads-Banner" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-plug-metrics" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Application Navigation for Small Viewports -->
-    <nav class="navbar d-md-none" id="mobile-plugMe-tab">
-        <div id="nav-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="h4 mobile-tab-name mx-auto mb-0">Trending</div>
-    </nav>
     <!-- Application Navigation for Medium to Extra large Viewports -->
-    <nav class="nav justify-content-center px-0 px-lg-3 d-none d-md-flex" id="plugMe-tab" role="tablist">
-        <a class="nav-item nav-link active" id="nav-home" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-        <a class="nav-item nav-link" id="nav-trend" data-toggle="tab" href="#trend" role="tab" aria-controls="trend" aria-selected="true">Trending</a>
+    <nav class="nav px-0 px-lg-3 d-none d-md-flex py-2" id="plugMe-tab">
+        <a class="btn plug-btn-sm s-0875 white bg-yellow ml-3" href="index.html"><i class="fa fa-caret-left" aria-hidden="true"></i> Back</a>
     </nav>
     <!-- Main Body of Application -->
     <div class="container-fluid main-page">
         <!-- Display Modal of the Plug Card. Please note that this instance of the modal is loaded for every plug-card below-->
-        <div class="modal fade" id="plugModal" tabindex="-1" role="dialog" aria-labelledby="pludModalEx" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-12 col-md-8 plug-content">
-                                    <div class="plug-view"></div>
-                                </div>
-                                <div class="col-12 col-md-4 plug-info">
-                                    <div class="row plug-view-card no-gutters">
-                                        <div class="col-12">
-                                            <div class="media">
-                                                <img class="plugger-img align-self-end mr-2" src="images/user.png" alt="Generic placeholder image">
-                                                <div class="media-body">
-                                                    <div class="plugger-info">
-                                                        <a href="#" class="view-plugger-name">John Doe</a><br>
-                                                        <a href="#" class="view-plugger-desc">Graphic Designer</a><br>
-                                                        <a href="#" class="view-plugger-location"><img src="images/marker.png"/> Lagos, Nigeria</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="col-12 plug-metrics">
-                                            <div class="row">
-                                                <div class="col-6 icon"><img src="images/bio_views.png"/> Views</div>
-                                                <div class="col-6 text-right value">30,594</div>
-                                                <div class="col-6 icon"><img src="images/bio_like.png"/> Likes</div>
-                                                <div class="col-6 text-right value">2,843</div>
-                                                <div class="col-6 icon"><img src="images/feedback.png"/> Feedback</div>
-                                                <div class="col-6 text-right value">621</div>
-                                                <div class="col-12">
-                                                    <div class="input-group input-group-sm mt-3">
-                                                        <div class="input-group-prepend">
-                                                            <span class="input-group-text" id="fdbk-dummy">Feedback</span>
-                                                        </div>
-                                                        <input type="text" class="form-control" id="fdbk-trigger" aria-label="feedback"
-                                                               aria-describedby="fdbk-dummy" placeholder="any thoughts...">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="col-12 plug-tag">
-                                            <div class="row">
-                                                <div class="col-12 mb-1"><span>Tags</span></div>
-                                                <div class="col-12">#GraphicDesign #VideoProduction #Animation</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 plug-like-btn my-2 text-center">
-                                            <a href="#" class="btn plug-btn-sm bg-yellow">Like <img src="images/likes_2.png"/></a>
-                                        </div>
-                                        <div class="col-12 plug-date text-right">Posted on 14th Dec, 2017.</div>
-                                        <hr>
-                                    </div>
-                                    <div class="row plug-feedback no-gutters pr-0">
-                                        <i class="fa fa-close" aria-hidden="true"></i>
-                                        <div style="overflow-y: scroll; height: 300px; width: 100%">
-                                            <div class="col-12 p-0">
-                                                <div class="media">
-                                                    <img class="align-self-center mr-2" src="images/user.png" alt="Generic placeholder image">
-                                                    <div class="media-body mt-1">
-                                                        <a href="#" class="name">Adewale Obi</a>
-                                                        <a href="#" class="desc">Fashion Designer</a>
-                                                    </div>
-                                                </div>
-                                                <p>Awesome job... would like to work with you</p>
-                                                <span class="fd-time">5 Days ago</span>
-                                                <hr>
-                                            </div>
-                                            <div class="col-12 p-0">
-                                                <div class="media">
-                                                    <img class="align-self-center mr-2" src="images/user.png" alt="Generic placeholder image">
-                                                    <div class="media-body mt-1">
-                                                        <a href="#" class="name">Adewale Obi</a>
-                                                        <a href="#" class="desc">Fashion Designer</a>
-                                                    </div>
-                                                </div>
-                                                <p>Awesome job... would like to work with you</p>
-                                                <span class="fd-time">5 Days ago</span>
-                                                <hr>
-                                            </div>
-                                            <div class="col-12 p-0">
-                                                <div class="media">
-                                                    <img class="align-self-center mr-2" src="images/user.png" alt="Generic placeholder image">
-                                                    <div class="media-body mt-1">
-                                                        <a href="#" class="name">Adewale Obi</a>
-                                                        <a href="#" class="desc">Fashion Designer</a>
-                                                    </div>
-                                                </div>
-                                                <p>Awesome job... would like to work with you</p>
-                                                <span class="fd-time">5 Days ago</span>
-                                                <hr>
-                                            </div>
-                                            <div class="col-12 p-0">
-                                                <div class="media">
-                                                    <img class="align-self-center mr-2" src="images/user.png" alt="Generic placeholder image">
-                                                    <div class="media-body mt-1">
-                                                        <a href="#" class="name">Adewale Obi</a>
-                                                        <a href="#" class="desc">Fashion Designer</a>
-                                                    </div>
-                                                </div>
-                                                <p>Awesome job... would like to work with you</p>
-                                                <span class="fd-time">5 Days ago</span>
-                                                <hr>
-                                            </div>
-                                            <div class="col-12 p-0">
-                                                <div class="media">
-                                                    <img class="align-self-center mr-2" src="images/user.png" alt="Generic placeholder image">
-                                                    <div class="media-body mt-1">
-                                                        <a href="#" class="name">Adewale Obi</a>
-                                                        <a href="#" class="desc">Fashion Designer</a>
-                                                    </div>
-                                                </div>
-                                                <p>Awesome job... would like to work with you</p>
-                                                <span class="fd-time">5 Days ago</span>
-                                                <hr>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 feed">
-                                            <form>
-                                                <div class="form-row">
-                                                    <div class="col pl-0">
-                                                        <textarea class="form-control-plaintext" id="comment" placeholder="Comment..." rows="2"></textarea>
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        <a class="btn plug-btn-sm bg-yellow mt-3 mr-2" href="#">Post</a>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <!-- User Bio and Plug collection -->
         <div class="container">
-            <!-- Profile Tabs for Small devices -->
-            <select class="form-control form-control-sm d-md-none mx-auto my-3" id="m-profileTab">
-                <option value="0" selected>Portfolio</option>
-                <option value="1">Opportunity</option>
-                <option value="2">Achievement</option>
-                <option value="3">Wallet</option>
-            </select>
             <!-- Tab Content holding information for various tabs -->
             <div class="row py-5">
                 <!-- User Bio -->
-                <div class="col-12 col-md-3 mt-4 mt-md-0 pt-2">
+                <div class="col-12 col-md-3 mt-4 mt-md-0 pl-0 pt-2">
                     <div class="row plugger-bio no-gutters">
                         <!-- Msg images appear when looking at a third parties profile -->
                         <div class="col-12">
                             <figure class="figure text-center mb-0">
                                 <img src="images/user.png" class="bio-img mb-2" alt="Generic placeholder image">
                                 <figcaption class="bio-info">
-                                    <a href="#" class="name">Musa Chukwuemeka</a><br>
-                                    <a href="#" class="desc">Graphic Designer</a><br>
-                                    <a href="#" class="location"><img src="images/marker.png"/> Lagos, Nigeria</a><br>
+                                    <a href="#" class="name">Musa Chukwuemeka</a>
+                                    <a href="#" class="desc">Graphic Designer</a>
+                                    <a href="#" class="location"><img src="images/marker.png"/> Lagos, Nigeria</a>
                                     <a href="#" class="plug-msg pt-2"><img src="images/massage.png"/></a>
                                 </figcaption>
                             </figure>
                         </div>
                         <hr>
-                        <div class="col-12 plug-metrics">
+                        <div class="col-12 plug-metrics magenta">
                             <div class="row">
-                                <div class="col-6 icon"><img src="images/bio_views.png"/> Views</div><div class="col-6 value text-right">30,594</div>
-                                <div class="col-6 icon"><img src="images/bio_like.png"/> Likes</div><div class="col-6 value text-right">2,843</div>
-                                <div class="col-6 icon"><img src="images/fan_base.png"/> Followers</div><div class="col-6 value text-right">621</div>
-                                <div class="col-6 icon"><img src="images/fan_of.png"/> Following</div><div class="col-6 value text-right">231</div>
+                                <div class="col-6 pr-1"><img src="images/bio_views.png"/> Views</div>
+                                <div class="col-6 text-right pl-1">30,594</div>
+                                <div class="col-6 pr-1"><img src="images/bio_like.png"/> Likes</div>
+                                <div class="col-6 text-right pl-1">2,843</div>
+                                <div class="col-6 pr-1"><img src="images/fan_base.png"/> Followers</div>
+                                <div class="col-6 text-right pl-1">621</div>
+                                <div class="col-6 pr-1"><img src="images/fan_of.png"/> Following</div>
+                                <div class="col-6 text-right pl-1">231</div>
                             </div>
                         </div>
                         <!-- <hr>
@@ -316,15 +152,6 @@
                         <hr>
                         <div class="col-12">
                             <div class="row">
-                                <div class=" col-12 bio-header mb-1">Booking Info</div>
-                                <div class="col-12">
-                                    <br><br>
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="col-12">
-                            <div class="row">
                                 <div class="col-12 bio-header mb-1">Experience</div>
                                 <div class="col-12">
                                     <br><br>
@@ -343,10 +170,10 @@
                         <hr>
                         <!-- The Edit button is visible only when account owner, is view own account -->
                         <div class="col-12 bio-edit text-center mb-3">
-                            <a href="#" class="btn bg-yellow plug-btn">Edit Profile</a>
+                            <a href="#" class="btn bg-yellow plug-btn white">Edit</a>
                         </div>
                         <div class="col-12 bio-member text-center">
-                            MEMBER SINCE: NOVEMBER 17, 2017.
+                            Joined: Nov 17, 2017.
                         </div>
                     </div>
                 </div>
@@ -505,7 +332,7 @@
                     </div>
                 </div>
                 <!-- Opportunities and Achievements -->
-                <div class="col-12 col-md-3 pt-2">
+                <div class="col-12 col-md-3 pr-0 pt-2">
                     <!-- Collection of Opportunities -->
                     <div class="row plug-list mx-0 py-3">
                         <h5 class="col-12 my-1 text-center magenta">Opportunities</h5>
@@ -696,21 +523,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
-    <script>
-        $("#m-profileTab").change(function () {
-            var i = $(this).val();
-
-            if (i == 0) {
-                $('a[href="#portfolio"]').tab('show');
-            } else if (i == 1) {
-                $('a[href="#opportunity"]').tab('show');
-            } else if (i == 2) {
-                $('a[href="#achievement"]').tab('show');
-            } else if (i == 3) {
-                $('a[href="#wallet"]').tab('show');
-            }
-        });
-    </script>
 </body>
 </html>
 
