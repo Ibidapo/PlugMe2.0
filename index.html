@@ -13,7 +13,7 @@
 <body style="overflow-x: hidden;">
     <!-- Navigation with Search accross all viewports -->
     <nav class="navbar fixed-top">
-        <a href="index.html" class="plugme-logo ml-4"><img src="images/logo.png"/></a>
+        <a href="index.html" class="plugme-logo ml-md-4"><img src="images/logo.png"/></a>
         <div class="input-group input-group-sm ml-auto mr-0 mx-md-auto">
             <span class="input-group-btn">
                 <button class="btn pt-2 pb-1 px-3" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
@@ -57,7 +57,7 @@
         <a class="nav-item nav-link" id="nav-trend" data-toggle="tab" href="#trend" role="tab" aria-controls="trend" aria-selected="true">Trending</a>
     </nav>
     <!-- Main Body of Application -->
-    <div class="container-fluid main-page">
+    <div class="container-fluid main-page pb-5 pb-md-0">
         <!-- Display Modal of the Plug Card. Please note that this instance of the modal is loaded for every plug-card below-->
         <div class="modal fade" id="plugModal" tabindex="-1" role="dialog" aria-labelledby="pludModalEx" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -317,8 +317,8 @@
             <div class="container tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="nav-home">
                 <div class="row page-content">
                     <!-- 3/4 of page (housing content) -->
-                    <div class="col-lg-9 col-md-8">
-                        <div class="row my-5">
+                    <div class="col-lg-9 col-md-8 order-2 order-md-1">
+                        <div class="row my-md-5">
                             <div class="col-sm-6 col-lg-4 col-xl-3">
                                 <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
                                     <div class="plug-caption px-3 py-1">
@@ -602,11 +602,10 @@
                         </div>
                     </div>
                     <!-- 1/4 of page (housing tags and opportunities) -->
-                    <div class="col-lg-3 col-md-4 mt-2 mx-0">
+                    <div class="col-lg-3 col-md-4 mt-0 mt-md-2 mx-0 order-1 order-md-2">
                         <!-- Collection of Tags -->
-                        <div class="row plug-list mx-0 mt-5 py-3">
-                            <h5 class="col-12 my-1 text-center magenta">Tags</h5>
-                            <hr>
+                        <div class="row plug-list mx-0 mt-5 pb-3">
+                            <div class="col-12 text-center white pt-3 pb-1 bg-yellow mb-3"><h5>Tags</h5></div>
                             <div class="col-12 text-center text-lg-left">
                                 <div class="row">
                                     <div class="col-12 op-name mb-1">#Art </div>
@@ -671,9 +670,10 @@
                             </div>
                         </div>
                         <!-- Collection of Opportunities -->
-                        <div class="row plug-list mx-0 mt-4 py-3">
-                            <h5 class="col-12 my-1 text-center magenta">Opportunities</h5>
-                            <hr>
+                        <div class="row plug-list mx-0 my-4 pb-3">
+                            <div class="col-12 text-center white pt-3 pb-1 bg-yellow mb-3">
+                                <h5>Opportunities</h5>
+                            </div>
                             <div class="col-12 text-center text-lg-left">
                                 <div class="row">
                                     <div class="col-12 op-name">Bill board Advert</div>
@@ -736,6 +736,7 @@
                                 <a class="nav-item nav-link" href="#">Terms & Conditions</a>
                                 <a class="nav-item nav-link" href="#">Privacy Policy</a>
                                 <a class="nav-item nav-link" href="#">About PlugMe</a>
+                                <a class="nav-item nav-link" href="#">Blog</a>
                                 <a class="nav-item nav-link" href="#">&copy 2018, PlugMe</a>
                             </nav>
                         </footer>
@@ -1172,16 +1173,12 @@
             </div>
         </div>
     </div>
-    <!-- Footer of Application -->
-    <footer class="container-fluid d-md-none px-0">
-        <!-- Bottom Footer on Mobile Viewports -->
-        <nav class="nav d-flex d-md-none justify-content-center px-2 px-md-4">
-            <a class="nav-link" href="#">&copy 2017, PlugMe</a>
-            <a class="nav-link" href="#">About PlugMe</a>
-            <a class="nav-link" href="#">Terms & Conditions</a>
-            <a class="nav-link" href="#">Privacy Policy</a>
-        </nav>
-    </footer>
+    <!-- Bottom Footer on Mobile Viewports -->
+    <nav class="nav nav-fill fixed-bottom d-flex d-md-none magenta s-0875 py-2">
+        <a class="nav-item nav-link" href="#">Gallery</a>
+        <a class="nav-item nav-link" href="#">Trending</a>
+        <a class="nav-item nav-link" href="profile.html">Profile</a>
+    </nav>
     <!-- Required Jquery, Popper & Bootstrap scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>

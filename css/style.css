@@ -86,6 +86,10 @@ nav.navbar .dropdown-menu hr, .plug-feedback hr {
 .drop-time, .msg-status {
     bottom: -0.375rem;
 }
+nav.fixed-bottom {
+    height: 50px;
+    background-color: white;
+}
 
 
 /*Styling for Input Groups*/
@@ -158,40 +162,6 @@ nav.navbar .input-group-sm>.input-group-btn>.btn:hover {
     font-weight: 400;
 }
 
-/*Styling for Side Navigation on Mobile Viewport*/
-nav.flex-column.side-nav {
-    background-color: rgba(139, 3, 79, 1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    padding-top: 125px;
-    overflow-x: hidden;
-    transition: 0.5s;
-    z-index: 1;
-}
-nav.flex-column.side-nav.open {
-    width: 250px;
-    box-shadow: 0 0 5px #00000080;
-}
-nav.flex-column.side-nav a {
-    width: 250px;
-    text-decoration: none;
-    color: rgba(254, 255, 3, 1);
-    transition: 0.3s;
-}
-nav.flex-column.side-nav hr {
-    background-image: radial-gradient(#cfd0d1 25%, transparent 100%);
-    height: 2px;
-}
-.Ads, #mobile-plugMe-tab, .main-page, footer {
-    transition: margin-left .5s;
-}
-.no-ads {
-    margin-top: 111px;
-}
-
 /*Styling for Mobile Application Navigation*/
 nav#mobile-plugMe-tab {
     background-color: white;
@@ -257,15 +227,17 @@ nav#mobile-plugMe-tab {
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
+.no-ads {
+    margin-top: 111px;
+}
 
 /*Styling for Content Area*/
 .main-page {
     background: url(../images/wallpaper.png) no-repeat center;
     background-size: cover;
 }
-.page-header h3, .page-header h4, .op-name, .up-name, .plug-info .name, .plug-tag span, .plugger-bio .bio-info .name, #about
-.caption, #about h6, .bio-gallery label, .bio-opportunity label, .card-body .bio-info .name, .bio-msg h5, .bio-msg h6, .bio-msg
-.bio-info .name {
+.page-header h3, .page-header h4, .op-name, .up-name, .plug-info .name, .plug-tag span, #about .caption, #about h6,
+.bio-gallery label, .bio-opportunity label, .bio-msg h5, .bio-msg h6, .bio-info .name {
     color: #5d3c9c;
     font-weight: 500;
 }
@@ -282,7 +254,7 @@ nav#mobile-plugMe-tab {
     border-radius: 1rem .25rem;
 }
 .plug-card, .plugger-bio, .bio-gallery, .bio-opportunity, .bio-achievement, .bio-msg, .sub-card, .plug-list, .modal-body .plug-content,
-.modal-body .plug-feedback, .modal-body .plug-info {
+.modal-body .plug-feedback, .modal-body .plug-info, nav.fixed-bottom {
     box-shadow: 0 0 5px #d8d8d8;
 }
 .plug-caption {
@@ -313,8 +285,8 @@ nav#mobile-plugMe-tab {
 .plugger-bio .bio-edit .btn{
     line-height: 1.25;
 }
-.plug-caption .plugger-name, .plug-caption .achiever-desc, .page-navigation, .op-location, .up-desc, .op-comment, .sign-cnt,
-.plug-btn-sm, #fdbk-trigger, .op-rating, .plug-list .col-4 {
+.plug-caption .plugger-name, .plug-caption .achiever-desc, .op-location, .up-desc, .op-comment, .sign-cnt,
+.plug-btn-sm, .op-rating, .plug-list .col-4 {
     font-size: 0.75rem;
 }
 .plug-caption .plug-categories, .plug-caption .opp-plugger-name, .plugger-bio .bio-member{
@@ -447,7 +419,7 @@ nav.navbar .dropdown-menu hr, .plug-list hr {
     overflow: hidden;
 }
 .plugger-bio, #opTab-content, #ocTab-content, #wTab-content {
-    padding: 1.25rem 1rem;
+    padding: 1.5rem 1.25rem;
 }
 .sub-card {
     background-color: #fafafa;
@@ -761,7 +733,7 @@ a.link-yellow, a.link-yellow:hover {
 .bio-msg .form-control-plaintext, .plug-feedback textarea, .add-sym {
     width: 100%;
 }
-.bio-msg textarea.form-control-plaintext, .plug-feedback textarea, .modal-body .plug-content, .sub-card {
+.bio-msg textarea.form-control-plaintext, .plug-feedback textarea, .modal-body .plug-content, .sub-card, .plug-list {
     overflow: hidden;
 }
 
@@ -781,7 +753,6 @@ footer nav .nav-link {
     color: #86275d;
     font-size: 0.75rem;
 }
-
 
 @media (min-width: 576px) {
     .modal-dialog, .container {
@@ -849,6 +820,9 @@ footer nav .nav-link {
     }
     nav.navbar .input-group {
         width: 50%;
+    }
+    .no-ads {
+        margin-top: 64px;
     }
     #Ads-Banner .carousel-control-next, #Ads-Banner .carousel-control-prev {
         width: 10%;

@@ -15,7 +15,7 @@
 <body style="overflow-x: hidden;">
     <!-- Navigation with Search accross all viewports -->
     <nav class="navbar fixed-top">
-        <a href="index.html" class="plugme-logo ml-4"><img src="images/logo.png"/></a>
+        <a href="index.html" class="plugme-logo ml-md-4"><img src="images/logo.png"/></a>
         <div class="input-group input-group-sm ml-auto mr-0 mx-md-auto">
                             <span class="input-group-btn">
                                 <button class="btn pt-2 pb-1 px-3" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
@@ -44,17 +44,6 @@
         </div>
         <a href="#" class="sign d-none d-md-block mr-4"><span>John Doe</span>&nbsp;&nbsp;<img src="images/profile.png"/></a>
     </nav>
-    <!-- Side Navigation Menu on Small Viewports -->
-    <nav class="nav flex-column side-nav text-center d-md-none">
-        <a class="nav-link menu-tab" href="#">Trending</a>
-        <a class="nav-link menu-tab" href="#">Gallery</a>
-        <a class="nav-link menu-tab" href="#">Opportunities</a>
-        <a class="nav-link menu-tab" href="#">Blog</a>
-        <a class="nav-link menu-tab" href="#">About Us</a>
-        <hr>
-        <a class="nav-link" href="#">Sign Up</a>
-        <a class="nav-link" href="logged_in.html">Sign In</a>
-    </nav>
     <!-- Application Navigation for Medium to Extra large Viewports -->
     <nav class="nav px-0 px-lg-3 d-none d-md-flex py-2" id="plugMe-tab2">
         <a class="btn plug-btn-sm s-0875 white bg-yellow ml-3" href="index.html"><i class="fa fa-caret-left" aria-hidden="true"></i> Back</a>
@@ -64,192 +53,197 @@
         <!-- User Bio and Plug collection -->
         <div class="container py-4">
             <div class="row py-5">
-                        <!-- User Bio -->
-                        <div class="col-12 col-md-4 mt-4 mt-md-0 pl-0">
-                            <div class="row plugger-bio no-gutters">
-                                <!-- Msg images appear when looking at a third parties profile -->
+                <!-- User Bio -->
+                <div class="col-12 col-md-4 my-4 my-md-0 pl-md-0">
+                    <div class="row plugger-bio no-gutters mx-auto">
+                        <!-- Msg images appear when looking at a third parties profile -->
+                        <div class="col-12">
+                            <figure class="figure text-center mb-0">
+                                <img src="images/user.png" class="bio-img mb-2" alt="Generic placeholder image">
+                                <figcaption class="bio-info">
+                                    <a href="#" class="name">Musa Chukwuemeka</a>
+                                    <a href="#" class="desc">Graphic Designer</a>
+                                    <a href="#" class="location"><img src="images/marker.png"/> Lagos, Nigeria</a>
+                                    <a href="#" class="plug-msg pt-2"><img src="images/massage.png"/></a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <hr>
+                        <div class="col-12 plug-metrics magenta">
+                            <div class="row">
+                                <div class="col-6 pr-1"><img src="images/bio_views.png"/> Views</div>
+                                <div class="col-6 text-right pl-1">30,594</div>
+                                <div class="col-6 pr-1"><img src="images/bio_like.png"/> Likes</div>
+                                <div class="col-6 text-right pl-1">2,843</div>
+                                <div class="col-6 pr-1"><img src="images/fan_base.png"/> Followers</div>
+                                <div class="col-6 text-right pl-1">621</div>
+                                <div class="col-6 pr-1"><img src="images/fan_of.png"/> Following</div>
+                                <div class="col-6 text-right pl-1">231</div>
+                            </div>
+                        </div>
+                        <!-- <hr>
+                        <div class="col-12 bio-rating">
+                            <div class="row">
+                                <div class="col-6 col-md-12 col-lg-6 text-md-center text-lg-left">Achievements</div>
+                                <div class="col-6 col-md-12 col-lg-6 text-right text-md-center text-lg-right">
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-6 col-md-12 col-lg-6 text-md-center text-lg-left">Opportunities</div>
+                                <div class="col-6 col-md-12 col-lg-6 text-right text-md-center text-lg-right">
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div> -->
+                        <hr>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12 bio-header mb-1">Bio</div>
                                 <div class="col-12">
-                                    <figure class="figure text-center mb-0">
-                                        <img src="images/user.png" class="bio-img mb-2" alt="Generic placeholder image">
-                                        <figcaption class="bio-info">
-                                            <a href="#" class="name">Musa Chukwuemeka</a>
-                                            <a href="#" class="desc">Graphic Designer</a>
-                                            <a href="#" class="location"><img src="images/marker.png"/> Lagos, Nigeria</a>
-                                            <a href="#" class="plug-msg pt-2"><img src="images/massage.png"/></a>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                <hr>
-                                <div class="col-12 plug-metrics magenta">
-                                    <div class="row">
-                                        <div class="col-6 pr-1"><img src="images/bio_views.png"/> Views</div>
-                                        <div class="col-6 text-right pl-1">30,594</div>
-                                        <div class="col-6 pr-1"><img src="images/bio_like.png"/> Likes</div>
-                                        <div class="col-6 text-right pl-1">2,843</div>
-                                        <div class="col-6 pr-1"><img src="images/fan_base.png"/> Followers</div>
-                                        <div class="col-6 text-right pl-1">621</div>
-                                        <div class="col-6 pr-1"><img src="images/fan_of.png"/> Following</div>
-                                        <div class="col-6 text-right pl-1">231</div>
-                                    </div>
-                                </div>
-                                <!-- <hr>
-                                <div class="col-12 bio-rating">
-                                    <div class="row">
-                                        <div class="col-6 col-md-12 col-lg-6 text-md-center text-lg-left">Achievements</div>
-                                        <div class="col-6 col-md-12 col-lg-6 text-right text-md-center text-lg-right">
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="col-6 col-md-12 col-lg-6 text-md-center text-lg-left">Opportunities</div>
-                                        <div class="col-6 col-md-12 col-lg-6 text-right text-md-center text-lg-right">
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                        </div>
-                                    </div>
-                                </div> -->
-                                <hr>
-                                <div class="col-12">
-                                    <div class="row">
-                                        <div class="col-12 bio-header mb-1">Bio</div>
-                                        <div class="col-12">
-                                            <br><br><br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12">
-                                    <div class="row">
-                                        <div class="col-12 bio-header mb-1">Skills</div>
-                                        <div class="row">
-                                            <br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12">
-                                    <div class="row">
-                                        <div class="col-12 bio-header mb-1">Experience</div>
-                                        <div class="col-12">
-                                            <br><br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12">
-                                    <div class="row">
-                                        <div class="col-12 bio-header mb-1">Interests</div>
-                                        <div class="row">
-                                            <br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <!-- The Edit button is visible only when account owner, is view own account -->
-                                <div class="col-12 bio-edit text-center mb-3">
-                                    <a href="#" class="btn bg-yellow plug-btn white">Edit</a>
-                                </div>
-                                <div class="col-12 bio-member text-center">
-                                    Joined: Nov 17, 2017.
+                                    <br><br><br>
                                 </div>
                             </div>
                         </div>
-                        <!-- User Content Gallery -->
-                        <div class="col-12 col-md-8 px-2 order-1 order-md-2">
-                            <div class="bio-gallery">
-                                <!-- Available and Uploaded Opportunities in tabs -->
-                                <nav class="nav nav-justified" id="addContentTab" role="tablist">
-                                    <a class="nav-item nav-link active" id="addImg-tab" data-toggle="tab" href="#addImg" role="tab" aria-controls="addImg" aria-selected="true">Add Image</a>
-                                    <a class="nav-item nav-link" id="addVid-tab" data-toggle="tab" href="#addVid" role="tab" aria-controls="addVid" aria-selected="false">Add Video</a>
-                                </nav>
-                                <div class="tab-content" id="ocTab-content">
-                                    <div class="tab-pane fade show active" id="addImg" role="tabpanel" aria-labelledby="addImg-tab">
-                                        <form action="/" class="dropzone" id="my-awesome-dropzone"></form>
-                                        <form>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label for="imgTitle">Title</label>
-                                                        <input type="text" class="form-control" id="imgTitle" placeholder="Avengers Comic">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="imgTag">Tag</label>
-                                                        <input type="text" class="form-control" id="imgTag" placeholder="#GraphicDesign #Animation">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label for="imgDesc">Description</label>
-                                                        <textarea class="form-control" id="imgDesc" placeholder="Content Description" rows="5"></textarea>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 text-center mt-3 mb-4">
-                                                    <button type="submit" class="btn bg-yellow plug-btn">Publish</button>
-                                                </div>
+                        <hr>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12 bio-header mb-1">Skills</div>
+                                <div class="row">
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12 bio-header mb-1">Experience</div>
+                                <div class="col-12">
+                                    <br><br>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12 bio-header mb-1">Interests</div>
+                                <div class="row">
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- The Edit button is visible only when account owner, is view own account -->
+                        <div class="col-12 bio-edit text-center mb-3">
+                            <a href="#" class="btn bg-yellow plug-btn white">Edit</a>
+                        </div>
+                        <div class="col-12 bio-member text-center">
+                            Joined: Nov 17, 2017.
+                        </div>
+                    </div>
+                </div>
+                <!-- User Content Gallery -->
+                <div class="col-12 col-md-8 px-2 order-1 order-md-2">
+                    <div class="bio-gallery">
+                        <!-- Available and Uploaded Opportunities in tabs -->
+                        <nav class="nav nav-justified" id="addContentTab" role="tablist">
+                            <a class="nav-item nav-link active" id="addImg-tab" data-toggle="tab" href="#addImg" role="tab" aria-controls="addImg" aria-selected="true">Add Image</a>
+                            <a class="nav-item nav-link" id="addVid-tab" data-toggle="tab" href="#addVid" role="tab" aria-controls="addVid" aria-selected="false">Add Video</a>
+                        </nav>
+                        <div class="tab-content" id="ocTab-content">
+                            <div class="tab-pane fade show active" id="addImg" role="tabpanel" aria-labelledby="addImg-tab">
+                                <form action="/" class="dropzone" id="my-awesome-dropzone"></form>
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="imgTitle">Title</label>
+                                                <input type="text" class="form-control" id="imgTitle" placeholder="Avengers Comic">
                                             </div>
-                                        </form>
-                                        <div class="up-discliamer text-center">
-                                            By clicking <span class="link-yellow">'Publish',</span> you agree to the
-                                            <span class="mobile-tab-name"> Terms & Conditions</span> and
-                                            <span class="mobile-tab-name">Privacy Policy.</span>
+                                            <div class="form-group">
+                                                <label for="imgTag">Tag</label>
+                                                <input type="text" class="form-control" id="imgTag" placeholder="#GraphicDesign #Animation">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="imgDesc">Description</label>
+                                                <textarea class="form-control" id="imgDesc" placeholder="Content Description" rows="5"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 text-center mt-3 mb-4">
+                                            <button type="submit" class="btn bg-yellow plug-btn">Publish</button>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="addVid" role="tabpanel" aria-labelledby="addVid-tab">
-                                        <form>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="vid-box">
-                                                        <input type="text" class="vid-url" placeholder="PASTE VIDEO URL HERE TO UPLOAD">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label for="title">Title</label>
-                                                        <input type="text" class="form-control" id="title" placeholder="Avengers Snippet">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="tag">Tag</label>
-                                                        <input type="text" class="form-control" id="tag" placeholder="#VideoProduction #Animation">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label for="vidDesc">Description</label>
-                                                        <textarea class="form-control" id="vidDesc" placeholder="Content Description" rows="5"></textarea>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 text-center mt-3 mb-4">
-                                                    <button type="submit" class="btn bg-yellow plug-btn">Publish</button>
-                                                </div>
+                                </form>
+                                <div class="up-discliamer text-center">
+                                    By clicking <span class="link-yellow">'Publish',</span> you agree to the
+                                    <span class="mobile-tab-name"> Terms & Conditions</span> and
+                                    <span class="mobile-tab-name">Privacy Policy.</span>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="addVid" role="tabpanel" aria-labelledby="addVid-tab">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="vid-box">
+                                                <input type="text" class="vid-url" placeholder="PASTE VIDEO URL HERE TO UPLOAD">
                                             </div>
-                                        </form>
-                                        <div class="up-discliamer text-center">
-                                            By clicking <span class="link-yellow">'Publish',</span> you agree to the
-                                            <span class="mobile-tab-name"> Terms & Conditions</span> and
-                                            <span class="mobile-tab-name">Privacy Policy.</span>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="title">Title</label>
+                                                <input type="text" class="form-control" id="title" placeholder="Avengers Snippet">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="tag">Tag</label>
+                                                <input type="text" class="form-control" id="tag" placeholder="#VideoProduction #Animation">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="vidDesc">Description</label>
+                                                <textarea class="form-control" id="vidDesc" placeholder="Content Description" rows="5"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 text-center mt-3 mb-4">
+                                            <button type="submit" class="btn bg-yellow plug-btn">Publish</button>
                                         </div>
                                     </div>
+                                </form>
+                                <div class="up-discliamer text-center">
+                                    By clicking <span class="link-yellow">'Publish',</span> you agree to the
+                                    <span class="mobile-tab-name"> Terms & Conditions</span> and
+                                    <span class="mobile-tab-name">Privacy Policy.</span>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Footer -->
+                    <footer>
+                        <nav class="nav d-none d-md-flex nav-fill py-2">
+                            <a class="nav-item nav-link" href="#">Terms & Conditions</a>
+                            <a class="nav-item nav-link" href="#">Privacy Policy</a>
+                            <a class="nav-item nav-link" href="#">About PlugMe</a>
+                            <a class="nav-item nav-link" href="#">&copy 2018, PlugMe</a>
+                        </nav>
+                    </footer>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- Footer of Application -->
-    <footer class="contaier-fluid px-0">
-        <!-- Bottom Footer on Mobile Viewports -->
-        <nav class="nav d-flex d-md-none justify-content-center px-2 px-md-4">
-            <a class="nav-link" href="#">&copy 2017, PlugMe</a>
-            <a class="nav-link" href="#">About PlugMe</a>
-            <a class="nav-link" href="#">Terms & Conditions</a>
-            <a class="nav-link" href="#">Privacy Policy</a>
-        </nav>
-    </footer>
+    <!-- Bottom Footer on Mobile Viewports -->
+    <nav class="nav nav-fill fixed-bottom d-flex d-md-none magenta s-0875 py-2">
+        <a class="nav-item nav-link" href="#">Gallery</a>
+        <a class="nav-item nav-link" href="#">Trending</a>
+        <a class="nav-item nav-link" href="profile.html">Profile</a>
+    </nav>
     <!-- Required Jquery, Popper & Bootstrap scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
