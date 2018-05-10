@@ -6,9 +6,10 @@
 /*Styling for PlugMe Navbar*/
 nav.navbar {
     background-color: #191919;
+    padding: .75rem 1rem;
 }
-nav.navbar, #plugMe-tab.fix, #mobile-plugMe-tab.fix, nav#mobile-plugMe-tab, #nav-icon span, .plug-caption, .plug-trends figure,
-.vid-url, .add-exp, .plug-card .plug-action, .plug-view-card, .plug-feedback {
+nav.navbar, #plugMe-tab.fix, #mobile-plugMe-tab.fix, nav#mobile-plugMe-tab, #nav-icon span, .plug-caption, .vid-url,
+.add-exp, .plug-card .plug-action, .plug-feedback, .plugger-bio figure, .plugger-img figure, .plug-info figure  {
     width: 100% ;
 }
 nav.navbar .input-group {
@@ -20,8 +21,8 @@ nav.navbar .input-group .form-control{
 nav.navbar .input-group-sm>.input-group-btn>.btn {
     border-radius: .5rem 0 0 .125rem;
 }
-nav.navbar .plugme-logo {
-    margin-left: 2rem;
+nav.navbar .plugme-logo img {
+    height: 40px;
 }
 nav.navbar .sign {
     font-size: 0.875rem;
@@ -29,20 +30,11 @@ nav.navbar .sign {
     margin: 0 .75rem;
     text-decoration: none;
 }
-nav.navbar .sign:last-child {
-    font-size: 1rem;
-    margin: 0 2rem 0 1rem;
-}
 nav.navbar .sign img {
     height: 20px;
 }
-nav.navbar .sign:last-child img {
-    height: 24px;
-    vertical-align: bottom;
-}
 nav.navbar .sign span, nav.navbar .sign:hover, nav.navbar .dropdown-menu .dropdown-item, .link-yellow, .link-yellow:hover,
-#about figure h5, .plug-trends figure:hover figcaption, nav.navbar .dropdown-menu .dropdown-item .media, .page-link:focus,
-.page-link:hover, .page-item.active .page-link {
+#about figure h5, nav.navbar .dropdown-menu .dropdown-item .media {
     color: #fdc242;
 }
 nav.navbar .dropdown-toggle::after, .plug-feedback, .add-exp, .plug-card .plug-action {
@@ -95,23 +87,24 @@ nav.navbar .dropdown-menu hr, .plug-feedback hr {
     bottom: -0.375rem;
 }
 
+
 /*Styling for Input Groups*/
-nav.navbar .input-group .form-control, footer .input-group .form-control {
-    background-color: #ffffff40;
+nav.navbar .input-group .form-control {
+    background-color: white;
     font-size: 0.875rem;
-    border: none;
-    color: white;
+    border: #737477;
+    box-shadow:inset 0 0 5px #737477;
 }
 .input-group .form-control:focus {
     box-shadow: none;
 }
-nav.navbar .input-group-sm>.input-group-btn>.btn, footer .input-group-sm>.input-group-btn>.btn {
+nav.navbar .input-group-sm>.input-group-btn>.btn {
     background-image: linear-gradient(to bottom, #f7f7f7 0%, #bcbaba 100%);
     cursor: pointer;
     color: #5d3c9c;
     border: none;
 }
-nav.navbar .input-group-sm>.input-group-btn>.btn:hover, footer .input-group-sm>.input-group-btn>.btn:hover {
+nav.navbar .input-group-sm>.input-group-btn>.btn:hover {
     background-image: linear-gradient(to bottom, #f7f7f7 0%, #a5a5a5 100%);
 }
 
@@ -150,7 +143,7 @@ nav.navbar .input-group-sm>.input-group-btn>.btn:hover, footer .input-group-sm>.
 }
 #plugMe-tab.fix, #mobile-plugMe-tab.fix {
     position: fixed;
-    top: 56px;
+    top: 64px;
     background-color: white;
     z-index: 3;
 }
@@ -266,15 +259,11 @@ nav#mobile-plugMe-tab {
     background: url(../images/wallpaper.png) no-repeat center;
     background-size: cover;
 }
-.page-header h3, .page-header h4, .op-name, .up-name, .plug-view-card .plugger-info .view-plugger-name, .plug-tag span,
-.plugger-bio .bio-info .name, #about .caption, #about h6, .bio-gallery label, .bio-opportunity label, .card-body .bio-info .name,
-.bio-msg h5, .bio-msg h6, .bio-msg .bio-info .name {
+.page-header h3, .page-header h4, .op-name, .up-name, .plug-info .name, .plug-tag span, .plugger-bio .bio-info .name, #about
+.caption, #about h6, .bio-gallery label, .bio-opportunity label, .card-body .bio-info .name, .bio-msg h5, .bio-msg h6, .bio-msg
+.bio-info .name {
     color: #5d3c9c;
     font-weight: 500;
-}
-.page-content .col-lg-auto, .bio-gallery .col-sm-6, .bio-opportunity .col-sm-6 {
-    padding-left: .5rem;
-    padding-right: .5rem;
 }
 
 /*Styling for Plug Cards*/
@@ -282,10 +271,14 @@ nav#mobile-plugMe-tab {
     position: relative;
     background-color: white;
     height: 250px;
-    border-radius: 1rem 0.25rem 1rem 0.25rem;
-    box-shadow: 0 0 5px #d8d8d8;
     cursor: pointer;
     overflow: hidden;
+}
+.plug-card, .plug-list, .plugger-bio .bio-img, .sub-card {
+    border-radius: 1rem .25rem;
+}
+.plug-card, .plugger-bio, .bio-gallery, .bio-opportunity, .bio-achievement, .bio-msg, .sub-card, .plug-list {
+    box-shadow: 0 0 5px #d8d8d8;
 }
 .plug-caption {
     position: absolute;
@@ -304,7 +297,7 @@ nav#mobile-plugMe-tab {
 .plug-name, .plugger-bio .bio-rating, .plugger-bio .bio-header, .plug-metrics .icon, .plug-date, #opportunityTab .nav-lnk,
 #addContentTab .nav-link, #walletTab .nav-link, .op-profile-desc, .op-comment span, .sign-cnt, .sign-ads, .sign-ads .link-yellow,
 .sign-caption .hd, #about figure h5, nav.navbar .dropdown-menu h5, .drop-name, .plug-feedback .media-body .name, .card-body .media-body
-.name, #wTab-content h5, .purple h6, .sub-head {
+.name, #wTab-content h5, .purple h6, .sub-head, .plug-list .icon {
     font-weight: 500;
 }
 .plug-caption .plug-name, .plug-caption .plug-categories, .plug-caption .opp-plugger-name, .add-sym, nav.navbar .dropdown-menu h5 {
@@ -321,22 +314,24 @@ nav#mobile-plugMe-tab {
 .plug-caption .plug-categories, .plug-caption .opp-plugger-name, .plugger-bio .bio-member{
     display: block;
     font-size: 0.675rem;
+}
+.plug-caption .plug-categories, .plug-caption .opp-plugger-name, .plugger-bio .bio-member, figure .bio-info {
     line-height: 1.125;
 }
-.plug-caption hr, .plug-view-card hr, .plugger-bio hr, nav.navbar .dropdown-menu hr, .bio-opportunity hr, .bio-achievement hr,
-.bio-msg hr, .plug-feedback hr, #wTab-content hr {
+.plug-caption hr, .plug-info hr, .plugger-bio hr, nav.navbar .dropdown-menu hr, .bio-opportunity hr, .bio-achievement hr,
+.bio-msg hr, .plug-feedback hr, #wTab-content hr, .plug-list hr {
     background-image: radial-gradient(#cfd0d1 20%, transparent 100%);
 }
 .plug-caption.active hr {
     background-image: radial-gradient(#737477 20%, transparent 100%);
 }
-.plug-caption hr, .plug-caption.active hr, .plug-view-card hr, .plugger-bio hr, nav.navbar .dropdown-menu hr, .bio-opportunity hr,
-.bio-achievement hr, .bio-msg hr, .plug-feedback hr, #wTab-content hr {
+.plug-caption hr, .plug-caption.active hr, .plug-info hr, .plugger-bio hr, nav.navbar .dropdown-menu hr, .bio-opportunity hr,
+.bio-achievement hr, .bio-msg hr, .plug-feedback hr, #wTab-content hr, .plug-list hr {
     border: 0 !important;
     border-radius: 50%;
 }
-.plug-caption hr, .plug-view-card hr, .plugger-bio hr, nav.navbar .dropdown-menu hr, .plug-caption.active hr, .bio-opportunity hr,
-.bio-achievement hr, .bio-msg hr, .plug-feedback hr, #wTab-content hr {
+.plug-caption hr, .plug-info hr, .plugger-bio hr, nav.navbar .dropdown-menu hr, .plug-caption.active hr, .bio-opportunity hr,
+.bio-achievement hr, .bio-msg hr, .plug-feedback hr, #wTab-content hr, .plug-list hr {
     height: 0.075rem;
 }
 .plug-caption hr {
@@ -351,21 +346,19 @@ nav#mobile-plugMe-tab {
     background-color: white;
     max-height: 135px;
 }
-.plug-caption.active a.plug-name, .plugger-bio .bio-rating, .op-profile-desc, .plug-view-card .plugger-info .view-plugger-desc,
-.plug-metrics, .plug-tag, .plugger-bio .bio-info .desc, .up-desc,#about .intro, #about p, #about .my-5 span, .add-exp, .card-body
-.bio-info .desc, .magenta, .bio-msg .bio-info .desc {
+.plug-caption.active a.plug-name, .plugger-bio .bio-rating, .op-profile-desc .plug-metrics, .plug-tag, .bio-info .desc, .up-desc,
+#about .intro, #about p, #about .my-5 span, .add-exp, .magenta {
     color: #86275d;
 }
-.plug-caption.active .plugger-name, .plug-caption.active .achiever-desc, .plugger-bio .bio-header, .page-navigation .active,
-.page-link, .page-link::after, .page-item.disabled .page-link, .plug-feedback .media-body a, .purple {
+.plug-caption.active .plugger-name, .plug-caption.active .achiever-desc, .plugger-bio .bio-header, .plug-feedback .media-body a,
+.purple {
     color: #5d3c9c;
 }
 .plug-caption.active .plug-categories, .plug-caption.active .likes, .plug-caption.active .views, .plug-caption.active
-.opp-plugger-name, .plugger-bio .bio-member, .plug-view-card .plugger-info .view-plugger-location, .plug-date, .plugger-bio .location,
-.op-rating, .bio-rating i , .page-navigation, .op-location, .op-time, .op-comment, .op-profile-value, #plugMe-tab .nav-link,
-#profileTab .nav-link, .plugger-bio .bio-member, .plug-trends figure figcaption, .up-discliamer, .bio-msg label, .msg-status,
-.plug-feedback, .plug-feedback textarea, .card-body .bio-info .location, #wTab-content h5, .grey, .bio-msg .bio-info .location,
-.sub-body, .sub-footer {
+.opp-plugger-name, .plugger-bio .bio-member, .plugger-info .location, .plug-date, .plugger-bio .location, .op-rating, .bio-rating
+i, .op-location, .op-time, .op-comment, .op-profile-value, #plugMe-tab .nav-link, #profileTab .nav-link, .plugger-bio .bio-member,
+.up-discliamer, .bio-msg label, .msg-status, .plug-feedback, .plug-feedback textarea, .card-body .bio-info .location, #wTab-content h5,
+.grey, .bio-info .location, .sub-body, .sub-footer, .plug-list {
     color: #737477;
 }
 .bg-magenta {
@@ -380,7 +373,7 @@ nav#mobile-plugMe-tab {
 }
 .bio-gallery .plug-card .plug-caption .plug-name, .bio-gallery label, .bio-opportunity label, #about p, .bio-gallery .form-control,
 .bio-opportunity .form-control, .bio-opportunity .input-group .form-control, .bio-opportunity .plug-card .plug-caption .plug-name,
-.s-0875, .bio-info .desc{
+.s-0875, .bio-info .desc, .plug-metrics .icon {
     font-size: 0.875rem;
 }
 .plug-card .plug-cancel, .plug-card .plug-type {
@@ -397,22 +390,7 @@ nav#mobile-plugMe-tab {
     width: 100%;
     height: 100%;
 }
-
-/* Styling for Trending Categories */
-.plug-trends figure {
-    cursor: pointer;
-    transition: all 1s ease;
-}
-.plug-trends figure:hover {
-    box-shadow: 0 0 5px #d8d8d8;
-    border-radius: 1rem 0.25rem 1rem 0.25rem;
-    background-color: white;
-}
-.plug-trends figure img {
-    object-fit: contain;
-    height: 200px;
-}
-.plug-trends figure img, nav.navbar .dropdown-menu hr {
+nav.navbar .dropdown-menu hr, .plug-list hr {
     width: 80%;
 }
 
@@ -421,8 +399,8 @@ nav#mobile-plugMe-tab {
     object-fit: cover;
     width: 100%;
 }
-.about-sign-up, .about-connect, .about-fanbase, .about-creatvt, .add-exp, .red-counter, .drop-time, nav.navbar .dropdown-menu .btn,
-.msg-status, .plug-card .plug-cancel, .plug-card .plug-action, .fd-time, .plug-feedback .fa-close, .plug-view-card, .plug-feedback {
+.about-sign-up, .about-connect, .about-fanbase, .about-creatvt, .add-sym, .add-exp, .red-counter, .drop-time, nav.navbar .dropdown-menu .btn,
+.msg-status, .plug-card .plug-cancel, .plug-card .plug-action, .fd-time, .plug-feedback .fa-close, .plug-feedback {
     position: absolute;
 }
 .about-sign-up, .about-connect, .plug-card .plug-cancel {
@@ -459,8 +437,7 @@ nav#mobile-plugMe-tab {
 
 /*Styling for Profile Page (Portfolio Section)*/
 .plugger-bio, .bio-gallery, .bio-opportunity, .bio-achievement, .bio-msg {
-    border-radius: 1.25rem .25rem 1.25rem .25rem;
-    box-shadow: 0 0 5px #73747799;
+    border-radius: 1.25rem .25rem;
     overflow: hidden;
 }
 .plugger-bio, #opTab-content, #ocTab-content, #wTab-content {
@@ -469,7 +446,7 @@ nav#mobile-plugMe-tab {
 .plugger-bio, .sub-card {
     background-color: #fafafa;
 }
-.bio-gallery, .bio-opportunity, .bio-achievement, .bio-msg {
+.bio-gallery, .bio-opportunity, .bio-achievement, .bio-msg, .plug-list {
     background-color: white;
 }
 .p-1-25 {
@@ -477,6 +454,7 @@ nav#mobile-plugMe-tab {
 }
 .plugger-bio .bio-img {
     height: 100px;
+    border-radius: 1rem .25rem;
 }
 .plugger-bio .bio-info img, .card-body .bio-info img, .bio-msg .bio-info img{
     height: 1rem;
@@ -488,9 +466,6 @@ nav#mobile-plugMe-tab {
 }
 .plugger-bio hr, .bio-opportunity hr, .bio-achievement hr, .bio-msg hr {
     margin: 1rem auto;
-}
-.plug-msg {
-    padding-top: .5rem;
 }
 .plug-msg img, .plug-action img {
     height: 1.25rem !important;
@@ -504,9 +479,6 @@ nav#mobile-plugMe-tab {
 }
 .bio-gallery .form-control:focus, .bio-opportunity .form-control:focus {
     box-shadow: inset 0 0 5px #ced4da;
-}
-.bio-gallery .add-sym {
-    font-size: 6rem;
 }
 
 /*Styling for Profile Page (Opportunity Section)*/
@@ -542,10 +514,7 @@ nav#mobile-plugMe-tab {
 .bio-opportunity .input-group, .form-control.hasDatepicker {
     height: calc(2.25rem + 2px);
 }
-.bio-opportunity .add-sym {
-    font-size: 3rem;
-}
-.add-exp {
+.add-exp, .add-sym {
     top: 50%;
     transform: translateY(-50%);
 }
@@ -683,10 +652,19 @@ a.link-yellow, a.link-yellow:hover {
 }
 
 /*Styling for Modal*/
-.modal-dialog {
-    margin: 100px auto 0;
+.modal-backdrop, .modal {
+    top: 64px;
 }
-.modal-content, .page-link, .page-link:focus, .page-link:hover, .page-item.disabled .page-link, .page-item.active .page-link {
+.modal-backdrop {
+    background-color: #e6e7e8;
+}
+.modal-backdrop.show {
+    opacity: 1;
+}
+.modal-dialog {
+    margin: 65px auto 0;
+}
+.modal-content {
     background-color: transparent;
     border: none;
 }
@@ -698,60 +676,52 @@ a.link-yellow, a.link-yellow:hover {
 .modal-body {
     padding: 0;
 }
-.modal-body .plug-content, .modal-body .plug-info {
-    padding: .5rem;
+.modal-body .plug-info, .modal-body .plug-content, .modal-body .plug-feedback {
+    height: 425px;
 }
-.modal-body .plug-info, .modal-body .plug-view, .modal-body .plug-view-card, .modal-body .plug-feedback {
-    height: 375px;
-}
-.modal-body .plug-view, .modal-body .plug-view-card, .modal-body .plug-feedback {
+.modal-body .plug-content, .modal-body .plug-feedback, .modal-body .plug-info {
     background-color: white;
     border-radius: 1.25rem .25rem 1.25rem .25rem;
 }
-.modal-body .plug-view-card, .modal-body .plug-feedback {
-    padding: 1rem;
-    left: 0;
-}
-.modal-body .plug-view-card a, .plugger-bio a, .page-link:focus, .page-link:hover, .modal-body .plug-feedback a, .bio-info a {
+.modal-body .plug-info a, .plugger-bio a, .modal-body .plug-feedback a, .bio-info a {
     text-decoration: none;
 }
-.plug-view-card .plugger-img, .op-uploader img, .op-status img, .bio-msg .bio-img, .card-body .bio-img {
+.plugger-img, .op-uploader img, .op-status img, .bio-msg .bio-img, .card-body .bio-img {
     height: 75px;
 }
-.plug-view-card .plugger-info, .plugger-bio .bio-info, .plugger-bio .bio-edit .btn, .drop-desc, nav.navbar .dropdown-menu .btn,
-.plug-feedback .media-body, .card-body .bio-info, .bio-msg .bio-info {
+.plug-info, .plugger-bio .bio-edit .btn, .drop-desc, nav.navbar .dropdown-menu .btn, .plug-feedback .media-body, .card-body .bio-info {
     line-height: 1;
 }
-.plug-view-card .plugger-info .view-plugger-name, .plugger-bio .bio-info .name, #plugMe-tab .nav-link, nav.flex-column.side-nav a,
-.op-name, .sign-caption .hd, #profileTab .nav-link, .card-body .bio-info .name, .bio-msg .bio-info .name, .sub-head, .sub-body {
+.plug-info .name, .plugger-bio .bio-info .name, #plugMe-tab .nav-link, nav.flex-column.side-nav a, .op-name, .sign-caption .hd,
+#profileTab .nav-link, .card-body .bio-info .name, .bio-msg .bio-info .name, .sub-head, .sub-body, .fa-search {
     font-size: 1.125rem;
 }
-.plug-view-card .plugger-info .view-plugger-desc, .plug-metrics .value, .op-profile-value, a.link-yellow, .msg-status {
+.plug-metrics .value, .op-profile-value, a.link-yellow, .msg-status {
     font-size: 0.875rem;
 }
-.plug-view-card .plugger-info .view-plugger-location, .plug-date, .op-time, .up-discliamer, .drop-desc, .plug-feedback
-.media-body .desc, .fd-time {
+.plug-info .view-plugger-location, .plug-date, .op-time, .up-discliamer, .drop-desc, .plug-feedback
+.media-body .desc, .fd-time, .plug-list .icon {
     font-size: 0.675rem;
 }
-.plug-view-card hr, .plugger-bio hr, nav.flex-column.side-nav hr, #m-profileTab.form-control, .sub-card hr {
+.plug-info hr, .plugger-bio hr, nav.flex-column.side-nav hr, #m-profileTab.form-control, .sub-card hr {
     width: 60%;
 }
-.view-plugger-location img, .op-location img{
+.location img, .op-location img{
     height: 1rem;
     vertical-align: text-bottom;
 }
-.plug-metrics img {
+.plug-metrics img, .plug-list img {
     width: 1rem;
     vertical-align: baseline;
 }
-.plug-view-card hr, .sub-card hr {
+.plug-info hr, .sub-card hr, .plug-list hr {
     margin: .5rem auto;
 }
-.plug-metrics .icon, .plug-tag,.plugger-bio .location, .sign-page .form-check-label, .plug-info .input-group, .plug-feedback,
-.plug-feedback .media-body .name, .card-body .bio-info .location, .bio-msg .bio-info .location {
+.plug-tag, .sign-page .form-check-label, .plug-info .input-group, .plug-feedback,
+.plug-feedback .media-body .name, .card-body .bio-info .location,.bio-info .location {
     font-size: 0.75rem;
 }
-.plug-tag span, .plug-feedback .fa-close {
+.plug-tag span, .plug-feedback .fa-close, .plug-list .op-name {
     font-size: 1rem;
 }
 .plugger-info .plug-msg img{
@@ -785,68 +755,45 @@ a.link-yellow, a.link-yellow:hover {
 }
 
 /*Styling for Bio Message Page*/
-.bio-msg .form-control-plaintext, .plug-feedback textarea {
+.bio-msg .form-control-plaintext, .plug-feedback textarea, .add-sym {
     width: 100%;
 }
-.bio-msg textarea.form-control-plaintext, .plug-feedback textarea, .modal-body .plug-view, .sub-card {
+.bio-msg textarea.form-control-plaintext, .plug-feedback textarea, .modal-body .plug-content, .sub-card {
     overflow: hidden;
 }
 
 /*Styling for Subscription Page*/
 .sub-card {
     max-width: 225px;
-    border-radius: 1rem 0.25rem;
-    box-shadow: 0 0 5px #d8d8d8
-}
-
-/*Styling for Pagination*/
-.page-link {
-    padding: .5rem;
-}
-.page-link::after {
-    content: " ,"
-}
-.page-item:first-child .page-link::after, .page-item:nth-last-child(2) .page-link::after, .page-item:last-child .page-link::after {
-    content: "";
 }
 
 /*Styling for Footer*/
-footer {
-    background-color: #363435;
-    color: white;
-    font-size: 0.75rem;
-}
 footer, .sign-caption p, #plugMe-tab .nav-link, #profileTab .nav-link, .sign-caption p, .drop-desc{
     font-weight: 300;
 }
-footer .input-group .form-control{
-    border-radius: .5rem 0 0 .125rem;
-}
-footer .input-group-sm>.input-group-btn>.btn {
-    border-radius: 0 .125rem .5rem 0 ;
-}
-footer .social img, .logo-orange img {
+.logo-orange img {
     height: 65px;
 }
-footer nav {
-    background-color: #191919;
-}
 footer nav .nav-link {
-    color: white;
+    color: #86275d;
     font-size: 0.75rem;
-    padding: 0 1rem;
-}
-footer nav .nav-link:nth-child(2), footer nav .nav-link:nth-child(3) {
-    border-right: 1px solid white;
-}
-footer nav .nav-link.copyright {
-    position: absolute;
-    left: 1.5rem;
 }
 
-@media (min-width: 991px) and (max-width: 1200px) {
-    footer .social img{
-        height: 50px;
+
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 80%;
+        margin: 30px auto;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1240px;
+    }
+    .modal-dialog {
+        max-width: 1140px;
     }
 }
 
@@ -854,36 +801,23 @@ footer nav .nav-link.copyright {
     .modal-dialog {
         max-width: 725px;
     }
-    .plug-view-card .plugger-img {
+    .plugger-img {
         height: 65px;
     }
-    .plug-view-card .plugger-info .view-plugger-name, .plugger-bio .bio-info .name, .card-body .bio-info .name, .bio-msg .bio-info .name {
+    .plug-info .view-plugger-name, .plugger-bio .bio-info .name, .card-body .bio-info .name, .bio-msg .bio-info .name {
         font-size: 1rem;
     }
-    .plug-view-card .plugger-info .view-plugger-desc, .plugger-bio .bio-info .desc, .card-body .bio-info .desc, .bio-msg .bio-info .desc {
+    .plug-info .desc, .plugger-bio .bio-info .desc, .card-body .bio-info .desc, .bio-msg .bio-info .desc {
         font-size: 0.75rem;
     }
-    .plug-view-card .plugger-info .view-plugger-location {
+    .plug-info .location {
         font-size: 0.5rem;
     }
-    .plug-view-card .plugger-info .view-plugger-location img{
+    .plug-info .location img{
         height: 0.75rem;
     }
     .plug-tag span {
         font-size: 0.875rem;
-    }
-}
-
-@media (min-width: 992px) {
-    .page-content .col-lg-auto {
-        -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
-        max-width: 100%;
-    }
-    .modal-dialog {
-        max-width: 900px;
     }
 }
 
@@ -905,9 +839,6 @@ footer nav .nav-link.copyright {
     }
     #plugMe-tab .nav-link {
         font-size: 1rem;
-    }
-    footer .social img{
-        height: 40px;
     }
 }
 
@@ -937,7 +868,7 @@ footer nav .nav-link.copyright {
 }
 
 @media (max-width: 575px) {
-    .modal-body .plug-view, .modal-body .plug-view-card {
+    .modal-body .plug-content {
         height:335px;
     }
     nav.navbar .input-group {

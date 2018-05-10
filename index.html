@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>PlugMe | Trending - Signed Out</title>
+    <title>PlugMe | The foremost creativity and opportunity platform</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,15 +13,15 @@
 <body style="overflow-x: hidden;">
     <!-- Navigation with Search accross all viewports -->
     <nav class="navbar fixed-top">
-        <a href="index.html" class="plugme-logo"><img src="images/logo.png" height="40"/></a>
+        <a href="index.html" class="plugme-logo ml-4"><img src="images/logo.png"/></a>
         <div class="input-group input-group-sm ml-auto mr-0 mx-md-auto">
             <span class="input-group-btn">
-                <button class="btn" type="button">Search</button>
+                <button class="btn pt-2 pb-1 px-3" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
             </span>
             <input type="text" class="form-control" placeholder="Plug Me to..." aria-label="Plug Me to...">
         </div>
         <a href="sign_up.html" class="sign d-none d-md-block"><img src="images/sign_up.png"/> Sign <span>Up</span></a>
-        <a href="sign_in.html" class="sign d-none d-md-block"><img src="images/sign_in.png"/> Sign <span>In</span></a>
+        <a href="sign_in.html" class="sign d-none d-md-block mr-4"><img src="images/sign_in.png"/> Sign <span>In</span></a>
     </nav>
     <!-- Side Navigation Menu on Small Viewports -->
     <nav class="nav flex-column side-nav text-center d-md-none">
@@ -73,13 +73,9 @@
         <div class="h4 mobile-tab-name mx-auto mb-0">Trending</div>
     </nav>
     <!-- Application Navigation for Medium to Extra large Viewports -->
-    <nav class="nav nav-justified px-0 px-lg-3 d-none d-md-flex" id="plugMe-tab" role="tablist">
-        <a class="nav-item nav-link active" id="nav-trend" data-toggle="tab" href="#trend" role="tab" aria-controls="trend" aria-selected="true">Trending</a>
-        <a class="nav-item nav-link" id="nav-gallery" data-toggle="tab" href="#gallery" role="tab" aria-controls="gallery" aria-selected="true">Gallery</a>
-        <a class="nav-item nav-link" id="nav-opp" data-toggle="tab" href="#opp" role="tab" aria-controls="opp" aria-selected="true">Opportunities</a>
-        <a class="nav-item nav-link" id="nav-blog" data-toggle="tab" href="#blog" role="tab" aria-controls="blog" aria-selected="true">Blog</a>
-        <a class="nav-item nav-link" id="nav-about" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">About Us</a>
-        <a class="nav-item nav-link ml-3 ml-lg-5" href="#"><img src="images/refresh.png" class="mb-1" height="15"/> Refresh</a>
+    <nav class="nav justify-content-center px-0 px-lg-3 d-none d-md-flex" id="plugMe-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-home" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+        <a class="nav-item nav-link" id="nav-trend" data-toggle="tab" href="#trend" role="tab" aria-controls="trend" aria-selected="true">Trending</a>
     </nav>
     <!-- Main Body of Application -->
     <div class="container-fluid main-page">
@@ -90,32 +86,29 @@
                     <div class="modal-body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-12 col-md-8 plug-content">
-                                    <div class="plug-view"></div>
+                                <div class="col-12 col-md-8 mb-4">
+                                    <div class="plug-content">
+
+                                    </div>
                                 </div>
-                                <div class="col-12 col-md-4 plug-info">
-                                    <div class="row plug-view-card no-gutters">
+                                <div class="col-12 col-md-4 mb-4">
+                                    <div class="row plug-info mx-0 py-3">
                                         <div class="col-12">
-                                            <div class="media">
-                                                <img class="plugger-img align-self-end mr-2" src="images/user.png" alt="Generic placeholder image">
-                                                <div class="media-body">
-                                                    <div class="plugger-info">
-                                                        <a href="#" class="view-plugger-name">John Doe</a><br>
-                                                        <a href="#" class="view-plugger-desc">Graphic Designer</a><br>
-                                                        <a href="#" class="view-plugger-location"><img src="images/marker.png"/> Lagos, Nigeria</a>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <figure class="figure text-center mb-0">
+                                                <img src="images/user.png" class="plugger-img mb-2" alt="Generic placeholder image">
+                                                <figcaption class="bio-info">
+                                                    <a href="#" class="name">Musa Chukwuemeka</a><br>
+                                                    <a href="#" class="desc">Graphic Designer</a><br>
+                                                    <a href="#" class="location"><img src="images/marker.png"/> Lagos, Nigeria</a><br>
+                                                </figcaption>
+                                            </figure>
                                         </div>
                                         <hr>
                                         <div class="col-12 plug-metrics">
-                                            <div class="row">
-                                                <div class="col-6 icon"><img src="images/bio_views.png"/> Views</div>
-                                                <div class="col-6 text-right value">30,594</div>
-                                                <div class="col-6 icon"><img src="images/bio_like.png"/> Likes</div>
-                                                <div class="col-6 text-right value">2,843</div>
-                                                <div class="col-6 icon"><img src="images/feedback.png"/> Feedback</div>
-                                                <div class="col-6 text-right value">621</div>
+                                            <div class="row text-center">
+                                                <div class="col-4 icon magenta"><img src="images/bio_views.png"/> 30,594</div>
+                                                <div class="col-4 icon magenta"><img src="images/bio_like.png"/> 2,843</div>
+                                                <div class="col-4 icon magenta"><img src="images/feedback.png"/> 621</div>
                                                 <div class="col-12">
                                                     <div class="input-group input-group-sm mt-3">
                                                         <div class="input-group-prepend">
@@ -140,7 +133,7 @@
                                         <div class="col-12 plug-date text-right">Posted on 14th Dec, 2017.</div>
                                         <hr>
                                     </div>
-                                    <div class="row plug-feedback no-gutters pr-0">
+                                    <!-- <div class="row plug-feedback no-gutters pr-0">
                                         <i class="fa fa-close" aria-hidden="true"></i>
                                         <div style="overflow-y: scroll; height: 300px; width: 100%">
                                             <div class="col-12 p-0">
@@ -216,7 +209,7 @@
                                                 </div>
                                             </form>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -226,709 +219,869 @@
         </div>
         <!-- Collection of Plug Card and call-outs -->
         <div class="tab-content" id="nav-tabContent">
-            <div class="container tab-pane fade show active" id="trend" role="tabpanel" aria-labelledby="nav-trend">
-                <div class="row page-header">
-                    <div class="col-12 mt-3">
-                        <h3 class="d-none d-md-block">Gallery</h3>
-                        <h4 class="d-block d-md-none text-center text-sm-left">Gallery</h4>
-                    </div>
-                </div>
+            <div class="container tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="nav-home">
                 <div class="row page-content">
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
-                            <div class="plug-type">
-                                <img src="images/image.png"/>
-                            </div>
-                            <div class="plug-caption px-3 py-1">
-                                <a href="#" class="plug-name">Max Payne</a>
-                                <div class="plug-details d-none">
-                                    <a href="#" class="plugger-name">John Doe</a><br>
-                                    <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                    <!-- 3/4 of page (housing content) -->
+                    <div class="col-lg-9 col-md-8">
+                        <div class="row my-5">
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
                                 </div>
-                                <hr>
-                                <span class="likes">Likes</span>
-                                <span class="views text-right">Views</span>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
-                            <div class="plug-type">
-                                <img src="images/video.png"/>
-                            </div>
-                            <div class="plug-caption px-3 py-1">
-                                <a href="#" class="plug-name">Max Payne</a>
-                                <div class="plug-details d-none">
-                                    <a href="#" class="plugger-name">John Doe</a><br>
-                                    <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
                                 </div>
-                                <hr>
-                                <span class="likes">Likes</span>
-                                <span class="views text-right">Views</span>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
+                    <!-- 1/4 of page (housing tags and opportunities) -->
+                    <div class="col-lg-3 col-md-4 mt-2 mx-0">
+                        <!-- Collection of Tags -->
+                        <div class="row plug-list mx-0 mt-5 py-3">
+                            <h5 class="col-12 my-1 text-center magenta">Tags</h5>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name mb-1">#Art </div>
+                                    <div class="col-4 icon pr-0"><img src="images/views_grey.png"/> 30,594</div>
+                                    <div class="col-4 icon px-2"><img src="images/likes_icon.png"/> 2,843</div>
+                                    <div class="col-4 icon pl-0"><img src="images/fdbk_grey.png"/> 11,556</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name mb-1">#Fashion</div>
+                                    <div class="col-4 icon pr-0"><img src="images/views_grey.png"/> 30,594</div>
+                                    <div class="col-4 icon px-2"><img src="images/likes_icon.png"/> 2,843</div>
+                                    <div class="col-4 icon pl-0"><img src="images/fdbk_grey.png"/> 11,556</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name mb-1">#Design</div>
+                                    <div class="col-4 icon pr-0"><img src="images/views_grey.png"/> 30,594</div>
+                                    <div class="col-4 icon px-2"><img src="images/likes_icon.png"/> 2,843</div>
+                                    <div class="col-4 icon pl-0"><img src="images/fdbk_grey.png"/> 11,556</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name mb-1">#Photography</div>
+                                    <div class="col-4 icon pr-0"><img src="images/views_grey.png"/> 30,594</div>
+                                    <div class="col-4 icon px-2"><img src="images/likes_icon.png"/> 2,843</div>
+                                    <div class="col-4 icon pl-0"><img src="images/fdbk_grey.png"/> 11,556</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name mb-1">#Technology</div>
+                                    <div class="col-4 icon pr-0"><img src="images/views_grey.png"/> 30,594</div>
+                                    <div class="col-4 icon px-2"><img src="images/likes_icon.png"/> 2,843</div>
+                                    <div class="col-4 icon pl-0"><img src="images/fdbk_grey.png"/> 11,556</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name mb-1">#Craft </div>
+                                    <div class="col-4 icon pr-0"><img src="images/views_grey.png"/> 30,594</div>
+                                    <div class="col-4 icon px-2"><img src="images/likes_icon.png"/> 2,843</div>
+                                    <div class="col-4 icon pl-0"><img src="images/fdbk_grey.png"/> 11,556</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name mb-1">#AudioVisuals</div>
+                                    <div class="col-4 icon pr-0"><img src="images/views_grey.png"/> 30,594</div>
+                                    <div class="col-4 icon px-2"><img src="images/likes_icon.png"/> 2,843</div>
+                                    <div class="col-4 icon pl-0"><img src="images/fdbk_grey.png"/> 11,556</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
+                        <!-- Collection of Opportunities -->
+                        <div class="row plug-list mx-0 mt-5 py-3">
+                            <h5 class="col-12 my-1 text-center magenta">Opportunities</h5>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name">Bill board Advert</div>
+                                    <div class="col-12 op-location">Lagos, Nigeria</div>
+                                    <div class="col-12 op-time">5 days ago</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name">Bill board Advert</div>
+                                    <div class="col-12 op-location">Lagos, Nigeria</div>
+                                    <div class="col-12 op-time">5 days ago</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name">Bill board Advert</div>
+                                    <div class="col-12 op-location">Lagos, Nigeria</div>
+                                    <div class="col-12 op-time">5 days ago</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name">Bill board Advert</div>
+                                    <div class="col-12 op-location">Lagos, Nigeria</div>
+                                    <div class="col-12 op-time">5 days ago</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name">Bill board Advert</div>
+                                    <div class="col-12 op-location">Lagos, Nigeria</div>
+                                    <div class="col-12 op-time">5 days ago</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name">Bill board Advert</div>
+                                    <div class="col-12 op-location">Lagos, Nigeria</div>
+                                    <div class="col-12 op-time">5 days ago</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name">Bill board Advert</div>
+                                    <div class="col-12 op-location">Lagos, Nigeria</div>
+                                    <div class="col-12 op-time">5 days ago</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="w-100 d-none d-lg-block"></div>
-                    <!-- 5 columns on Large screens -->
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="w-100 d-none d-lg-block"></div>
-                    <!-- 5 columns on Large screens -->
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="w-100 d-none d-lg-block"></div>
-                </div>
-                <div class="row">
-                    <div class="col-12 my-3">
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination justify-content-center mt-3">
-                                <li class="page-item disabled">
-                                    <a class="page-link" href="#" aria-label="Previous" tabindex="-1">
-                                        <span aria-hidden="true"><i class="fa fa-caret-left" aria-hidden="true"></i></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                </li>
-                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">...</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                        <span aria-hidden="true"><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <div class="row plug-trends py-3 pb-5">
-                    <div class="col-10 col-sm-6 col-lg-3 mx-auto text-center">
-                        <figure class="figure py-3">
-                            <figcaption class="figure-caption"><h4>Opportunities</h4></figcaption>
-                            <img src="images/opportunities.png" class="figure-img mt-2" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-10 col-sm-6 col-lg-3 mx-auto text-center">
-                        <figure class="figure py-3">
-                            <figcaption class="figure-caption"><h4>Pluggers</h4></figcaption>
-                            <img src="images/pluggers.png" class="figure-img mt-2" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-10 col-sm-6 col-lg-3 mx-auto text-center">
-                        <figure class="figure py-3">
-                            <figcaption class="figure-caption"><h4>Achievers</h4></figcaption>
-                            <img src="images/achievers.png" class="figure-img mt-2" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-10 col-sm-6 col-lg-3 mx-auto text-center">
-                        <figure class="figure py-3">
-                            <figcaption class="figure-caption"><h4>Tags</h4></figcaption>
-                            <img src="images/tags.png" class="figure-img mt-2" alt="">
-                        </figure>
+                        <!-- Footer -->
+                        <footer>
+                            <nav class="nav d-none d-md-flex nav-fill py-2">
+                                <a class="nav-item nav-link" href="#">Terms & Conditions</a>
+                                <a class="nav-item nav-link" href="#">Privacy Policy</a>
+                                <a class="nav-item nav-link" href="#">About PlugMe</a>
+                                <a class="nav-item nav-link" href="#">&copy 2018, PlugMe</a>
+                            </nav>
+                        </footer>
                     </div>
                 </div>
             </div>
-            <div class="container tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="nav-gallery">
-                <div class="row page-header">
-                    <div class="col-12 mt-3">
-                        <h3 class="d-none d-md-block">Recent</h3>
-                        <h4 class="d-block d-md-none text-center text-sm-left">Recent</h4>
-                    </div>
-                </div>
+            <div class="container tab-pane fade" id="trend" role="tabpanel" aria-labelledby="nav-trend">
                 <div class="row page-content">
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
-                            <div class="plug-caption px-3 py-1">
-                                <a href="#" class="plug-name">Max Payne</a>
-                                <div class="plug-details d-none">
-                                    <a href="#" class="plugger-name">John Doe</a><br>
-                                    <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                    <!-- 3/4 of page (housing content) -->
+                    <div class="col-lg-9 col-md-8">
+                        <div class="row my-5">
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
                                 </div>
-                                <hr>
-                                <span class="likes">Likes</span>
-                                <span class="views text-right">Views</span>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <span class="likes">Likes</span>
+                                        <span class="views text-right">Views</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
-                            <div class="plug-caption px-3 py-1">
-                                <a href="#" class="plug-name">Max Payne</a>
-                                <div class="plug-details d-none">
-                                    <a href="#" class="plugger-name">John Doe</a><br>
-                                    <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                    <!-- 1/4 of page (housing tags and opportunities) -->
+                    <div class="col-lg-3 col-md-4 mt-2 mx-0">
+                        <!-- Collection of Tags -->
+                        <div class="row plug-list mx-0 mt-5 py-3">
+                            <h5 class="col-12 my-1 text-center magenta">Tags</h5>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name mb-1">#Art </div>
+                                    <div class="col-4 icon pr-0"><img src="images/views_grey.png"/> 30,594</div>
+                                    <div class="col-4 icon px-2"><img src="images/likes_icon.png"/> 2,843</div>
+                                    <div class="col-4 icon pl-0"><img src="images/fdbk_grey.png"/> 11,556</div>
                                 </div>
-                                <hr>
-                                <span class="likes">Likes</span>
-                                <span class="views text-right">Views</span>
+                            </div>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name mb-1">#Fashion</div>
+                                    <div class="col-4 icon pr-0"><img src="images/views_grey.png"/> 30,594</div>
+                                    <div class="col-4 icon px-2"><img src="images/likes_icon.png"/> 2,843</div>
+                                    <div class="col-4 icon pl-0"><img src="images/fdbk_grey.png"/> 11,556</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name mb-1">#Design</div>
+                                    <div class="col-4 icon pr-0"><img src="images/views_grey.png"/> 30,594</div>
+                                    <div class="col-4 icon px-2"><img src="images/likes_icon.png"/> 2,843</div>
+                                    <div class="col-4 icon pl-0"><img src="images/fdbk_grey.png"/> 11,556</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name mb-1">#Photography</div>
+                                    <div class="col-4 icon pr-0"><img src="images/views_grey.png"/> 30,594</div>
+                                    <div class="col-4 icon px-2"><img src="images/likes_icon.png"/> 2,843</div>
+                                    <div class="col-4 icon pl-0"><img src="images/fdbk_grey.png"/> 11,556</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name mb-1">#Technology</div>
+                                    <div class="col-4 icon pr-0"><img src="images/views_grey.png"/> 30,594</div>
+                                    <div class="col-4 icon px-2"><img src="images/likes_icon.png"/> 2,843</div>
+                                    <div class="col-4 icon pl-0"><img src="images/fdbk_grey.png"/> 11,556</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name mb-1">#Craft </div>
+                                    <div class="col-4 icon pr-0"><img src="images/views_grey.png"/> 30,594</div>
+                                    <div class="col-4 icon px-2"><img src="images/likes_icon.png"/> 2,843</div>
+                                    <div class="col-4 icon pl-0"><img src="images/fdbk_grey.png"/> 11,556</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name mb-1">#AudioVisuals</div>
+                                    <div class="col-4 icon pr-0"><img src="images/views_grey.png"/> 30,594</div>
+                                    <div class="col-4 icon px-2"><img src="images/likes_icon.png"/> 2,843</div>
+                                    <div class="col-4 icon pl-0"><img src="images/fdbk_grey.png"/> 11,556</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="w-100 d-none d-lg-block"></div>
-                    <!-- 5 columns on Large screens -->
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="w-100 d-none d-lg-block"></div>
-                    <!-- 5 columns on Large screens -->
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="w-100 d-none d-lg-block"></div>
-                    <!-- 5 columns on Large screens -->
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto"></div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="w-100 d-none d-lg-block"></div>
-                    <!-- 5 columns on Large screens -->
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="w-100 d-none d-lg-block"></div>
-                    <!-- 5 columns on Large screens -->
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="w-100 d-none d-lg-block"></div>
-                </div>
-                <div class="row pb-5">
-                    <div class="col-12 my-3">
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination justify-content-center mt-3">
-                                <li class="page-item disabled">
-                                    <a class="page-link" href="#" aria-label="Previous" tabindex="-1">
-                                        <span aria-hidden="true"><i class="fa fa-caret-left" aria-hidden="true"></i></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                </li>
-                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">...</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                        <span aria-hidden="true"><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-            <div class="container tab-pane fade" id="opp" role="tabpanel" aria-labelledby="nav-opp">
-                <div class="row page-header">
-                    <div class="col-12 mt-3">
-                        <h3 class="d-none d-md-block">Recent</h3>
-                        <h4 class="d-block d-md-none text-center text-sm-left">Recent</h4>
-                    </div>
-                </div>
-                <div class="row page-content">
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
-                            <div class="plug-caption px-3 py-1">
-                                <a href="#" class="plug-name">GTBank Bill Board...</a>
-                                <div class="plug-details d-none">
-                                    <a href="#" class="achiever-desc">Graphic Designer</a><br>
-                                    <a href="#" class="opp-plugger-name mt-0">Posted by John Doe</a>
-                                    <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation</a>
+                        <!-- Collection of Opportunities -->
+                        <div class="row plug-list mx-0 mt-5 py-3">
+                            <h5 class="col-12 my-1 text-center magenta">Opportunities</h5>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name">Bill board Advert</div>
+                                    <div class="col-12 op-location">Lagos, Nigeria</div>
+                                    <div class="col-12 op-time">5 days ago</div>
                                 </div>
-                                <hr>
-                                <span class="likes">Likes</span>
-                                <span class="views text-right">Views</span>
+                            </div>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name">Bill board Advert</div>
+                                    <div class="col-12 op-location">Lagos, Nigeria</div>
+                                    <div class="col-12 op-time">5 days ago</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name">Bill board Advert</div>
+                                    <div class="col-12 op-location">Lagos, Nigeria</div>
+                                    <div class="col-12 op-time">5 days ago</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name">Bill board Advert</div>
+                                    <div class="col-12 op-location">Lagos, Nigeria</div>
+                                    <div class="col-12 op-time">5 days ago</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name">Bill board Advert</div>
+                                    <div class="col-12 op-location">Lagos, Nigeria</div>
+                                    <div class="col-12 op-time">5 days ago</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name">Bill board Advert</div>
+                                    <div class="col-12 op-location">Lagos, Nigeria</div>
+                                    <div class="col-12 op-time">5 days ago</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12 text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-12 op-name">Bill board Advert</div>
+                                    <div class="col-12 op-location">Lagos, Nigeria</div>
+                                    <div class="col-12 op-time">5 days ago</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
-                            <div class="plug-caption px-3 py-1">
-                                <a href="#" class="plug-name">FirstBank Christmas...</a>
-                                <div class="plug-details d-none">
-                                    <a href="#" class="achiever-desc">Graphic Designer</a><br>
-                                    <a href="#" class="opp-plugger-name mt-0">Posted by John Doe</a>
-                                    <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation</a>
-                                </div>
-                                <hr>
-                                <span class="likes">Likes</span>
-                                <span class="views text-right">Views</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto"></div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto"></div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto"></div>
-                    </div>
-                    <div class="w-100 d-none d-lg-block"></div>
-                    <!-- 5 columns on Large screens -->
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto"></div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="w-100 d-none d-lg-block"></div>
-                    <!-- 5 columns on Large screens -->
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="w-100 d-none d-lg-block"></div>
-                    <!-- 5 columns on Large screens -->
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto"></div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="w-100 d-none d-lg-block"></div>
-                    <!-- 5 columns on Large screens -->
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="w-100 d-none d-lg-block"></div>
-                    <!-- 5 columns on Large screens -->
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-auto">
-                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                        </div>
-                    </div>
-                    <div class="w-100 d-none d-lg-block"></div>
-                </div>
-                <div class="row pb-5">
-                    <div class="col-12 my-3">
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination justify-content-center mt-3">
-                                <li class="page-item disabled">
-                                    <a class="page-link" href="#" aria-label="Previous" tabindex="-1">
-                                        <span aria-hidden="true"><i class="fa fa-caret-left" aria-hidden="true"></i></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                </li>
-                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">...</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                        <span aria-hidden="true"><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-            <div class="container tab-pane fade" id="blog" role="tabpanel" aria-labelledby="nav-blog">
-                <div class="row page-header">
-                    <div class="col-12 mt-3" style="height: 400px">
-                        <h3 class="d-none d-md-block">Blog</h3>
-                        <h4 class="d-block d-md-none text-center text-sm-left">Blog</h4>
-                        <p>This Page redirects to Medium, where all the blog content, archives are being housed.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container tab-pane fade" id="about" role="tabpanel" aria-labelledby="nav-about">
-                <div class="row">
-                    <div class="col-12 page-header text-center mt-5 mb-3">
-                        <h3 class="d-none d-md-block">About Us</h3>
-                        <h4 class="d-block d-md-none">About Us</h4>
-                        <span class="intro">We plug creative individuals to opportunities in their local</span>
-                        <span class="intro">environments and around the Globe.</span>
-                        <span class="caption">"Where Creatives meet Opportunity"</span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 d-none d-md-flex">
-                        <div class="about-sign-up pl-3">
-                            <h6 class="text-center text-sm-left">Sign Up</h6>
-                            <p>Create a PlugMe account and update your portfolio.</p>
-                        </div>
-                        <div class="about-connect pl-3">
-                            <h6 class="text-center text-sm-left">Get Connected</h6>
-                            <p>Plug into opportunities that match your talent, interests, and rub minds with other creatives in your field.</p>
-                        </div>
-                    </div>
-                    <div class="col-10 col-md-6 mx-auto about-graphic pb-3">
-                        <img src="images/about_bg.png"/>
-                    </div>
-                    <div class="col-md-3 d-none d-md-flex">
-                        <div class="about-fanbase pl-3">
-                            <h6 class="text-center text-sm-left">Expand your Fan-base</h6>
-                            <p>Build a loyal fan-base by letting your work do the talking.</p>
-                        </div>
-                        <div class="about-creatvt pl-3">
-                            <h6 class="text-center text-sm-left">Boost your creativity</h6>
-                            <p>Use PlugMe's exclusive features, and watch your career take off</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 my-5 text-center">
-                        <span>"The platform that enables interaction between creatives and industry stakeholders, on all levels.</span>
-                        <span> Take advantage of all our unique features to build and keep track of your career."</span>
-                    </div>
-                </div>
-                <div class="row pb-5">
-                    <div class="col-10 col-md-4">
-                        <figure class="figure">
-                            <img src="images/about_trend.png" class="figure-img rounded" alt=""/>
-                            <figcaption class="figure-caption mt-3">
-                                <h5>Creativity</h5>
-                                <p class="text-justify">A platform where you can freely express your creativity and interest(s). PlugMe
-                                    was designed for a wide scope of creatives within various fields(tags).<br>
-                                    You create? We are the Plug.
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-10 col-md-4">
-                        <figure class="figure">
-                            <img src="images/about_opp.png" class="figure-img rounded" alt=""/>
-                            <figcaption class="figure-caption mt-3">
-                                <h5>Opportunity</h5>
-                                <p class="text-justify">Finding creative services or talent(s) for a project or particular job has been
-                                    made seamless. With our 'Opportunities' feature, notify creatives in any desired location and
-                                    select the perfect match for the job.
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-10 col-md-4">
-                        <figure class="figure">
-                            <img src="images/about_reach.png" class="figure-img rounded" alt=""/>
-                            <figcaption class="figure-caption mt-3">
-                                <h5>Community</h5>
-                                <p class="text-justify">PlugMe is a platform where creative talents, content creators and content
-                                    lovers can connect.Feel free to reach out, share ideas and collaborate with talent in and outside
-                                    your field.
-                                </p>
-                            </figcaption>
-                        </figure>
+                        <!-- Footer -->
+                        <footer>
+                            <nav class="nav d-none d-md-flex nav-fill py-2">
+                                <a class="nav-item nav-link" href="#">Terms & Conditions</a>
+                                <a class="nav-item nav-link" href="#">Privacy Policy</a>
+                                <a class="nav-item nav-link" href="#">About PlugMe</a>
+                                <a class="nav-item nav-link" href="#">&copy 2018, PlugMe</a>
+                            </nav>
+                        </footer>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Footer of Application -->
-    <footer class="contaier-fluid px-0">
-        <div class="container pt-5">
-            <div class="row justify-content-around pb-4">
-                <div class="col-10 col-md-5 col-lg-4 pb-4 pb-md-0">
-                    <h6>Newsletter</h6>
-                    <p class="mb-2">Subscribe to the PlugMe Newsletter to get awesome opportunities in your mailbox weekly!</p>
-                    <div class="input-group input-group-sm">
-                        <input type="text" class="form-control" placeholder="Email" aria-label="Email">
-                        <span class="input-group-btn">
-                            <button class="btn" type="button">Subscribe</button>
-                          </span>
-                    </div>
-                </div>
-                <div class="col-10 col-md-6">
-                    <h6>Connect with Us</h6>
-                    <a href="#" class="social"><img class="mr-2 my-2 my-sm-0 mb-md-2" src="images/facebook_btn.png"/></a>
-                    <a href="#" class="social"><img class="mr-2 my-2 my-sm-0 mb-md-2" src="images/twitter_btn.png"/></a>
-                    <a href="#" class="social"><img class="mr-2 my-2 my-sm-0 mb-md-2" src="images/instagram_btn.png"/></a>
-                </div>
-            </div>
-        </div>
+    <footer class="container-fluid d-md-none px-0">
         <!-- Bottom Footer on Mobile Viewports -->
         <nav class="nav d-flex d-md-none justify-content-center px-2 px-md-4">
             <a class="nav-link" href="#">&copy 2017, PlugMe</a>
-            <a class="nav-link" href="#">About PlugMe</a>
-            <a class="nav-link" href="#">Terms & Conditions</a>
-            <a class="nav-link" href="#">Privacy Policy</a>
-        </nav>
-        <!-- Bottom Footer on Medium to Extra large Viewports -->
-        <nav class="nav d-none d-md-flex justify-content-end px-2 px-md-4 py-2">
-            <a class="nav-link copyright" href="#">&copy 2017, PlugMe</a>
             <a class="nav-link" href="#">About PlugMe</a>
             <a class="nav-link" href="#">Terms & Conditions</a>
             <a class="nav-link" href="#">Privacy Policy</a>

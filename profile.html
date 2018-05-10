@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>PlugMe | User Profile - Portfolio, Opportunities, Achievements & Wallet</title>
+    <title>PlugMe | User Profile - Portfolio, Opportunities & Achievements</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,11 +13,11 @@
 <body style="overflow-x: hidden;">
     <!-- Navigation with Search accross all viewports -->
     <nav class="navbar fixed-top">
-        <a href="index.html" class="plugme-logo"><img src="images/logo.png" height="40"/></a>
+        <a href="index.html" class="plugme-logo ml-4"><img src="images/logo.png"/></a>
         <div class="input-group input-group-sm ml-auto mr-0 mx-md-auto">
-                <span class="input-group-btn">
-                    <button class="btn" type="button">Search</button>
-                </span>
+            <span class="input-group-btn">
+                <button class="btn pt-2 pb-1 px-3" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </span>
             <input type="text" class="form-control" placeholder="Plug Me to..." aria-label="Plug Me to...">
         </div>
         <div class="dropdown show">
@@ -40,7 +40,7 @@
                 <a class="dropdown-item" href="#">Something else here</a><hr>
             </div>
         </div>
-        <a href="#" class="sign d-none d-md-block"><span>John Doe</span>&nbsp;&nbsp;<img src="images/profile.png"/></a>
+        <a href="#" class="sign d-none d-md-block mr-4"><span>John Doe</span>&nbsp;&nbsp;<img src="images/profile.png"/></a>
     </nav>
     <!-- Side Navigation Menu on Small Viewports -->
     <nav class="nav flex-column side-nav text-center d-md-none">
@@ -92,13 +92,9 @@
         <div class="h4 mobile-tab-name mx-auto mb-0">Trending</div>
     </nav>
     <!-- Application Navigation for Medium to Extra large Viewports -->
-    <nav class="nav nav-justified px-0 px-lg-3 d-none d-md-flex" id="plugMe-tab" role="tablist">
+    <nav class="nav justify-content-center px-0 px-lg-3 d-none d-md-flex" id="plugMe-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-home" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
         <a class="nav-item nav-link" id="nav-trend" data-toggle="tab" href="#trend" role="tab" aria-controls="trend" aria-selected="true">Trending</a>
-        <a class="nav-item nav-link" id="nav-gallery" data-toggle="tab" href="#gallery" role="tab" aria-controls="gallery" aria-selected="true">Gallery</a>
-        <a class="nav-item nav-link" id="nav-opp" data-toggle="tab" href="#opp" role="tab" aria-controls="opp" aria-selected="true">Opportunities</a>
-        <a class="nav-item nav-link" id="nav-blog" data-toggle="tab" href="#blog" role="tab" aria-controls="blog" aria-selected="true">Blog</a>
-        <a class="nav-item nav-link" id="nav-about" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">About Us</a>
-        <a class="nav-item nav-link ml-3 ml-lg-5" href="#"><img src="images/refresh.png" class="mb-1" height="15"/> Refresh</a>
     </nav>
     <!-- Main Body of Application -->
     <div class="container-fluid main-page">
@@ -244,14 +240,7 @@
             </div>
         </div>
         <!-- User Bio and Plug collection -->
-        <div class="container py-4">
-            <!-- Profile Tabs for Medium and Large devices -->
-            <nav class="nav justify-content-center pb-2  d-none d-md-flex" id="profileTab" role="tablist">
-                <a class="nav-item nav-link active" id="portfolio-tab" data-toggle="tab" href="#portfolio" role="tab" aria-controls="portfolio" aria-selected="true">Portfolio</a>
-                <a class="nav-item nav-link" id="opportunity-tab" data-toggle="tab" href="#opportunity" role="tab" aria-controls="opportunity" aria-selected="false">Opportunities</a>
-                <a class="nav-item nav-link" id="achievement-tab" data-toggle="tab" href="#achievement" role="tab" aria-controls="achievement" aria-selected="false">Achievements</a>
-                <a class="nav-item nav-link" id="wallet-tab" data-toggle="tab" href="#wallet" role="tab" aria-controls="wallet" aria-selected="false">Wallet</a>
-            </nav>
+        <div class="container">
             <!-- Profile Tabs for Small devices -->
             <select class="form-control form-control-sm d-md-none mx-auto my-3" id="m-profileTab">
                 <option value="0" selected>Portfolio</option>
@@ -260,1208 +249,443 @@
                 <option value="3">Wallet</option>
             </select>
             <!-- Tab Content holding information for various tabs -->
-            <div class="tab-content" id="profileTab-content">
-                <div class="tab-pane fade show active" id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
-                    <div class="row pb-3">
-                        <!-- Describes Navigation history -->
-                        <div class="col-12 page-navigation pb-2">
-                            Profile&nbsp;&nbsp;<span class="active"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;&nbsp;Portfolio</span>
+            <div class="row py-5">
+                <!-- User Bio -->
+                <div class="col-12 col-md-3 mt-4 mt-md-0 pt-2">
+                    <div class="row plugger-bio no-gutters">
+                        <!-- Msg images appear when looking at a third parties profile -->
+                        <div class="col-12">
+                            <figure class="figure text-center mb-0">
+                                <img src="images/user.png" class="bio-img mb-2" alt="Generic placeholder image">
+                                <figcaption class="bio-info">
+                                    <a href="#" class="name">Musa Chukwuemeka</a><br>
+                                    <a href="#" class="desc">Graphic Designer</a><br>
+                                    <a href="#" class="location"><img src="images/marker.png"/> Lagos, Nigeria</a><br>
+                                    <a href="#" class="plug-msg pt-2"><img src="images/massage.png"/></a>
+                                </figcaption>
+                            </figure>
                         </div>
-                        <!-- User Bio -->
-                        <div class="col-12 col-md-4 px-2 mt-4 mt-md-0 order-2 order-md-1">
-                            <div class="row plugger-bio no-gutters mx-auto">
-                                <!-- Msg images appear when looking at a third parties profile -->
+                        <hr>
+                        <div class="col-12 plug-metrics">
+                            <div class="row">
+                                <div class="col-6 icon"><img src="images/bio_views.png"/> Views</div><div class="col-6 value text-right">30,594</div>
+                                <div class="col-6 icon"><img src="images/bio_like.png"/> Likes</div><div class="col-6 value text-right">2,843</div>
+                                <div class="col-6 icon"><img src="images/fan_base.png"/> Followers</div><div class="col-6 value text-right">621</div>
+                                <div class="col-6 icon"><img src="images/fan_of.png"/> Following</div><div class="col-6 value text-right">231</div>
+                            </div>
+                        </div>
+                        <!-- <hr>
+                        <div class="col-12 bio-rating">
+                            <div class="row">
+                                <div class="col-6 col-md-12 col-lg-6 text-md-center text-lg-left">Achievements</div>
+                                <div class="col-6 col-md-12 col-lg-6 text-right text-md-center text-lg-right">
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-6 col-md-12 col-lg-6 text-md-center text-lg-left">Opportunities</div>
+                                <div class="col-6 col-md-12 col-lg-6 text-right text-md-center text-lg-right">
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div> -->
+                        <hr>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12 bio-header mb-1">Bio</div>
                                 <div class="col-12">
-                                    <div class="media">
-                                        <img class="plugger-img align-self-end bio-img mx-auto pr-3 pr-md-0 pr-lg-3" src="images/user.png" alt="Generic placeholder image">
-                                        <div class="media-body d-md-none d-lg-flex">
-                                            <div class="bio-info text-md-center text-lg-left mt-2">
-                                                <a href="#" class="name">John Doe</a><br>
-                                                <a href="#" class="desc">Graphic Designer</a><br>
-                                                <a href="#" class="location"><img src="images/marker.png"/> Lagos, Nigeria</a><br>
-                                                <a href="#" class="plug-msg"><img src="images/massage.png"/></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 d-none d-md-block d-lg-none">
-                                    <div class="bio-info text-md-center text-lg-left mt-2">
-                                        <a href="#" class="name">John Doe</a><br>
-                                        <a href="#" class="desc">Graphic Designer</a><br>
-                                        <a href="#" class="location"><img src="images/marker.png"/> Lagos, Nigeria</a><br>
-                                        <a href="#" class="plug-msg"><img src="images/massage.png"/></a>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12 plug-metrics">
-                                    <div class="row">
-                                        <div class="col-6 icon"><img src="images/bio_views.png"/> Views</div><div class="col-6 value text-right">30,594</div>
-                                        <div class="col-6 icon"><img src="images/bio_like.png"/> Likes</div><div class="col-6 value text-right">2,843</div>
-                                        <div class="col-6 icon"><img src="images/fan_base.png"/> Followers</div><div class="col-6 value text-right">621</div>
-                                        <div class="col-6 icon"><img src="images/fan_of.png"/> Following</div><div class="col-6 value text-right">231</div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12 bio-rating">
-                                    <div class="row">
-                                        <div class="col-6 col-md-12 col-lg-6 text-md-center text-lg-left">Achievements</div>
-                                        <div class="col-6 col-md-12 col-lg-6 text-right text-md-center text-lg-right">
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="col-6 col-md-12 col-lg-6 text-md-center text-lg-left">Opportunities</div>
-                                        <div class="col-6 col-md-12 col-lg-6 text-right text-md-center text-lg-right">
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12 bio-story">
-                                    <div class="row">
-                                        <div class="col-12 bio-header mb-1">Bio</div>
-                                        <div class="col-12">
-                                            <br><br><br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12 bio-contact">
-                                    <div class="row">
-                                        <div class=" col-12 bio-header mb-1">Booking Info</div>
-                                        <div class="col-12">
-                                            <br><br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12 bio-exp">
-                                    <div class="row">
-                                        <div class="col-12 bio-header mb-1">Experience</div>
-                                        <div class="col-12">
-                                            <br><br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12 bio-tag">
-                                    <div class="row">
-                                        <div class="col-12 bio-header mb-1">Tags</div>
-                                        <div class="row">
-                                            <br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <!-- The Edit button is visible only when account owner, is view own account -->
-                                <div class="col-12 bio-edit text-center mb-3">
-                                    <a href="#" class="btn bg-yellow plug-btn">Edit Profile</a>
-                                </div>
-                                <div class="col-12 bio-member text-center">
-                                    MEMBER SINCE: NOVEMBER 17, 2017.
+                                    <br><br><br>
                                 </div>
                             </div>
                         </div>
-                        <!-- User Content Gallery -->
-                        <div class="col-12 col-md-8 px-2 order-1 order-md-2">
-                            <div class="bio-gallery">
-                                <div class="row no-gutters counter">
-                                    <div class="col-12 py-2 text-center">
-                                        1,264 Contents
-                                    </div>
-                                </div>
-                                <div class="row p-1-25">
-                                    <a href="uploads.html" class="col-sm-6 col-md-4 col-lg-3" style="text-decoration: none">
-                                        <div class="plug-card mt-2 mb-3 mx-auto text-center pt-3 add">
-                                            <div class="add-sym">+</div>
-                                            <div class="add-exp">Upload Content</div>
-                                        </div>
-                                    </a>
-                                    <div class="col-sm-6 col-md-4 col-lg-3">
-                                        <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
-                                            <div class="plug-caption px-2 py-1">
-                                                <a href="#" class="plug-name">Max Payne</a>
-                                                <div class="plug-details d-none">
-                                                    <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
-                                                </div>
-                                                <hr>
-                                                <span class="likes">Likes</span>
-                                                <span class="views text-right">Views</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-lg-3">
-                                        <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
-                                            <div class="plug-caption px-2 py-1">
-                                                <a href="#" class="plug-name">Max Payne</a>
-                                                <div class="plug-details d-none">
-                                                    <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
-                                                </div>
-                                                <hr>
-                                                <span class="likes">Likes</span>
-                                                <span class="views text-right">Views</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-lg-3">
-                                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-lg-3">
-                                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-lg-3">
-                                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-lg-3">
-                                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-lg-3">
-                                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-lg-3">
-                                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-lg-3">
-                                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-lg-3">
-                                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-lg-3">
-                                        <div class="plug-card mt-2 mb-3 mx-auto">
-
-                                        </div>
-                                    </div>
-                                </div>
+                        <hr>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12 bio-header mb-1">Skills</div>
                                 <div class="row">
-                                    <div class="col-12 mb-3">
-                                        <nav aria-label="Page navigation example">
-                                            <ul class="pagination justify-content-end px-3">
-                                                <li class="page-item disabled">
-                                                    <a class="page-link" href="#" aria-label="Previous" tabindex="-1">
-                                                        <span aria-hidden="true"><i class="fa fa-caret-left" aria-hidden="true"></i></span>
-                                                        <span class="sr-only">Previous</span>
-                                                    </a>
-                                                </li>
-                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">...</a></li>
-                                                <li class="page-item">
-                                                    <a class="page-link" href="#" aria-label="Next">
-                                                        <span aria-hidden="true"><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-                                                        <span class="sr-only">Next</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </nav>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class=" col-12 bio-header mb-1">Booking Info</div>
+                                <div class="col-12">
+                                    <br><br>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12 bio-header mb-1">Experience</div>
+                                <div class="col-12">
+                                    <br><br>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12 bio-header mb-1">Interests</div>
+                                <div class="row">
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- The Edit button is visible only when account owner, is view own account -->
+                        <div class="col-12 bio-edit text-center mb-3">
+                            <a href="#" class="btn bg-yellow plug-btn">Edit Profile</a>
+                        </div>
+                        <div class="col-12 bio-member text-center">
+                            MEMBER SINCE: NOVEMBER 17, 2017.
+                        </div>
+                    </div>
+                </div>
+                <!-- User Content Gallery -->
+                <div class="col-12 col-md-6">
+                    <div class="row px-2">
+                        <div class="col-12 col-sm-6 col-lg-4 px-2" style="text-decoration: none">
+                            <div class="plug-card mt-2 mb-3 mx-auto text-center pt-3 add">
+                                <div class="add-sym"><img src="images/plus.png" class="mx-auto my-auto"/></div>
+                                <div class="add-exp">Upload Content</div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 px-2">
+                            <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                <div class="plug-caption px-2 py-1">
+                                    <a href="#" class="plug-name">Max Payne</a>
+                                    <div class="plug-details d-none">
+                                        <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
                                     </div>
+                                    <hr>
+                                    <span class="likes">Likes</span>
+                                    <span class="views text-right">Views</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 px-2">
+                            <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                <div class="plug-caption px-2 py-1">
+                                    <a href="#" class="plug-name">Max Payne</a>
+                                    <div class="plug-details d-none">
+                                        <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                    </div>
+                                    <hr>
+                                    <span class="likes">Likes</span>
+                                    <span class="views text-right">Views</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 px-2">
+                            <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                <div class="plug-caption px-2 py-1">
+                                    <a href="#" class="plug-name">Max Payne</a>
+                                    <div class="plug-details d-none">
+                                        <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                    </div>
+                                    <hr>
+                                    <span class="likes">Likes</span>
+                                    <span class="views text-right">Views</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 px-2">
+                            <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                <div class="plug-caption px-2 py-1">
+                                    <a href="#" class="plug-name">Max Payne</a>
+                                    <div class="plug-details d-none">
+                                        <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                    </div>
+                                    <hr>
+                                    <span class="likes">Likes</span>
+                                    <span class="views text-right">Views</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 px-2">
+                        <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                            <div class="plug-caption px-2 py-1">
+                                <a href="#" class="plug-name">Max Payne</a>
+                                <div class="plug-details d-none">
+                                    <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                </div>
+                                <hr>
+                                <span class="likes">Likes</span>
+                                <span class="views text-right">Views</span>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-12 col-sm-6 col-lg-4 px-2">
+                            <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                <div class="plug-caption px-2 py-1">
+                                    <a href="#" class="plug-name">Max Payne</a>
+                                    <div class="plug-details d-none">
+                                        <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                    </div>
+                                    <hr>
+                                    <span class="likes">Likes</span>
+                                    <span class="views text-right">Views</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 px-2">
+                        <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                            <div class="plug-caption px-2 py-1">
+                                <a href="#" class="plug-name">Max Payne</a>
+                                <div class="plug-details d-none">
+                                    <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                </div>
+                                <hr>
+                                <span class="likes">Likes</span>
+                                <span class="views text-right">Views</span>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-12 col-sm-6 col-lg-4 px-2">
+                            <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                <div class="plug-caption px-2 py-1">
+                                    <a href="#" class="plug-name">Max Payne</a>
+                                    <div class="plug-details d-none">
+                                        <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                    </div>
+                                    <hr>
+                                    <span class="likes">Likes</span>
+                                    <span class="views text-right">Views</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 px-2">
+                        <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                            <div class="plug-caption px-2 py-1">
+                                <a href="#" class="plug-name">Max Payne</a>
+                                <div class="plug-details d-none">
+                                    <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                </div>
+                                <hr>
+                                <span class="likes">Likes</span>
+                                <span class="views text-right">Views</span>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-12 col-sm-6 col-lg-4 px-2">
+                            <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                <div class="plug-caption px-2 py-1">
+                                    <a href="#" class="plug-name">Max Payne</a>
+                                    <div class="plug-details d-none">
+                                        <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                    </div>
+                                    <hr>
+                                    <span class="likes">Likes</span>
+                                    <span class="views text-right">Views</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 px-2">
+                            <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                <div class="plug-caption px-2 py-1">
+                                    <a href="#" class="plug-name">Max Payne</a>
+                                    <div class="plug-details d-none">
+                                        <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                    </div>
+                                    <hr>
+                                    <span class="likes">Likes</span>
+                                    <span class="views text-right">Views</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="opportunity" role="tabpanel" aria-labelledby="opportunity-tab">
-                    <div class="row pb-3">
-                        <!-- Describes Navigation history -->
-                        <div class="col-12 page-navigation pb-2">
-                            Profile&nbsp;&nbsp;<i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;&nbsp;Opportunities&nbsp;&nbsp;<span class="active"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;&nbsp;Available</span>
-                        </div>
-                        <!-- User Bio -->
-                        <div class="col-12 col-md-4 px-2 mt-4 mt-md-0 order-2 order-md-1">
-                            <div class="row plugger-bio no-gutters mx-auto">
-                                <!-- Msg images appear when looking at a third parties profile -->
-                                <div class="col-12">
-                                    <div class="media">
-                                        <img class="plugger-img align-self-end bio-img mx-auto pr-3 pr-md-0 pr-lg-3" src="images/user.png" alt="Generic placeholder image">
-                                        <div class="media-body d-md-none d-lg-flex">
-                                            <div class="bio-info text-md-center text-lg-left mt-2">
-                                                <a href="#" class="name">John Doe</a><br>
-                                                <a href="#" class="desc">Graphic Designer</a><br>
-                                                <a href="#" class="location"><img src="images/marker.png"/> Lagos, Nigeria</a><br>
-                                                <a href="#" class="plug-msg"><img src="images/massage.png"/></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 d-none d-md-block d-lg-none">
-                                    <div class="bio-info text-md-center text-lg-left mt-2">
-                                        <a href="#" class="name">John Doe</a><br>
-                                        <a href="#" class="desc">Graphic Designer</a><br>
-                                        <a href="#" class="location"><img src="images/marker.png"/> Lagos, Nigeria</a><br>
-                                        <a href="#" class="plug-msg"><img src="images/massage.png"/></a>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12 plug-metrics">
-                                    <div class="row">
-                                        <div class="col-6 icon"><img src="images/bio_views.png"/> Views</div><div class="col-6 value text-right">30,594</div>
-                                        <div class="col-6 icon"><img src="images/bio_like.png"/> Likes</div><div class="col-6 value text-right">2,843</div>
-                                        <div class="col-6 icon"><img src="images/fan_base.png"/> Followers</div><div class="col-6 value text-right">621</div>
-                                        <div class="col-6 icon"><img src="images/fan_of.png"/> Following</div><div class="col-6 value text-right">231</div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12 bio-rating">
-                                    <div class="row">
-                                        <div class="col-6 col-md-12 col-lg-6 text-md-center text-lg-left">Achievements</div>
-                                        <div class="col-6 col-md-12 col-lg-6 text-right text-md-center text-lg-right">
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="col-6 col-md-12 col-lg-6 text-md-center text-lg-left">Opportunities</div>
-                                        <div class="col-6 col-md-12 col-lg-6 text-right text-md-center text-lg-right">
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12 bio-story">
-                                    <div class="row">
-                                        <div class="col-12 bio-header mb-1">Bio</div>
-                                        <div class="col-12">
-                                            <br><br><br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12 bio-contact">
-                                    <div class="row">
-                                        <div class=" col-12 bio-header mb-1">Booking Info</div>
-                                        <div class="col-12">
-                                            <br><br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12 bio-exp">
-                                    <div class="row">
-                                        <div class="col-12 bio-header mb-1">Experience</div>
-                                        <div class="col-12">
-                                            <br><br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12 bio-tag">
-                                    <div class="row">
-                                        <div class="col-12 bio-header mb-1">Tags</div>
-                                        <div class="row">
-                                            <br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <!-- The Edit button is visible only when account owner, is view own account -->
-                                <div class="col-12 bio-edit text-center mb-3">
-                                    <a href="#" class="btn bg-yellow plug-btn">Edit Profile</a>
-                                </div>
-                                <div class="col-12 bio-member text-center">
-                                    MEMBER SINCE: NOVEMBER 17, 2017.
-                                </div>
+                <!-- Opportunities and Achievements -->
+                <div class="col-12 col-md-3 pt-2">
+                    <!-- Collection of Opportunities -->
+                    <div class="row plug-list mx-0 py-3">
+                        <h5 class="col-12 my-1 text-center magenta">Opportunities</h5>
+                        <hr>
+                        <div class="col-12 text-center text-lg-left">
+                            <div class="row">
+                                <div class="col-12 op-name">Bill board Advert</div>
+                                <div class="col-12 op-location">Lagos, Nigeria</div>
+                                <div class="col-12 op-time">5 days ago</div>
                             </div>
                         </div>
-                        <!-- User Opportunity Gallery -->
-                        <div class="col-12 col-md-8 px-2 order-1 order-md-2">
-                            <div class="bio-opportunity">
-                                <!-- Available and Uploaded Opportunities in tabs -->
-                                <nav class="nav nav-justified" id="opportunityTab" role="tablist">
-                                    <a class="nav-item nav-link active" id="avail-tab" data-toggle="tab" href="#avail" role="tab" aria-controls="avail" aria-selected="true">Available</a>
-                                    <a class="nav-item nav-link" id="upload-tab" data-toggle="tab" href="#upload" role="tab" aria-controls="upload" aria-selected="false">Uploaded</a>
-                                </nav>
-                                <div class="tab-content" id="opTab-content">
-                                    <div class="tab-pane fade show active" id="avail" role="tabpanel" aria-labelledby="avail-tab">
-                                        <a class="no-decor" href="op_available.html">
-                                            <div class="row no-gutters">
-                                                <div class="col-12 col-lg-9 op-desc align-self-center order-2 order-lg-1 text-center text-lg-left">
-                                                    <span class="op-name">Bill board Advert</span>
-                                                    <span class="op-location">Lagos, Nigeria</span>
-                                                    <span class="op-time">5 days ago</span>
-                                                </div>
-                                                <div class="col-12 col-lg-3 op-uploader order-1 order-lg-2 text-center text-lg-right">
-                                                    <img src="images/user.png"/>
-                                                    <span class="up-name">Pyramid Inc.</span>
-                                                    <span class="up-desc">Advert Agency</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <hr>
-                                        <a class="no-decor" href="op_available.html">
-                                            <div class="row no-gutters">
-                                                <div class="col-12 col-lg-9 op-desc align-self-center order-2 order-lg-1 text-center text-lg-left">
-                                                    <span class="op-name">Bill board Advert</span>
-                                                    <span class="op-location">Lagos, Nigeria</span>
-                                                    <span class="op-time">5 days ago</span>
-                                                </div>
-                                                <div class="col-12 col-lg-3 op-uploader order-1 order-lg-2 text-center text-lg-right">
-                                                    <img src="images/user.png"/>
-                                                    <span class="up-name">Pyramid Inc.</span>
-                                                    <span class="up-desc">Advert Agency</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <hr>
-                                        <a class="no-decor" href="op_available.html">
-                                            <div class="row no-gutters">
-                                                <div class="col-12 col-lg-9 op-desc align-self-center order-2 order-lg-1 text-center text-lg-left">
-                                                    <span class="op-name">Bill board Advert</span>
-                                                    <span class="op-location">Lagos, Nigeria</span>
-                                                    <span class="op-time">5 days ago</span>
-                                                </div>
-                                                <div class="col-12 col-lg-3 op-uploader order-1 order-lg-2 text-center text-lg-right">
-                                                    <img src="images/user.png"/>
-                                                    <span class="up-name">Pyramid Inc.</span>
-                                                    <span class="up-desc">Advert Agency</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <hr>
-                                        <a class="no-decor" href="op_available.html">
-                                            <div class="row no-gutters">
-                                                <div class="col-12 col-lg-9 op-desc align-self-center order-2 order-lg-1 text-center text-lg-left">
-                                                    <span class="op-name">Bill board Advert</span>
-                                                    <span class="op-location">Lagos, Nigeria</span>
-                                                    <span class="op-time">5 days ago</span>
-                                                </div>
-                                                <div class="col-12 col-lg-3 op-uploader order-1 order-lg-2 text-center text-lg-right">
-                                                    <img src="images/user.png"/>
-                                                    <span class="up-name">Pyramid Inc.</span>
-                                                    <span class="up-desc">Advert Agency</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <hr>
-                                        <a class="no-decor" href="op_available.html">
-                                            <div class="row no-gutters">
-                                                <div class="col-12 col-lg-9 op-desc align-self-center order-2 order-lg-1 text-center text-lg-left">
-                                                    <span class="op-name">Bill board Advert</span>
-                                                    <span class="op-location">Lagos, Nigeria</span>
-                                                    <span class="op-time">5 days ago</span>
-                                                </div>
-                                                <div class="col-12 col-lg-3 op-uploader order-1 order-lg-2 text-center text-lg-right">
-                                                    <img src="images/user.png"/>
-                                                    <span class="up-name">Pyramid Inc.</span>
-                                                    <span class="up-desc">Advert Agency</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <hr>
-                                        <a class="no-decor" href="op_available.html">
-                                            <div class="row no-gutters">
-                                                <div class="col-12 col-lg-9 op-desc align-self-center order-2 order-lg-1 text-center text-lg-left">
-                                                    <span class="op-name">Bill board Advert</span>
-                                                    <span class="op-location">Lagos, Nigeria</span>
-                                                    <span class="op-time">5 days ago</span>
-                                                </div>
-                                                <div class="col-12 col-lg-3 op-uploader order-1 order-lg-2 text-center text-lg-right">
-                                                    <img src="images/user.png"/>
-                                                    <span class="up-name">Pyramid Inc.</span>
-                                                    <span class="up-desc">Advert Agency</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <hr>
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <nav aria-label="Page navigation example">
-                                                    <ul class="pagination justify-content-end px-3">
-                                                        <li class="page-item disabled">
-                                                            <a class="page-link" href="#" aria-label="Previous" tabindex="-1">
-                                                                <span aria-hidden="true"><i class="fa fa-caret-left" aria-hidden="true"></i></span>
-                                                                <span class="sr-only">Previous</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                        <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">...</a></li>
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#" aria-label="Next">
-                                                                <span aria-hidden="true"><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-                                                                <span class="sr-only">Next</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </nav>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="upload" role="tabpanel" aria-labelledby="upload-tab">
-                                        <a class="no-decor add text-center" href="uploads.html">
-                                            <div class="add-sym">+</div>
-                                            <div class="add-exp">Upload Opportunity</div>
-                                        </a>
-                                        <hr>
-                                        <a class="no-decor" href="op_uploaded.html">
-                                            <div class="row no-gutters">
-                                                <div class="col-12 col-lg-9 op-desc align-self-center text-center text-lg-left">
-                                                    <span class="op-name">Bill board Advert</span>
-                                                    <span class="op-location">Lagos, Nigeria</span>
-                                                    <span class="op-time">5 days ago</span>
-                                                </div>
-                                                <div class="col-12 col-lg-3 mt-2 mt-lg-0 op-status text-center text-lg-right">
-                                                    <img src="images/available.png"/>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <hr>
-                                        <a class="no-decor" href="op_uploaded.html">
-                                            <div class="row no-gutters">
-                                                <div class="col-12 col-lg-2 op-uploader text-center text-lg-left">
-                                                    <img src="images/user.png"/>
-                                                    <span class="up-name">Adewale</span>
-                                                    <span class="up-desc">Graphic Designer</span>
-                                                </div>
-                                                <div class="col-12 col-lg-7 mt-2 mt-lg-0 op-desc text-center text-lg-left">
-                                                    <span class="op-name">Bill board Advert</span>
-                                                    <span class="op-location">Lagos, Nigeria</span>
-                                                    <span class="op-time">5 days ago</span>
-                                                </div>
-                                                <div class="col-12 col-lg-3 mt-2 mt-lg-0 align-self-center op-status text-center text-lg-right">
-                                                    <img src="images/pending.png"/>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <hr>
-                                        <a class="no-decor" href="op_uploaded.html">
-                                            <div class="row no-gutters">
-                                                <div class="col-12 col-lg-2 op-uploader text-center text-lg-left">
-                                                    <img src="images/user.png"/>
-                                                    <span class="up-name">Adewale</span>
-                                                    <span class="up-desc">Graphic Designer</span>
-                                                </div>
-                                                <div class="col-12 col-lg-7 mt-2 mt-lg-0 op-desc text-center text-lg-left">
-                                                    <span class="op-name">Bill board Advert</span>
-                                                    <span class="op-comment"><span>Comment:</span> Awesome job, looking forward to future collaborations...</span>
-                                                    <span class="op-rating">
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                    </span>
-                                                    <span class="op-location">Lagos, Nigeria</span>
-                                                    <span class="op-time">5 days ago</span>
-                                                </div>
-                                                <div class="col-12 col-lg-3 mt-2 mt-lg-0 align-self-center op-status text-center text-lg-right">
-                                                    <img src="images/done.png"/>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <hr>
-                                        <a class="no-decor" href="op_uploaded.html">
-                                            <div class="row no-gutters">
-                                                <div class="col-12 col-lg-2 op-uploader text-center text-lg-left">
-                                                    <img src="images/user.png"/>
-                                                    <span class="up-name">Adewale</span>
-                                                    <span class="up-desc">Graphic Designer</span>
-                                                </div>
-                                                <div class="col-12 col-lg-7 mt-2 mt-lg-0 op-desc text-center text-lg-left">
-                                                    <span class="op-name">Bill board Advert</span>
-                                                    <span class="op-comment"><span>Comment:</span> Awesome job, looking forward to future collaborations...</span>
-                                                    <span class="op-rating">
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                    </span>
-                                                    <span class="op-location">Lagos, Nigeria</span>
-                                                    <span class="op-time">5 days ago</span>
-                                                </div>
-                                                <div class="col-12 col-lg-3 mt-2 mt-lg-0 align-self-center op-status text-center text-lg-right">
-                                                    <img src="images/done.png"/>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <hr>
-                                        <a class="no-decor" href="op_uploaded.html">
-                                            <div class="row no-gutters">
-                                                <div class="col-12 col-lg-2 op-uploader text-center text-lg-left">
-                                                    <img src="images/user.png"/>
-                                                    <span class="up-name">Adewale</span>
-                                                    <span class="up-desc">Graphic Designer</span>
-                                                </div>
-                                                <div class="col-12 col-lg-7 mt-2 mt-lg-0 op-desc text-center text-lg-left">
-                                                    <span class="op-name">Bill board Advert</span>
-                                                    <span class="op-comment"><span>Comment:</span> Awesome job, looking forward to future collaborations...</span>
-                                                    <span class="op-rating">
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                    </span>
-                                                    <span class="op-location">Lagos, Nigeria</span>
-                                                    <span class="op-time">5 days ago</span>
-                                                </div>
-                                                <div class="col-12 col-lg-3 mt-2 mt-lg-0 op-status align-self-center text-center text-lg-right">
-                                                    <img src="images/done.png"/>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <hr>
-                                        <a class="no-decor" href="op_uploaded.html">
-                                            <div class="row no-gutters">
-                                                <div class="col-12 col-lg-2 op-uploader text-center text-lg-left">
-                                                    <img src="images/user.png"/>
-                                                    <span class="up-name">Adewale</span>
-                                                    <span class="up-desc">Graphic Designer</span>
-                                                </div>
-                                                <div class="col-12 col-lg-7 mt-2 mt-lg-0 op-desc text-center text-lg-left">
-                                                    <span class="op-name">Bill board Advert</span>
-                                                    <span class="op-comment"><span>Comment:</span> Awesome job, looking forward to future collaborations...</span>
-                                                    <span class="op-rating">
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                    </span>
-                                                    <span class="op-location">Lagos, Nigeria</span>
-                                                    <span class="op-time">5 days ago</span>
-                                                </div>
-                                                <div class="col-12 col-lg-3 mt-2 mt-lg-0 op-status align-self-center text-center text-lg-right">
-                                                    <img src="images/done.png"/>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <hr>
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <nav aria-label="Page navigation example">
-                                                    <ul class="pagination justify-content-end px-3">
-                                                        <li class="page-item disabled">
-                                                            <a class="page-link" href="#" aria-label="Previous" tabindex="-1">
-                                                                <span aria-hidden="true"><i class="fa fa-caret-left" aria-hidden="true"></i></span>
-                                                                <span class="sr-only">Previous</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                        <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">...</a></li>
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#" aria-label="Next">
-                                                                <span aria-hidden="true"><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-                                                                <span class="sr-only">Next</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </nav>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <hr>
+                        <div class="col-12 text-center text-lg-left">
+                            <div class="row">
+                                <div class="col-12 op-name">Bill board Advert</div>
+                                <div class="col-12 op-location">Lagos, Nigeria</div>
+                                <div class="col-12 op-time">5 days ago</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-12 text-center text-lg-left">
+                            <div class="row">
+                                <div class="col-12 op-name">Bill board Advert</div>
+                                <div class="col-12 op-location">Lagos, Nigeria</div>
+                                <div class="col-12 op-time">5 days ago</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-12 text-center text-lg-left">
+                            <div class="row">
+                                <div class="col-12 op-name">Bill board Advert</div>
+                                <div class="col-12 op-location">Lagos, Nigeria</div>
+                                <div class="col-12 op-time">5 days ago</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-12 text-center text-lg-left">
+                            <div class="row">
+                                <div class="col-12 op-name">Bill board Advert</div>
+                                <div class="col-12 op-location">Lagos, Nigeria</div>
+                                <div class="col-12 op-time">5 days ago</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-12 text-center text-lg-left">
+                            <div class="row">
+                                <div class="col-12 op-name">Bill board Advert</div>
+                                <div class="col-12 op-location">Lagos, Nigeria</div>
+                                <div class="col-12 op-time">5 days ago</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-12 text-center text-lg-left">
+                            <div class="row">
+                                <div class="col-12 op-name">Bill board Advert</div>
+                                <div class="col-12 op-location">Lagos, Nigeria</div>
+                                <div class="col-12 op-time">5 days ago</div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="tab-pane fade" id="achievement" role="tabpanel" aria-labelledby="achievement-tab">
-                    <div class="row pb-3">
-                        <!-- Describes Navigation history -->
-                        <div class="col-12 page-navigation pb-2">
-                            Profile&nbsp;&nbsp;<span class="active"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;&nbsp;Achievements</span>
-                        </div>
-                        <!-- User Bio -->
-                        <div class="col-12 col-md-4 px-2 mt-4 mt-md-0 order-2 order-md-1">
-                            <div class="row plugger-bio no-gutters mx-auto">
-                                <!-- Msg images appear when looking at a third parties profile -->
-                                <div class="col-12">
-                                    <div class="media">
-                                        <img class="plugger-img align-self-end bio-img mx-auto pr-3 pr-md-0 pr-lg-3" src="images/user.png" alt="Generic placeholder image">
-                                        <div class="media-body d-md-none d-lg-flex">
-                                            <div class="bio-info text-md-center text-lg-left mt-2">
-                                                <a href="#" class="name">John Doe</a><br>
-                                                <a href="#" class="desc">Graphic Designer</a><br>
-                                                <a href="#" class="location"><img src="images/marker.png"/> Lagos, Nigeria</a><br>
-                                                <a href="#" class="plug-msg"><img src="images/massage.png"/></a>
-                                            </div>
-                                        </div>
-                                    </div>
+                    <!-- Collection of Achievements -->
+                    <div class="row plug-list mx-0 mt-4 py-3">
+                        <h5 class="col-12 my-1 text-center magenta">Achievements</h5>
+                        <hr>
+                        <div class="col-12 text-center text-lg-left">
+                            <div class="row">
+                                <div class="col-12 op-name">Bill board Advert</div>
+                                <div class="col-12 op-rating">
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
                                 </div>
-                                <div class="col-12 d-none d-md-block d-lg-none">
-                                    <div class="bio-info text-md-center text-lg-left mt-2">
-                                        <a href="#" class="name">John Doe</a><br>
-                                        <a href="#" class="desc">Graphic Designer</a><br>
-                                        <a href="#" class="location"><img src="images/marker.png"/> Lagos, Nigeria</a><br>
-                                        <a href="#" class="plug-msg"><img src="images/massage.png"/></a>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12 plug-metrics">
-                                    <div class="row">
-                                        <div class="col-6 icon"><img src="images/bio_views.png"/> Views</div><div class="col-6 value text-right">30,594</div>
-                                        <div class="col-6 icon"><img src="images/bio_like.png"/> Likes</div><div class="col-6 value text-right">2,843</div>
-                                        <div class="col-6 icon"><img src="images/fan_base.png"/> Followers</div><div class="col-6 value text-right">621</div>
-                                        <div class="col-6 icon"><img src="images/fan_of.png"/> Following</div><div class="col-6 value text-right">231</div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12 bio-rating">
-                                    <div class="row">
-                                        <div class="col-6 col-md-12 col-lg-6 text-md-center text-lg-left">Achievements</div>
-                                        <div class="col-6 col-md-12 col-lg-6 text-right text-md-center text-lg-right">
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="col-6 col-md-12 col-lg-6 text-md-center text-lg-left">Opportunities</div>
-                                        <div class="col-6 col-md-12 col-lg-6 text-right text-md-center text-lg-right">
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12 bio-story">
-                                    <div class="row">
-                                        <div class="col-12 bio-header mb-1">Bio</div>
-                                        <div class="col-12">
-                                            <br><br><br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12 bio-contact">
-                                    <div class="row">
-                                        <div class=" col-12 bio-header mb-1">Booking Info</div>
-                                        <div class="col-12">
-                                            <br><br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12 bio-exp">
-                                    <div class="row">
-                                        <div class="col-12 bio-header mb-1">Experience</div>
-                                        <div class="col-12">
-                                            <br><br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12 bio-tag">
-                                    <div class="row">
-                                        <div class="col-12 bio-header mb-1">Tags</div>
-                                        <div class="row">
-                                            <br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <!-- The Edit button is visible only when account owner, is view own account -->
-                                <div class="col-12 bio-edit text-center mb-3">
-                                    <a href="#" class="btn bg-yellow plug-btn">Edit Profile</a>
-                                </div>
-                                <div class="col-12 bio-member text-center">
-                                    MEMBER SINCE: NOVEMBER 17, 2017.
-                                </div>
+                                <div class="col-12 op-location">Lagos, Nigeria</div>
                             </div>
                         </div>
-                        <!-- User Achievement Gallery -->
-                        <div class="col-12 col-md-8 px-2 order-1 order-md-2">
-                            <div class="bio-achievement">
-                                <div class="row no-gutters counter">
-                                    <div class="col-12 py-2 text-center">
-                                        186 Contents
-                                    </div>
+                        <hr>
+                        <div class="col-12 text-center text-lg-left">
+                            <div class="row">
+                                <div class="col-12 op-name">Bill board Advert</div>
+                                <div class="col-12 op-rating">
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
                                 </div>
-                                <div class="row p-1-25">
-                                    <div class="col-12">
-                                        <a class="no-decor" href="op_achieved.html">
-                                            <div class="row no-gutters">
-                                                <div class="col-12 col-lg-9 op-desc align-self-center text-center text-lg-left">
-                                                    <span class="op-name">Bill board Advert</span>
-                                                    <span class="op-location">Lagos, Nigeria</span>
-                                                    <span class="op-time">5 days ago</span>
-                                                </div>
-                                                <div class="col-12 col-lg-3 mt-2 mt-lg-0 op-status align-self-center text-center text-lg-right">
-                                                    <img src="images/pending.png"/>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <hr>
-                                        <a class="no-decor" href="op_achieved.html">
-                                            <div class="row no-gutters">
-                                                <div class="col-12 col-lg-9 op-desc align-self-center text-center text-lg-left">
-                                                    <span class="op-name">Bill board Advert</span>
-                                                    <span class="op-comment"><span>Comment:</span> Awesome job, looking forward to future collaborations...</span>
-                                                    <span class="op-rating">
-                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        </span>
-                                                    <span class="op-location">Lagos, Nigeria</span>
-                                                    <span class="op-time">5 days ago</span>
-                                                </div>
-                                                <div class="col-12 col-lg-3 mt-2 mt-lg-0 op-status align-self-center text-center text-lg-right">
-                                                    <img src="images/done.png"/>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <hr>
-                                        <a class="no-decor" href="op_achieved.html">
-                                            <div class="row no-gutters">
-                                                <div class="col-12 col-lg-9 op-desc align-self-center text-center text-lg-left">
-                                                    <span class="op-name">Bill board Advert</span>
-                                                    <span class="op-comment"><span>Comment:</span> Awesome job, looking forward to future collaborations...</span>
-                                                    <span class="op-rating">
-                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        </span>
-                                                    <span class="op-location">Lagos, Nigeria</span>
-                                                    <span class="op-time">5 days ago</span>
-                                                </div>
-                                                <div class="col-12 col-lg-3 mt-2 mt-lg-0 op-status align-self-center text-center text-lg-right">
-                                                    <img src="images/done.png"/>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <hr>
-                                        <a class="no-decor" href="op_achieved.html">
-                                            <div class="row no-gutters">
-                                                <div class="col-12 col-lg-9 op-desc align-self-center text-center text-lg-left">
-                                                    <span class="op-name">Bill board Advert</span>
-                                                    <span class="op-comment"><span>Comment:</span> Awesome job, looking forward to future collaborations...</span>
-                                                    <span class="op-rating">
-                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        </span>
-                                                    <span class="op-location">Lagos, Nigeria</span>
-                                                    <span class="op-time">5 days ago</span>
-                                                </div>
-                                                <div class="col-12 col-lg-3 mt-2 mt-lg-0 op-status align-self-center text-center text-lg-right">
-                                                    <img src="images/done.png"/>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <hr>
-                                        <a class="no-decor" href="op_achieved.html">
-                                            <div class="row no-gutters">
-                                                <div class="col-12 col-lg-9 op-desc align-self-center text-center text-lg-left">
-                                                    <span class="op-name">Bill board Advert</span>
-                                                    <span class="op-comment"><span>Comment:</span> Awesome job, looking forward to future collaborations...</span>
-                                                    <span class="op-rating">
-                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        </span>
-                                                    <span class="op-location">Lagos, Nigeria</span>
-                                                    <span class="op-time">5 days ago</span>
-                                                </div>
-                                                <div class="col-12 col-lg-3 mt-2 mt-lg-0 op-status align-self-center text-center text-lg-right">
-                                                    <img src="images/done.png"/>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <hr>
-                                        <a class="no-decor" href="op_achieved.html">
-                                            <div class="row no-gutters">
-                                                <div class="col-12 col-lg-9 op-desc align-self-center text-center text-lg-left">
-                                                    <span class="op-name">Bill board Advert</span>
-                                                    <span class="op-comment"><span>Comment:</span> Awesome job, looking forward to future collaborations...</span>
-                                                    <span class="op-rating">
-                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        </span>
-                                                    <span class="op-location">Lagos, Nigeria</span>
-                                                    <span class="op-time">5 days ago</span>
-                                                </div>
-                                                <div class="col-12 col-lg-3 mt-2 mt-lg-0 op-status align-self-center text-center text-lg-right">
-                                                    <img src="images/done.png"/>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <hr>
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <nav aria-label="Page navigation example">
-                                                    <ul class="pagination justify-content-end px-3">
-                                                        <li class="page-item disabled">
-                                                            <a class="page-link" href="#" aria-label="Previous" tabindex="-1">
-                                                                <span aria-hidden="true"><i class="fa fa-caret-left" aria-hidden="true"></i></span>
-                                                                <span class="sr-only">Previous</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                        <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">...</a></li>
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#" aria-label="Next">
-                                                                <span aria-hidden="true"><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-                                                                <span class="sr-only">Next</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </nav>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="col-12 op-location">Lagos, Nigeria</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-12 text-center text-lg-left">
+                            <div class="row">
+                                <div class="col-12 op-name">Bill board Advert</div>
+                                <div class="col-12 op-rating">
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
                                 </div>
+                                <div class="col-12 op-location">Lagos, Nigeria</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-12 text-center text-lg-left">
+                            <div class="row">
+                                <div class="col-12 op-name">Bill board Advert</div>
+                                <div class="col-12 op-rating">
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-12 op-location">Lagos, Nigeria</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-12 text-center text-lg-left">
+                            <div class="row">
+                                <div class="col-12 op-name">Bill board Advert</div>
+                                <div class="col-12 op-rating">
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-12 op-location">Lagos, Nigeria</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-12 text-center text-lg-left">
+                            <div class="row">
+                                <div class="col-12 op-name">Bill board Advert</div>
+                                <div class="col-12 op-rating">
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-12 op-location">Lagos, Nigeria</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-12 text-center text-lg-left">
+                            <div class="row">
+                                <div class="col-12 op-name">Bill board Advert</div>
+                                <div class="col-12 op-rating">
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-12 op-location">Lagos, Nigeria</div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="tab-pane fade" id="wallet" role="tabpanel" aria-labelledby="wallet-tab">
-                    <div class="row pb-3">
-                        <!-- Describes Navigation history -->
-                        <div class="col-12 page-navigation pb-2">
-                            Profile&nbsp;&nbsp;<span class="active"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;&nbsp;Wallet</span>
-                        </div>
-                        <!-- User Bio -->
-                        <div class="col-12 col-md-4 px-2 mt-4 mt-md-0 order-2 order-md-1">
-                            <div class="row plugger-bio no-gutters mx-auto">
-                                <!-- Msg images appear when looking at a third parties profile -->
-                                <div class="col-12">
-                                    <div class="media">
-                                        <img class="plugger-img align-self-end bio-img mx-auto pr-3 pr-md-0 pr-lg-3" src="images/user.png" alt="Generic placeholder image">
-                                        <div class="media-body d-md-none d-lg-flex">
-                                            <div class="bio-info text-md-center text-lg-left mt-2">
-                                                <a href="#" class="name">John Doe</a><br>
-                                                <a href="#" class="desc">Graphic Designer</a><br>
-                                                <a href="#" class="location"><img src="images/marker.png"/> Lagos, Nigeria</a><br>
-                                                <a href="#" class="plug-msg"><img src="images/massage.png"/></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 d-none d-md-block d-lg-none">
-                                    <div class="bio-info text-md-center text-lg-left mt-2">
-                                        <a href="#" class="name">John Doe</a><br>
-                                        <a href="#" class="desc">Graphic Designer</a><br>
-                                        <a href="#" class="location"><img src="images/marker.png"/> Lagos, Nigeria</a><br>
-                                        <a href="#" class="plug-msg"><img src="images/massage.png"/></a>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12 plug-metrics">
-                                    <div class="row">
-                                        <div class="col-6 icon"><img src="images/bio_views.png"/> Views</div><div class="col-6 value text-right">30,594</div>
-                                        <div class="col-6 icon"><img src="images/bio_like.png"/> Likes</div><div class="col-6 value text-right">2,843</div>
-                                        <div class="col-6 icon"><img src="images/fan_base.png"/> Followers</div><div class="col-6 value text-right">621</div>
-                                        <div class="col-6 icon"><img src="images/fan_of.png"/> Following</div><div class="col-6 value text-right">231</div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12 bio-rating">
-                                    <div class="row">
-                                        <div class="col-6 col-md-12 col-lg-6 text-md-center text-lg-left">Achievements</div>
-                                        <div class="col-6 col-md-12 col-lg-6 text-right text-md-center text-lg-right">
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="col-6 col-md-12 col-lg-6 text-md-center text-lg-left">Opportunities</div>
-                                        <div class="col-6 col-md-12 col-lg-6 text-right text-md-center text-lg-right">
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12 bio-story">
-                                    <div class="row">
-                                        <div class="col-12 bio-header mb-1">Bio</div>
-                                        <div class="col-12">
-                                            <br><br><br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12 bio-contact">
-                                    <div class="row">
-                                        <div class=" col-12 bio-header mb-1">Booking Info</div>
-                                        <div class="col-12">
-                                            <br><br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12 bio-exp">
-                                    <div class="row">
-                                        <div class="col-12 bio-header mb-1">Experience</div>
-                                        <div class="col-12">
-                                            <br><br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-12 bio-tag">
-                                    <div class="row">
-                                        <div class="col-12 bio-header mb-1">Tags</div>
-                                        <div class="row">
-                                            <br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <!-- The Edit button is visible only when account owner, is view own account -->
-                                <div class="col-12 bio-edit text-center mb-3">
-                                    <a href="#" class="btn bg-yellow plug-btn">Edit Profile</a>
-                                </div>
-                                <div class="col-12 bio-member text-center">
-                                    MEMBER SINCE: NOVEMBER 17, 2017.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- User Achievement Gallery -->
-                        <div class="col-12 col-md-8 px-2 order-1 order-md-2">
-                            <div class="bio-gallery">
-                                <!-- Available and Uploaded Opportunities in tabs -->
-                                <nav class="nav nav-justified" id="walletTab" role="tablist">
-                                    <a class="nav-item nav-link active" id="wPay-tab" data-toggle="tab" href="#w-payment" role="tab" aria-controls="w-payment" aria-selected="true">Payments</a>
-                                    <a class="nav-item nav-link" id="wSet-tab" data-toggle="tab" href="#w-setting" role="tab" aria-controls="w-setting" aria-selected="false">Settings</a>
-                                </nav>
-                                <div class="tab-content" id="wTab-content">
-                                    <div class="tab-pane fade show active" id="w-payment" role="tabpanel" aria-labelledby="wPay-tab">
-                                        <!-- This section provides wallet payment history -->
-                                        <div class="row mt-0 mt-lg-3">
-                                            <div class="col-12 text-center my-2 my-lg-0 magenta align-self-center">
-                                                Account Balance: &#8358 180,000.00
-                                            </div>
-                                            <div class="col-12 text-center mt-0 mt-lg-2">
-                                                <a href="#" class="btn bg-yellow plug-btn-sm my-2 my-lg-0 mr-3">Fund Wallet</a>
-                                                <a href="#" class="btn bg-yellow plug-btn-sm my-2 my-lg-0 mr-3">Withdraw Funds</a>
-                                                <a href="#" class="btn bg-yellow plug-btn-sm my-2 my-lg-0">Issue Invoice</a>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12 mt-3 mt-lg-5">
-                                                <h5 class="text-center mb-0">History</h5>
-                                                <hr style="width: 60%;">
-                                                <a class="no-decor" href="mou.html">
-                                                    <div class="row no-gutters">
-                                                        <div class="col-12 col-lg-9 op-desc align-self-center order-2 order-lg-1 mt-1 mt-lg-0 text-center text-lg-left">
-                                                            <span class="op-name">Bill board Advert</span>
-                                                            <span class="op-location dr">&#8358 180,000.00</span>
-                                                            <span class="op-time">Wallet Debit</span>
-                                                        </div>
-                                                        <div class="col-12 col-lg-3 op-uploader order-1 order-lg-2 text-center text-lg-right">
-                                                            <img src="images/user.png"/>
-                                                            <span class="up-name">Pyramid Inc.</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <hr>
-                                                <a class="no-decor" href="mou.html">
-                                                    <div class="row no-gutters">
-                                                        <div class="col-12 col-lg-9 op-desc align-self-center order-2 order-lg-1 mt-1 mt-lg-0 text-center text-lg-left">
-                                                            <span class="op-name">Bill board Advert</span>
-                                                            <span class="op-location cr">&#8358 180,000.00</span>
-                                                            <span class="op-time">Wallet Credit</span>
-                                                        </div>
-                                                        <div class="col-12 col-lg-3 op-uploader order-1 order-lg-2 text-center text-lg-right">
-                                                            <img src="images/user.png"/>
-                                                            <span class="up-name">Pyramid Inc.</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <hr>
-                                                <a class="no-decor" href="mou.html">
-                                                    <div class="row no-gutters">
-                                                        <div class="col-12 col-lg-9 op-desc align-self-center order-2 order-lg-1 mt-1 mt-lg-0 text-center text-lg-left">
-                                                            <span class="op-name">Bill board Advert</span>
-                                                            <span class="op-location dr">&#8358 180,000.00</span>
-                                                            <span class="op-time">Wallet Debit</span>
-                                                        </div>
-                                                        <div class="col-12 col-lg-3 op-uploader order-1 order-lg-2 text-center text-lg-right">
-                                                            <img src="images/user.png"/>
-                                                            <span class="up-name">Pyramid Inc.</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <hr>
-                                                <a class="no-decor" href="mou.html">
-                                                    <div class="row no-gutters">
-                                                        <div class="col-12 col-lg-9 op-desc align-self-center order-2 order-lg-1 mt-1 mt-lg-0 text-center text-lg-left">
-                                                            <span class="op-name">Bill board Advert</span>
-                                                            <span class="op-location cr">&#8358 180,000.00</span>
-                                                            <span class="op-time">Wallet Credit</span>
-                                                        </div>
-                                                        <div class="col-12 col-lg-3 op-uploader order-1 order-lg-2 text-center text-lg-right">
-                                                            <img src="images/user.png"/>
-                                                            <span class="up-name">Pyramid Inc.</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <hr>
-                                                <a class="no-decor" href="mou.html">
-                                                    <div class="row no-gutters">
-                                                        <div class="col-12 col-lg-9 op-desc align-self-center order-2 order-lg-1 mt-1 mt-lg-0 text-center text-lg-left">
-                                                            <span class="op-name">Bill board Advert</span>
-                                                            <span class="op-location cr">&#8358 180,000.00</span>
-                                                            <span class="op-time">Wallet Debit</span>
-                                                        </div>
-                                                        <div class="col-12 col-lg-3 op-uploader order-1 order-lg-2 text-center text-lg-right">
-                                                            <img src="images/user.png"/>
-                                                            <span class="up-name">Pyramid Inc.</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <hr>
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <nav aria-label="Page navigation example">
-                                                            <ul class="pagination justify-content-end px-3 mb-0">
-                                                                <li class="page-item disabled">
-                                                                    <a class="page-link" href="#" aria-label="Previous" tabindex="-1">
-                                                                        <span aria-hidden="true"><i class="fa fa-caret-left" aria-hidden="true"></i></span>
-                                                                        <span class="sr-only">Previous</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                                <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">...</a></li>
-                                                                <li class="page-item">
-                                                                    <a class="page-link" href="#" aria-label="Next">
-                                                                        <span aria-hidden="true"><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-                                                                        <span class="sr-only">Next</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </nav>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="w-setting" role="tabpanel" aria-labelledby="wSet-tab">
-                                       <!-- This section provides wallet settings -->
-                                        <div class="row">
-                                            <div class="col-12 col-lg-10 mx-auto magenta text-center s-0875">
-                                                <h6 class="h6">NOTICE!!</h6>
-                                                For Security reasons, account name cannot be changed once saved, and also transactions
-                                                cannot commence on PlugMe until accounts are verified.
-                                            </div>
-                                            <div class="col-12 col-lg-10 mx-auto mt-3">
-                                                <form>
-                                                    <div class="form-group">
-                                                        <label for="wId">Wallet ID</label>
-                                                        <input type="text" class="form-control" id="wId" value="1gudkafu2332" readonly>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="acctName">Account Name</label>
-                                                        <input type="text" class="form-control" id="acctName" placeholder="As it apears with the Bank">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="acctNum">Account Number</label>
-                                                        <input type="text" class="form-control" id="acctNum" placeholder="0000000000">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="bnk">Bank</label>
-                                                        <select id="bnk" class="form-control">
-                                                            <option selected>Select your accounts Bank</option>
-                                                            <option>Access Bank</option>
-                                                            <option>GTBank</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="text-center mt-4 mb-5">
-                                                        <a href="#" class="btn bg-yellow plug-btn">Save</a>
-                                                    </div>
-                                                </form>
-                                                <div class="up-discliamer text-center">
-                                                    By clicking <span class="link-yellow">'Save Account',</span> you agree to the
-                                                    <span class="mobile-tab-name"> Terms & Conditions</span> and
-                                                    <span class="mobile-tab-name">Privacy Policy.</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Footer -->
+                    <footer>
+                        <nav class="nav d-none d-md-flex nav-fill py-2">
+                            <a class="nav-item nav-link" href="#">Terms & Conditions</a>
+                            <a class="nav-item nav-link" href="#">Privacy Policy</a>
+                            <a class="nav-item nav-link" href="#">About PlugMe</a>
+                            <a class="nav-item nav-link" href="#">&copy 2018, PlugMe</a>
+                        </nav>
+                    </footer>
                 </div>
             </div>
         </div>
     </div>
     <!-- Footer of Application -->
     <footer class="contaier-fluid px-0">
-        <div class="container pt-5">
-            <div class="row justify-content-around pb-4">
-                <div class="col-10 col-md-5 col-lg-4 pb-4 pb-md-0">
-                    <h6>Newsletter</h6>
-                    <p class="mb-2">Subscribe to the PlugMe Newsletter to get awesome opportunities in your mailbox weekly!</p>
-                    <div class="input-group input-group-sm">
-                        <input type="text" class="form-control" placeholder="Email" aria-label="Email">
-                        <span class="input-group-btn">
-                            <button class="btn" type="button">Subscribe</button>
-                          </span>
-                    </div>
-                </div>
-                <div class="col-10 col-md-6">
-                    <h6>Connect with Us</h6>
-                    <a href="#" class="social"><img class="mr-2 my-2 my-sm-0 mb-md-2" src="images/facebook_btn.png"/></a>
-                    <a href="#" class="social"><img class="mr-2 my-2 my-sm-0 mb-md-2" src="images/twitter_btn.png"/></a>
-                    <a href="#" class="social"><img class="mr-2 my-2 my-sm-0 mb-md-2" src="images/instagram_btn.png"/></a>
-                </div>
-            </div>
-        </div>
         <!-- Bottom Footer on Mobile Viewports -->
         <nav class="nav d-flex d-md-none justify-content-center px-2 px-md-4">
             <a class="nav-link" href="#">&copy 2017, PlugMe</a>
-            <a class="nav-link" href="#">About PlugMe</a>
-            <a class="nav-link" href="#">Terms & Conditions</a>
-            <a class="nav-link" href="#">Privacy Policy</a>
-        </nav>
-        <!-- Bottom Footer on Medium to Extra large Viewports -->
-        <nav class="nav d-none d-md-flex justify-content-end px-2 px-md-4 py-2">
-            <a class="nav-link copyright" href="#">&copy 2017, PlugMe</a>
             <a class="nav-link" href="#">About PlugMe</a>
             <a class="nav-link" href="#">Terms & Conditions</a>
             <a class="nav-link" href="#">Privacy Policy</a>
@@ -1489,3 +713,610 @@
     </script>
 </body>
 </html>
+
+
+
+<!-- User Opportunity Gallery
+<div class="col-12 col-md-8 px-2 order-1 order-md-2">
+    <div class="bio-opportunity">
+        Available and Uploaded Opportunities in tabs
+        <nav class="nav nav-justified" id="opportunityTab" role="tablist">
+            <a class="nav-item nav-link active" id="avail-tab" data-toggle="tab" href="#avail" role="tab" aria-controls="avail" aria-selected="true">Available</a>
+            <a class="nav-item nav-link" id="upload-tab" data-toggle="tab" href="#upload" role="tab" aria-controls="upload" aria-selected="false">Uploaded</a>
+        </nav>
+        <div class="tab-content" id="opTab-content">
+            <div class="tab-pane fade show active" id="avail" role="tabpanel" aria-labelledby="avail-tab">
+                <a class="no-decor" href="op_available.html">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-lg-9 op-desc align-self-center order-2 order-lg-1 text-center text-lg-left">
+                            <span class="op-name">Bill board Advert</span>
+                            <span class="op-location">Lagos, Nigeria</span>
+                            <span class="op-time">5 days ago</span>
+                        </div>
+                        <div class="col-12 col-lg-3 op-uploader order-1 order-lg-2 text-center text-lg-right">
+                            <img src="images/user.png"/>
+                            <span class="up-name">Pyramid Inc.</span>
+                            <span class="up-desc">Advert Agency</span>
+                        </div>
+                    </div>
+                </a>
+                <hr>
+                <a class="no-decor" href="op_available.html">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-lg-9 op-desc align-self-center order-2 order-lg-1 text-center text-lg-left">
+                            <span class="op-name">Bill board Advert</span>
+                            <span class="op-location">Lagos, Nigeria</span>
+                            <span class="op-time">5 days ago</span>
+                        </div>
+                        <div class="col-12 col-lg-3 op-uploader order-1 order-lg-2 text-center text-lg-right">
+                            <img src="images/user.png"/>
+                            <span class="up-name">Pyramid Inc.</span>
+                            <span class="up-desc">Advert Agency</span>
+                        </div>
+                    </div>
+                </a>
+                <hr>
+                <a class="no-decor" href="op_available.html">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-lg-9 op-desc align-self-center order-2 order-lg-1 text-center text-lg-left">
+                            <span class="op-name">Bill board Advert</span>
+                            <span class="op-location">Lagos, Nigeria</span>
+                            <span class="op-time">5 days ago</span>
+                        </div>
+                        <div class="col-12 col-lg-3 op-uploader order-1 order-lg-2 text-center text-lg-right">
+                            <img src="images/user.png"/>
+                            <span class="up-name">Pyramid Inc.</span>
+                            <span class="up-desc">Advert Agency</span>
+                        </div>
+                    </div>
+                </a>
+                <hr>
+                <a class="no-decor" href="op_available.html">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-lg-9 op-desc align-self-center order-2 order-lg-1 text-center text-lg-left">
+                            <span class="op-name">Bill board Advert</span>
+                            <span class="op-location">Lagos, Nigeria</span>
+                            <span class="op-time">5 days ago</span>
+                        </div>
+                        <div class="col-12 col-lg-3 op-uploader order-1 order-lg-2 text-center text-lg-right">
+                            <img src="images/user.png"/>
+                            <span class="up-name">Pyramid Inc.</span>
+                            <span class="up-desc">Advert Agency</span>
+                        </div>
+                    </div>
+                </a>
+                <hr>
+                <a class="no-decor" href="op_available.html">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-lg-9 op-desc align-self-center order-2 order-lg-1 text-center text-lg-left">
+                            <span class="op-name">Bill board Advert</span>
+                            <span class="op-location">Lagos, Nigeria</span>
+                            <span class="op-time">5 days ago</span>
+                        </div>
+                        <div class="col-12 col-lg-3 op-uploader order-1 order-lg-2 text-center text-lg-right">
+                            <img src="images/user.png"/>
+                            <span class="up-name">Pyramid Inc.</span>
+                            <span class="up-desc">Advert Agency</span>
+                        </div>
+                    </div>
+                </a>
+                <hr>
+                <a class="no-decor" href="op_available.html">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-lg-9 op-desc align-self-center order-2 order-lg-1 text-center text-lg-left">
+                            <span class="op-name">Bill board Advert</span>
+                            <span class="op-location">Lagos, Nigeria</span>
+                            <span class="op-time">5 days ago</span>
+                        </div>
+                        <div class="col-12 col-lg-3 op-uploader order-1 order-lg-2 text-center text-lg-right">
+                            <img src="images/user.png"/>
+                            <span class="up-name">Pyramid Inc.</span>
+                            <span class="up-desc">Advert Agency</span>
+                        </div>
+                    </div>
+                </a>
+                <hr>
+            </div>
+            <div class="tab-pane fade" id="upload" role="tabpanel" aria-labelledby="upload-tab">
+                <a class="no-decor add text-center" href="uploads.html">
+                    <div class="add-sym">+</div>
+                    <div class="add-exp">Upload Opportunity</div>
+                </a>
+                <hr>
+                <a class="no-decor" href="op_uploaded.html">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-lg-9 op-desc align-self-center text-center text-lg-left">
+                            <span class="op-name">Bill board Advert</span>
+                            <span class="op-location">Lagos, Nigeria</span>
+                            <span class="op-time">5 days ago</span>
+                        </div>
+                        <div class="col-12 col-lg-3 mt-2 mt-lg-0 op-status text-center text-lg-right">
+                            <img src="images/available.png"/>
+                        </div>
+                    </div>
+                </a>
+                <hr>
+                <a class="no-decor" href="op_uploaded.html">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-lg-2 op-uploader text-center text-lg-left">
+                            <img src="images/user.png"/>
+                            <span class="up-name">Adewale</span>
+                            <span class="up-desc">Graphic Designer</span>
+                        </div>
+                        <div class="col-12 col-lg-7 mt-2 mt-lg-0 op-desc text-center text-lg-left">
+                            <span class="op-name">Bill board Advert</span>
+                            <span class="op-location">Lagos, Nigeria</span>
+                            <span class="op-time">5 days ago</span>
+                        </div>
+                        <div class="col-12 col-lg-3 mt-2 mt-lg-0 align-self-center op-status text-center text-lg-right">
+                            <img src="images/pending.png"/>
+                        </div>
+                    </div>
+                </a>
+                <hr>
+                <a class="no-decor" href="op_uploaded.html">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-lg-2 op-uploader text-center text-lg-left">
+                            <img src="images/user.png"/>
+                            <span class="up-name">Adewale</span>
+                            <span class="up-desc">Graphic Designer</span>
+                        </div>
+                        <div class="col-12 col-lg-7 mt-2 mt-lg-0 op-desc text-center text-lg-left">
+                            <span class="op-name">Bill board Advert</span>
+                            <span class="op-comment"><span>Comment:</span> Awesome job, looking forward to future collaborations...</span>
+                            <span class="op-rating">
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </span>
+                            <span class="op-location">Lagos, Nigeria</span>
+                            <span class="op-time">5 days ago</span>
+                        </div>
+                        <div class="col-12 col-lg-3 mt-2 mt-lg-0 align-self-center op-status text-center text-lg-right">
+                            <img src="images/done.png"/>
+                        </div>
+                    </div>
+                </a>
+                <hr>
+                <a class="no-decor" href="op_uploaded.html">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-lg-2 op-uploader text-center text-lg-left">
+                            <img src="images/user.png"/>
+                            <span class="up-name">Adewale</span>
+                            <span class="up-desc">Graphic Designer</span>
+                        </div>
+                        <div class="col-12 col-lg-7 mt-2 mt-lg-0 op-desc text-center text-lg-left">
+                            <span class="op-name">Bill board Advert</span>
+                            <span class="op-comment"><span>Comment:</span> Awesome job, looking forward to future collaborations...</span>
+                            <span class="op-rating">
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </span>
+                            <span class="op-location">Lagos, Nigeria</span>
+                            <span class="op-time">5 days ago</span>
+                        </div>
+                        <div class="col-12 col-lg-3 mt-2 mt-lg-0 align-self-center op-status text-center text-lg-right">
+                            <img src="images/done.png"/>
+                        </div>
+                    </div>
+                </a>
+                <hr>
+                <a class="no-decor" href="op_uploaded.html">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-lg-2 op-uploader text-center text-lg-left">
+                            <img src="images/user.png"/>
+                            <span class="up-name">Adewale</span>
+                            <span class="up-desc">Graphic Designer</span>
+                        </div>
+                        <div class="col-12 col-lg-7 mt-2 mt-lg-0 op-desc text-center text-lg-left">
+                            <span class="op-name">Bill board Advert</span>
+                            <span class="op-comment"><span>Comment:</span> Awesome job, looking forward to future collaborations...</span>
+                            <span class="op-rating">
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </span>
+                            <span class="op-location">Lagos, Nigeria</span>
+                            <span class="op-time">5 days ago</span>
+                        </div>
+                        <div class="col-12 col-lg-3 mt-2 mt-lg-0 op-status align-self-center text-center text-lg-right">
+                            <img src="images/done.png"/>
+                        </div>
+                    </div>
+                </a>
+                <hr>
+                <a class="no-decor" href="op_uploaded.html">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-lg-2 op-uploader text-center text-lg-left">
+                            <img src="images/user.png"/>
+                            <span class="up-name">Adewale</span>
+                            <span class="up-desc">Graphic Designer</span>
+                        </div>
+                        <div class="col-12 col-lg-7 mt-2 mt-lg-0 op-desc text-center text-lg-left">
+                            <span class="op-name">Bill board Advert</span>
+                            <span class="op-comment"><span>Comment:</span> Awesome job, looking forward to future collaborations...</span>
+                            <span class="op-rating">
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </span>
+                            <span class="op-location">Lagos, Nigeria</span>
+                            <span class="op-time">5 days ago</span>
+                        </div>
+                        <div class="col-12 col-lg-3 mt-2 mt-lg-0 op-status align-self-center text-center text-lg-right">
+                            <img src="images/done.png"/>
+                        </div>
+                    </div>
+                </a>
+                <hr>
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-end px-3">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" aria-label="Previous" tabindex="-1">
+                                        <span aria-hidden="true"><i class="fa fa-caret-left" aria-hidden="true"></i></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">...</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true"><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- User Achievement Gallery
+<div class="tab-pane fade" id="achievement" role="tabpanel" aria-labelledby="achievement-tab">
+    <div class="row pb-3">
+         User Achievement Gallery
+        <div class="col-12 col-md-8 px-2 order-1 order-md-2">
+            <div class="bio-achievement">
+                <div class="row no-gutters counter">
+                    <div class="col-12 py-2 text-center">
+                        186 Contents
+                    </div>
+                </div>
+                <div class="row p-1-25">
+                    <div class="col-12">
+                        <a class="no-decor" href="op_achieved.html">
+                            <div class="row no-gutters">
+                                <div class="col-12 col-lg-9 op-desc align-self-center text-center text-lg-left">
+                                    <span class="op-name">Bill board Advert</span>
+                                    <span class="op-location">Lagos, Nigeria</span>
+                                    <span class="op-time">5 days ago</span>
+                                </div>
+                                <div class="col-12 col-lg-3 mt-2 mt-lg-0 op-status align-self-center text-center text-lg-right">
+                                    <img src="images/pending.png"/>
+                                </div>
+                            </div>
+                        </a>
+                        <hr>
+                        <a class="no-decor" href="op_achieved.html">
+                            <div class="row no-gutters">
+                                <div class="col-12 col-lg-9 op-desc align-self-center text-center text-lg-left">
+                                    <span class="op-name">Bill board Advert</span>
+                                    <span class="op-comment"><span>Comment:</span> Awesome job, looking forward to future collaborations...</span>
+                                    <span class="op-rating">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </span>
+                                    <span class="op-location">Lagos, Nigeria</span>
+                                    <span class="op-time">5 days ago</span>
+                                </div>
+                                <div class="col-12 col-lg-3 mt-2 mt-lg-0 op-status align-self-center text-center text-lg-right">
+                                    <img src="images/done.png"/>
+                                </div>
+                            </div>
+                        </a>
+                        <hr>
+                        <a class="no-decor" href="op_achieved.html">
+                            <div class="row no-gutters">
+                                <div class="col-12 col-lg-9 op-desc align-self-center text-center text-lg-left">
+                                    <span class="op-name">Bill board Advert</span>
+                                    <span class="op-comment"><span>Comment:</span> Awesome job, looking forward to future collaborations...</span>
+                                    <span class="op-rating">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </span>
+                                    <span class="op-location">Lagos, Nigeria</span>
+                                    <span class="op-time">5 days ago</span>
+                                </div>
+                                <div class="col-12 col-lg-3 mt-2 mt-lg-0 op-status align-self-center text-center text-lg-right">
+                                    <img src="images/done.png"/>
+                                </div>
+                            </div>
+                        </a>
+                        <hr>
+                        <a class="no-decor" href="op_achieved.html">
+                            <div class="row no-gutters">
+                                <div class="col-12 col-lg-9 op-desc align-self-center text-center text-lg-left">
+                                    <span class="op-name">Bill board Advert</span>
+                                    <span class="op-comment"><span>Comment:</span> Awesome job, looking forward to future collaborations...</span>
+                                    <span class="op-rating">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </span>
+                                    <span class="op-location">Lagos, Nigeria</span>
+                                    <span class="op-time">5 days ago</span>
+                                </div>
+                                <div class="col-12 col-lg-3 mt-2 mt-lg-0 op-status align-self-center text-center text-lg-right">
+                                    <img src="images/done.png"/>
+                                </div>
+                            </div>
+                        </a>
+                        <hr>
+                        <a class="no-decor" href="op_achieved.html">
+                            <div class="row no-gutters">
+                                <div class="col-12 col-lg-9 op-desc align-self-center text-center text-lg-left">
+                                    <span class="op-name">Bill board Advert</span>
+                                    <span class="op-comment"><span>Comment:</span> Awesome job, looking forward to future collaborations...</span>
+                                    <span class="op-rating">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </span>
+                                    <span class="op-location">Lagos, Nigeria</span>
+                                    <span class="op-time">5 days ago</span>
+                                </div>
+                                <div class="col-12 col-lg-3 mt-2 mt-lg-0 op-status align-self-center text-center text-lg-right">
+                                    <img src="images/done.png"/>
+                                </div>
+                            </div>
+                        </a>
+                        <hr>
+                        <a class="no-decor" href="op_achieved.html">
+                            <div class="row no-gutters">
+                                <div class="col-12 col-lg-9 op-desc align-self-center text-center text-lg-left">
+                                    <span class="op-name">Bill board Advert</span>
+                                    <span class="op-comment"><span>Comment:</span> Awesome job, looking forward to future collaborations...</span>
+                                    <span class="op-rating">
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        </span>
+                                    <span class="op-location">Lagos, Nigeria</span>
+                                    <span class="op-time">5 days ago</span>
+                                </div>
+                                <div class="col-12 col-lg-3 mt-2 mt-lg-0 op-status align-self-center text-center text-lg-right">
+                                    <img src="images/done.png"/>
+                                </div>
+                            </div>
+                        </a>
+                        <hr>
+                        <div class="row">
+                            <div class="col-12">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-end px-3">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" aria-label="Previous" tabindex="-1">
+                                                <span aria-hidden="true"><i class="fa fa-caret-left" aria-hidden="true"></i></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">...</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true"><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- User Wallet
+<div class="tab-pane fade" id="wallet" role="tabpanel" aria-labelledby="wallet-tab">
+    <div class="row pb-3">
+        <div class="col-12 col-md-8 px-2 order-1 order-md-2">
+            <div class="bio-gallery">
+                Available and Uploaded Opportunities in tabs
+                <nav class="nav nav-justified" id="walletTab" role="tablist">
+                    <a class="nav-item nav-link active" id="wPay-tab" data-toggle="tab" href="#w-payment" role="tab" aria-controls="w-payment" aria-selected="true">Payments</a>
+                    <a class="nav-item nav-link" id="wSet-tab" data-toggle="tab" href="#w-setting" role="tab" aria-controls="w-setting" aria-selected="false">Settings</a>
+                </nav>
+                <div class="tab-content" id="wTab-content">
+                    <div class="tab-pane fade show active" id="w-payment" role="tabpanel" aria-labelledby="wPay-tab">
+                        This section provides wallet payment history
+                        <div class="row mt-0 mt-lg-3">
+                            <div class="col-12 text-center my-2 my-lg-0 magenta align-self-center">
+                                Account Balance: &#8358 180,000.00
+                            </div>
+                            <div class="col-12 text-center mt-0 mt-lg-2">
+                                <a href="#" class="btn bg-yellow plug-btn-sm my-2 my-lg-0 mr-3">Fund Wallet</a>
+                                <a href="#" class="btn bg-yellow plug-btn-sm my-2 my-lg-0 mr-3">Withdraw Funds</a>
+                                <a href="#" class="btn bg-yellow plug-btn-sm my-2 my-lg-0">Issue Invoice</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mt-3 mt-lg-5">
+                                <h5 class="text-center mb-0">History</h5>
+                                <hr style="width: 60%;">
+                                <a class="no-decor" href="mou.html">
+                                    <div class="row no-gutters">
+                                        <div class="col-12 col-lg-9 op-desc align-self-center order-2 order-lg-1 mt-1 mt-lg-0 text-center text-lg-left">
+                                            <span class="op-name">Bill board Advert</span>
+                                            <span class="op-location dr">&#8358 180,000.00</span>
+                                            <span class="op-time">Wallet Debit</span>
+                                        </div>
+                                        <div class="col-12 col-lg-3 op-uploader order-1 order-lg-2 text-center text-lg-right">
+                                            <img src="images/user.png"/>
+                                            <span class="up-name">Pyramid Inc.</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr>
+                                <a class="no-decor" href="mou.html">
+                                    <div class="row no-gutters">
+                                        <div class="col-12 col-lg-9 op-desc align-self-center order-2 order-lg-1 mt-1 mt-lg-0 text-center text-lg-left">
+                                            <span class="op-name">Bill board Advert</span>
+                                            <span class="op-location cr">&#8358 180,000.00</span>
+                                            <span class="op-time">Wallet Credit</span>
+                                        </div>
+                                        <div class="col-12 col-lg-3 op-uploader order-1 order-lg-2 text-center text-lg-right">
+                                            <img src="images/user.png"/>
+                                            <span class="up-name">Pyramid Inc.</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr>
+                                <a class="no-decor" href="mou.html">
+                                    <div class="row no-gutters">
+                                        <div class="col-12 col-lg-9 op-desc align-self-center order-2 order-lg-1 mt-1 mt-lg-0 text-center text-lg-left">
+                                            <span class="op-name">Bill board Advert</span>
+                                            <span class="op-location dr">&#8358 180,000.00</span>
+                                            <span class="op-time">Wallet Debit</span>
+                                        </div>
+                                        <div class="col-12 col-lg-3 op-uploader order-1 order-lg-2 text-center text-lg-right">
+                                            <img src="images/user.png"/>
+                                            <span class="up-name">Pyramid Inc.</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr>
+                                <a class="no-decor" href="mou.html">
+                                    <div class="row no-gutters">
+                                        <div class="col-12 col-lg-9 op-desc align-self-center order-2 order-lg-1 mt-1 mt-lg-0 text-center text-lg-left">
+                                            <span class="op-name">Bill board Advert</span>
+                                            <span class="op-location cr">&#8358 180,000.00</span>
+                                            <span class="op-time">Wallet Credit</span>
+                                        </div>
+                                        <div class="col-12 col-lg-3 op-uploader order-1 order-lg-2 text-center text-lg-right">
+                                            <img src="images/user.png"/>
+                                            <span class="up-name">Pyramid Inc.</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr>
+                                <a class="no-decor" href="mou.html">
+                                    <div class="row no-gutters">
+                                        <div class="col-12 col-lg-9 op-desc align-self-center order-2 order-lg-1 mt-1 mt-lg-0 text-center text-lg-left">
+                                            <span class="op-name">Bill board Advert</span>
+                                            <span class="op-location cr">&#8358 180,000.00</span>
+                                            <span class="op-time">Wallet Debit</span>
+                                        </div>
+                                        <div class="col-12 col-lg-3 op-uploader order-1 order-lg-2 text-center text-lg-right">
+                                            <img src="images/user.png"/>
+                                            <span class="up-name">Pyramid Inc.</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination justify-content-end px-3 mb-0">
+                                                <li class="page-item disabled">
+                                                    <a class="page-link" href="#" aria-label="Previous" tabindex="-1">
+                                                        <span aria-hidden="true"><i class="fa fa-caret-left" aria-hidden="true"></i></span>
+                                                        <span class="sr-only">Previous</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">...</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true"><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                                                        <span class="sr-only">Next</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="w-setting" role="tabpanel" aria-labelledby="wSet-tab">
+                        This section provides wallet settings
+                        <div class="row">
+                            <div class="col-12 col-lg-10 mx-auto magenta text-center s-0875">
+                                <h6 class="h6">NOTICE!!</h6>
+                                For Security reasons, account name cannot be changed once saved, and also transactions
+                                cannot commence on PlugMe until accounts are verified.
+                            </div>
+                            <div class="col-12 col-lg-10 mx-auto mt-3">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="wId">Wallet ID</label>
+                                        <input type="text" class="form-control" id="wId" value="1gudkafu2332" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="acctName">Account Name</label>
+                                        <input type="text" class="form-control" id="acctName" placeholder="As it apears with the Bank">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="acctNum">Account Number</label>
+                                        <input type="text" class="form-control" id="acctNum" placeholder="0000000000">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="bnk">Bank</label>
+                                        <select id="bnk" class="form-control">
+                                            <option selected>Select your accounts Bank</option>
+                                            <option>Access Bank</option>
+                                            <option>GTBank</option>
+                                        </select>
+                                    </div>
+                                    <div class="text-center mt-4 mb-5">
+                                        <a href="#" class="btn bg-yellow plug-btn">Save</a>
+                                    </div>
+                                </form>
+                                <div class="up-discliamer text-center">
+                                    By clicking <span class="link-yellow">'Save Account',</span> you agree to the
+                                    <span class="mobile-tab-name"> Terms & Conditions</span> and
+                                    <span class="mobile-tab-name">Privacy Policy.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
