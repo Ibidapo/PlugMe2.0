@@ -324,7 +324,7 @@ nav#mobile-plugMe-tab {
     max-height: 135px;
 }
 .plug-caption.active a.plug-name, .plugger-bio .bio-rating, .op-profile-desc .plug-metrics, .plug-tag, .bio-info .desc, .up-desc,
-#about .intro, #about p, #about .my-5 span, .add-exp, .magenta, .plug-list a:hover, .plug-list a:hover .op-name {
+#about .intro, #about p, #about .my-5 span, .add-exp, .magenta {
     color: #86275d;
 }
 .plug-caption.active .plugger-name, .plug-caption.active .achiever-desc, .plugger-bio .bio-header, .plug-feedback .media-body a,
@@ -460,7 +460,7 @@ nav.navbar .dropdown-menu hr, .plug-list hr {
 }
 
 /*Styling for Profile Page (Opportunity Section)*/
-#opportunityTab, #addContentTab, #walletTab {
+#opportunityTab, #addContentTab, #walletTab, .plug-list a:hover {
     background-color:  #e1e1e1;
 }
 #opportunityTab .nav-link,#addContentTab .nav-link, .counter, #walletTab .nav-link {
@@ -688,7 +688,7 @@ a.link-yellow, a.link-yellow:hover {
     width: 1rem;
     vertical-align: baseline;
 }
-.plug-info hr, .sub-card hr, .plug-list hr {
+.plug-info hr, .sub-card hr {
     margin: .5rem auto;
 }
 .plug-tag, .sign-page .form-check-label, .plug-info .input-group, .plug-feedback,
