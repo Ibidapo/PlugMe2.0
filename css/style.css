@@ -25,7 +25,6 @@ nav.navbar .plugme-logo img {
     height: 40px;
 }
 nav.navbar .sign {
-    font-size: 0.875rem;
     color: white;
     margin: 0 .75rem;
     text-decoration: none;
@@ -325,7 +324,7 @@ nav#mobile-plugMe-tab {
     max-height: 135px;
 }
 .plug-caption.active a.plug-name, .plugger-bio .bio-rating, .op-profile-desc .plug-metrics, .plug-tag, .bio-info .desc, .up-desc,
-#about .intro, #about p, #about .my-5 span, .add-exp, .magenta {
+#about .intro, #about p, #about .my-5 span, .add-exp, .magenta, .plug-list a:hover, .plug-list a:hover .op-name {
     color: #86275d;
 }
 .plug-caption.active .plugger-name, .plug-caption.active .achiever-desc, .plugger-bio .bio-header, .plug-feedback .media-body a,
@@ -336,7 +335,7 @@ nav#mobile-plugMe-tab {
 .opp-plugger-name, .plugger-bio .bio-member, .plugger-info .location, .plug-date, .plugger-bio .location, .op-rating, .bio-rating
 i, .op-location, .op-time, .op-comment, .op-profile-value, #plugMe-tab .nav-link, #profileTab .nav-link, .plugger-bio .bio-member,
 .up-discliamer, .bio-msg label, .msg-status, .plug-feedback, .plug-feedback textarea, .card-body .bio-info .location, #wTab-content h5,
-.grey, .bio-info .location, .sub-body, .sub-footer, .plug-list, #plugMe-tab2 .nav-link {
+.grey, .bio-info .location, .sub-body, .sub-footer, .plug-list a, #plugMe-tab2 .nav-link {
     color: #737477;
 }
 .bg-magenta {
@@ -658,7 +657,7 @@ a.link-yellow, a.link-yellow:hover {
 .modal-body .plug-content, .modal-body .plug-feedback, .modal-body .plug-info {
     border-radius: 1.25rem .25rem;
 }
-.modal-body .plug-info a, .plugger-bio a, .modal-body .plug-feedback a, .bio-info a {
+.modal-body .plug-info a, .plugger-bio a, .modal-body .plug-feedback a, .bio-info a, .plug-list a {
     text-decoration: none;
 }
 .plugger-img, .op-uploader img, .op-status img, .bio-msg .bio-img, .card-body .bio-img {
