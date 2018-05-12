@@ -60,7 +60,7 @@ nav.navbar .dropdown-menu .dropdown-item {
     font-size: 0.875rem;
     font-weight: 300;
 }
-nav.navbar .dropdown-menu img {
+nav.navbar .dropdown-menu img, nav.fixed-bottom img {
     height: 1.75rem;
 }
 nav.navbar .dropdown-menu .dropdown-item:focus, nav.navbar .dropdown-menu .dropdown-item:hover {
@@ -84,10 +84,6 @@ nav.navbar .dropdown-menu hr, .plug-feedback hr {
 }
 .drop-time, .msg-status {
     bottom: -0.375rem;
-}
-nav.fixed-bottom {
-    height: 50px;
-    background-color: white;
 }
 
 
@@ -312,7 +308,7 @@ nav#mobile-plugMe-tab {
     height: 0.075rem;
 }
 .plug-caption hr {
-    margin: .25rem 0 0 0 !important;
+    margin: .25rem 0 !important;
 }
 .plug-caption .likes, .plug-caption .views {
     display: inline-block;
@@ -324,7 +320,7 @@ nav#mobile-plugMe-tab {
     max-height: 135px;
 }
 .plug-caption.active a.plug-name, .plugger-bio .bio-rating, .op-profile-desc .plug-metrics, .plug-tag, .bio-info .desc, .up-desc,
-#about .intro, #about p, #about .my-5 span, .add-exp, .magenta {
+#about .intro, #about p, #about .my-5 span, .add-exp, .magenta, .plug-list a:hover .op-name {
     color: #86275d;
 }
 .plug-caption.active .plugger-name, .plug-caption.active .achiever-desc, .plugger-bio .bio-header, .plug-feedback .media-body a,
@@ -424,7 +420,7 @@ nav.navbar .dropdown-menu hr, .plug-list hr {
     background-color: #fafafa;
 }
 .bio-gallery, .bio-opportunity, .bio-achievement, .bio-msg, .plug-list, .plugger-bio, .modal-body .plug-content,
-.modal-body .plug-feedback, .modal-body .plug-info {
+.modal-body .plug-feedback, .modal-body .plug-info, nav.fixed-bottom {
     background-color: white;
 }
 .p-1-25 {
