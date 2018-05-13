@@ -277,7 +277,7 @@ nav#mobile-plugMe-tab {
     text-decoration: none;
 }
 .plug-caption .plug-details, .bio-opportunity .plug-card .plug-caption .plug-name, .plug-info .input-group-prepend, .op-uploader,
-.plugger-bio .bio-edit .btn{
+.plugger-bio .bio-edit .btn, .plug-info .plug-metrics {
     line-height: 1.25;
 }
 .plug-caption .plugger-name, .plug-caption .achiever-desc, .op-location, .up-desc, .op-comment, .sign-cnt,
@@ -683,9 +683,6 @@ a.link-yellow, a.link-yellow:hover {
 .plug-metrics img, .plug-list img {
     width: 1rem;
     vertical-align: baseline;
-}
-.plug-info hr, .sub-card hr {
-    margin: .5rem auto;
 }
 .plug-tag, .sign-page .form-check-label, .plug-info .input-group, .plug-feedback,
 .plug-feedback .media-body .name, .card-body .bio-info .location,.bio-info .location {
