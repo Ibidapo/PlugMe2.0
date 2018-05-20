@@ -245,12 +245,15 @@ nav#mobile-plugMe-tab {
     cursor: pointer;
     overflow: hidden;
 }
+.plug-card.sgt {
+    height: 200px
+}
 .plug-card, .plug-list, .plugger-bio .bio-img, .sub-card {
     border-radius: 1rem .25rem;
 }
 .plug-card, .plugger-bio, .bio-gallery, .bio-opportunity, .bio-achievement, .bio-msg, .sub-card, .plug-list, .modal-body .plug-content,
 .modal-body .plug-feedback, .modal-body .plug-info, nav.fixed-bottom {
-    box-shadow: 0 0 5px #d8d8d8;
+    box-shadow: 0 0 5px #73747766;
 }
 .plug-caption {
     position: absolute;
@@ -263,7 +266,7 @@ nav#mobile-plugMe-tab {
     transition: max-height 1.5s ease !important;
     -webkit-transition: max-height 1.5s ease; /* Safari */
 }
-.plug-caption, .plug-caption.active {
+.plug-caption, .plug-caption.active, .plug-caption.activated {
     box-shadow: 0 0 5px #73747799;
 }
 .plug-name, .plugger-bio .bio-rating, .plugger-bio .bio-header, .plug-metrics, .plug-date, #opportunityTab .nav-lnk,
@@ -277,7 +280,7 @@ nav#mobile-plugMe-tab {
     text-decoration: none;
 }
 .plug-caption .plug-details, .bio-opportunity .plug-card .plug-caption .plug-name, .plug-info .input-group-prepend, .op-uploader,
-.plugger-bio .bio-edit .btn, .plug-info .plug-metrics {
+.plugger-bio .bio-edit .btn {
     line-height: 1.25;
 }
 .plug-caption .plugger-name, .plug-caption .achiever-desc, .op-location, .up-desc, .op-comment, .sign-cnt,
@@ -295,16 +298,16 @@ nav#mobile-plugMe-tab {
 .bio-msg hr, .plug-feedback hr, #wTab-content hr, .plug-list hr {
     background-image: radial-gradient(#cfd0d1 20%, transparent 100%);
 }
-.plug-caption.active hr {
+.plug-caption.active hr, .plug-caption.actived hr {
     background-image: radial-gradient(#737477 20%, transparent 100%);
 }
-.plug-caption hr, .plug-caption.active hr, .plug-info hr, .plugger-bio hr, nav.navbar .dropdown-menu hr, .bio-opportunity hr,
+.plug-caption hr, .plug-caption.active hr, .plug-caption.actived hr, .plug-info hr, .plugger-bio hr, nav.navbar .dropdown-menu hr, .bio-opportunity hr,
 .bio-achievement hr, .bio-msg hr, .plug-feedback hr, #wTab-content hr, .plug-list hr {
     border: 0 !important;
     border-radius: 50%;
 }
 .plug-caption hr, .plug-info hr, .plugger-bio hr, nav.navbar .dropdown-menu hr, .plug-caption.active hr, .bio-opportunity hr,
-.bio-achievement hr, .bio-msg hr, .plug-feedback hr, #wTab-content hr, .plug-list hr {
+.plug-caption.actived hr, .bio-achievement hr, .bio-msg hr, .plug-feedback hr, #wTab-content hr, .plug-list hr {
     height: 0.075rem;
 }
 .plug-caption hr {
@@ -315,21 +318,21 @@ nav#mobile-plugMe-tab {
     width: 48%;
     font-size: .675rem;
 }
-.plug-caption.active {
+.plug-caption.active, .plug-caption.activated {
     background-color: white;
     max-height: 135px;
 }
-.plug-caption.active a.plug-name, .plugger-bio .bio-rating, .op-profile-desc .plug-metrics, .plug-tag, .bio-info .desc, .up-desc,
-#about .intro, #about p, #about .my-5 span, .add-exp, .magenta, .plug-list a:hover .op-name {
+.plug-caption.active a.plug-name, .plug-caption.activated a.plug-name, .plugger-bio .bio-rating, .op-profile-desc .plug-metrics,
+.plug-tag, .bio-info .desc, .up-desc, #about .intro, #about p, #about .my-5 span, .add-exp, .magenta, .plug-list a:hover .op-name,
+.plug-btn-metrics, .op-profile-desc {
     color: #86275d;
 }
 .plug-caption.active .plugger-name, .plug-caption.active .achiever-desc, .plugger-bio .bio-header, .plug-feedback .media-body a,
 .purple {
     color: #5d3c9c;
 }
-.plug-caption.active .plug-categories, .plug-caption.active .likes, .plug-caption.active .views, .plug-caption.active
-.opp-plugger-name, .plugger-bio .bio-member, .plugger-info .location, .plug-date, .plugger-bio .location, .op-rating, .bio-rating
-i, .op-location, .op-time, .op-comment, .op-profile-value, #plugMe-tab .nav-link, #profileTab .nav-link, .plugger-bio .bio-member,
+.plug-caption.active .plug-categories, .plug-caption.active .plug-metrics, .plug-caption.activated .plug-metrics, .plugger-bio .bio-member, .plugger-info .location,
+.plug-date, .plugger-bio .location, .op-rating, .op-location, .op-time, .op-comment, .op-profile-value, #plugMe-tab .nav-link, #profileTab .nav-link, .plugger-bio .bio-member,
 .up-discliamer, .bio-msg label, .msg-status, .plug-feedback, .plug-feedback textarea, .card-body .bio-info .location, #wTab-content h5,
 .grey, .bio-info .location, .sub-body, .sub-footer, .plug-list a, #plugMe-tab2 .nav-link {
     color: #737477;
@@ -467,7 +470,7 @@ nav.navbar .dropdown-menu hr, .plug-list hr {
 #opportunityTab .nav-link.active, #addContentTab .nav-link.active, .counter, #walletTab .nav-link.active, .bg-yellow {
     background-color: #fdc242;
 }
-.op-name, .op-location, .op-time, .up-name, .up-desc, .op-profile-desc, .op-comment, .op-rating,#about .caption, #about .intro,
+.op-name, .op-location, .op-time, .up-name, .up-desc, .op-profile-desc, .op-comment,#about .caption, #about .intro,
 #about .my-5 span, .plug-msg, .no-decor, .drop-name, .drop-desc, .bio-opportunity .plug-card .plug-caption .plug-name,
 .plug-feedback .media-body a, .bio-info .name, .bio-info .desc, .bio-info .location {
     display: block;
@@ -548,7 +551,8 @@ input.vid-url:focus, .bio-msg .form-control-plaintext:focus, .plug-feedback text
 
 /*Styling for Sign In & Up*/
 .sign-page {
-    background-color: rgba(0, 0, 0, .675);
+    background: url(../images/sign-in.jpg) no-repeat center;
+    background-size: cover;
     min-height: 100vh;
 }
 .sign-page form, .sign-cnt, .sign-page input, .sign-page .form-check-label, .sign-page .form-control:focus, .sign-caption,
@@ -595,15 +599,22 @@ a.link-yellow, a.link-yellow:hover {
 }
 
 /*Styling for Buttons*/
-.plug-btn, .plug-btn-sm {
+.plug-btn, .plug-btn-sm, .plug-btn-metrics {
     padding: .25rem 1rem;
     border-radius: .5rem .125rem .5rem .125rem;
-    box-shadow: 0 0 5px #73747766;
     cursor: pointer;
+}
+.plug-btn, .plug-btn-sm {
+    box-shadow: 0 0 5px #73747766;
 }
 .plug-btn:hover, .plug-btn-sm:hover {
     color: inherit;
     box-shadow: 0 0 10px #73747780;
+}
+.plug-btn-metrics:hover {
+    color: inherit;
+    background-color: #e1e1e1;
+    box-shadow: 0 0 5px #e1e1e1;
 }
 .plug-btn-sm img {
     height: 12px;
@@ -659,7 +670,7 @@ a.link-yellow, a.link-yellow:hover {
 .plugger-img, .op-uploader img, .op-status img, .bio-msg .bio-img, .card-body .bio-img {
     height: 75px;
 }
-.plug-info, .drop-desc, nav.navbar .dropdown-menu .btn, .plug-feedback .media-body, .card-body .bio-info {
+.drop-desc, nav.navbar .dropdown-menu .btn, .plug-feedback .media-body, .card-body .bio-info {
     line-height: 1;
 }
 .plug-info .name, .plugger-bio .bio-info .name, #plugMe-tab .nav-link, nav.flex-column.side-nav a, .op-name, .sign-caption .hd,
@@ -669,8 +680,8 @@ a.link-yellow, a.link-yellow:hover {
 .plug-metrics .value, .op-profile-value, a.link-yellow, .msg-status {
     font-size: 0.875rem;
 }
-.plug-info .view-plugger-location, .plug-date, .op-time, .up-discliamer, .drop-desc, .plug-feedback
-.media-body .desc, .fd-time, .plug-list .icon {
+.plug-info .view-plugger-location, .plug-date, .op-time, .up-discliamer, .drop-desc, .plug-feedback .media-body .desc, .fd-time,
+.plug-list .icon, .plug-caption .plug-metrics {
     font-size: 0.675rem;
 }
 .plug-info hr, .plugger-bio hr, nav.flex-column.side-nav hr, #m-profileTab.form-control, .sub-card hr {
@@ -684,8 +695,8 @@ a.link-yellow, a.link-yellow:hover {
     width: 1rem;
     vertical-align: baseline;
 }
-.plug-tag, .sign-page .form-check-label, .plug-info .input-group, .plug-feedback,
-.plug-feedback .media-body .name, .card-body .bio-info .location,.bio-info .location {
+.plug-tag, .sign-page .form-check-label, .plug-info .input-group, .plug-feedback, .plug-feedback .media-body .name,
+.card-body .bio-info .location,.bio-info .location, .plug-btn-metrics {
     font-size: 0.75rem;
 }
 .plug-tag span, .plug-feedback .fa-close, .plug-list .op-name {
@@ -693,6 +704,9 @@ a.link-yellow, a.link-yellow:hover {
 }
 .plugger-info .plug-msg img{
     height: 1rem;
+}
+.w-0-75 {
+    width: 0.75rem !important;
 }
 .plug-info .input-group {
     height: 1.5rem;
@@ -841,7 +855,7 @@ footer nav .nav-link {
     nav.navbar .input-group {
         width: 55%;
     }
-    .plug-card {
+    .plug-card, .plug-btn.sgt {
         width: 250px
     }
     footer .social img{

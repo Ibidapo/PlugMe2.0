@@ -13,32 +13,175 @@
 <body style="overflow-x: hidden;">
     <!-- Navigation with Search accross all viewports -->
     <nav class="navbar fixed-top">
-        <a href="index.html" class="plugme-logo ml-md-4"><img src="images/logo.png"/></a>
+        <a href="index.html" class="plugme-logo ml-md-4"><img src="images/logo-orange.png"/></a>
         <div class="input-group input-group-sm ml-auto mr-0 mx-md-auto">
             <span class="input-group-btn">
                 <button class="btn pt-2 pb-1 px-3" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
             </span>
             <input type="text" class="form-control" placeholder="Plug Me to..." aria-label="Plug Me to...">
         </div>
-        <div class="dropdown show">
-            <a class="sign d-none d-md-block dropdown-toggle" href="#" role="button" id="dropdownNote" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img src="images/notification.png"/>
+        <div class="dropdown">
+            <a class="sign d-none d-md-block dropdown-toggle" href="#" role="button" id="dropdownNote" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <img src="images/notification.png">
             </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownNote">
-                <a class="dropdown-item" href="#">Action</a><hr>
-                <a class="dropdown-item" href="#">Another action</a><hr>
-                <a class="dropdown-item" href="#">Something else here</a><hr>
+            <div class="dropdown-menu show" aria-labelledby="dropdownNote">
+                <h5>Recent</h5>
+                <a class="dropdown-item" href="#">
+                    <div class="row">
+                        <div class="col-4 pr-1">
+                            <div class="media">
+                                <img class="align-self-center mr-1" src="images/user.png" alt="Generic placeholder image">
+                                <div class="media-body">
+                                    <span class="drop-name">Adewale</span>
+                                    <span class="drop-desc">Fashion Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 pl-1">
+                            posted a content
+                            <span class="drop-time">5 days ago</span>
+                        </div>
+                    </div>
+                </a>
+                <hr>
+                <a class="dropdown-item" href="#">
+                    <div class="row">
+                        <div class="col-4 pr-1">
+                            <div class="media">
+                                <img class="align-self-center mr-1" src="images/user.png" alt="Generic placeholder image">
+                                <div class="media-body">
+                                    <span class="drop-name">Adewale</span>
+                                    <span class="drop-desc">Fashion Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 pl-1">
+                            commented on your content
+                            <span class="drop-time">5 days ago</span>
+                        </div>
+                    </div>
+                </a>
+                <hr>
+                <a class="dropdown-item" href="#">
+                    <div class="row">
+                        <div class="col-4 pr-1">
+                            <div class="media">
+                                <img class="align-self-center mr-1" src="images/user.png" alt="Generic placeholder image">
+                                <div class="media-body">
+                                    <span class="drop-name">Adewale</span>
+                                    <span class="drop-desc">Fashion Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 pl-1">
+                            liked your content
+                            <span class="drop-time">5 days ago</span>
+                        </div>
+                    </div>
+                </a>
+                <hr>
+                <a class="dropdown-item" href="#">
+                    <div class="row">
+                        <div class="col-4 pr-1">
+                            <div class="media">
+                                <img class="align-self-center mr-1" src="images/user.png" alt="Generic placeholder image">
+                                <div class="media-body">
+                                    <span class="drop-name">Adewale</span>
+                                    <span class="drop-desc">Fashion Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 pl-1">
+                            is now a fan of yours
+                            <span class="drop-time">5 days ago</span>
+                        </div>
+                    </div>
+                </a>
+                <hr>
             </div>
+            <div class="red-counter d-none d-md-block text-center">54</div>
         </div>
-        <div class="dropdown show">
+        <div class="dropdown">
             <a class="sign d-none d-md-block dropdown-toggle" href="#" role="button" id="dropdownMsg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img src="images/massage.png"/>
+                <img src="images/massage.png">
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMsg">
-                <a class="dropdown-item" href="#">Action</a><hr>
-                <a class="dropdown-item" href="#">Another action</a><hr>
-                <a class="dropdown-item" href="#">Something else here</a><hr>
+                <h5>Recent</h5>
+                <a href="#" class="btn bg-yellow plug-btn">+</a>
+                <a class="dropdown-item" href="#">
+                    <div class="row">
+                        <div class="col-4 pr-1">
+                            <div class="media">
+                                <img class="align-self-center mr-1" src="images/user.png" alt="Generic placeholder image">
+                                <div class="media-body">
+                                    <span class="drop-name">Adewale</span>
+                                    <span class="drop-desc">Fashion Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 pl-1">
+                            messaged you
+                            <span class="drop-time">5 days ago</span>
+                        </div>
+                    </div>
+                </a>
+                <hr>
+                <a class="dropdown-item" href="#">
+                    <div class="row">
+                        <div class="col-4 pr-1">
+                            <div class="media">
+                                <img class="align-self-center mr-1" src="images/user.png" alt="Generic placeholder image">
+                                <div class="media-body">
+                                    <span class="drop-name">Adewale</span>
+                                    <span class="drop-desc">Fashion Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 pl-1">
+                            messaged you
+                            <span class="drop-time">5 days ago</span>
+                        </div>
+                    </div>
+                </a>
+                <hr>
+                <a class="dropdown-item" href="#">
+                    <div class="row">
+                        <div class="col-4 pr-1">
+                            <div class="media">
+                                <img class="align-self-center mr-1" src="images/user.png" alt="Generic placeholder image">
+                                <div class="media-body">
+                                    <span class="drop-name">Adewale</span>
+                                    <span class="drop-desc">Fashion Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 pl-1">
+                            messaged you
+                            <span class="drop-time">5 days ago</span>
+                        </div>
+                    </div>
+                </a>
+                <hr>
+                <a class="dropdown-item" href="#">
+                    <div class="row">
+                        <div class="col-4 pr-1">
+                            <div class="media">
+                                <img class="align-self-center mr-1" src="images/user.png" alt="Generic placeholder image">
+                                <div class="media-body">
+                                    <span class="drop-name">Adewale</span>
+                                    <span class="drop-desc">Fashion Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 pl-1">
+                            messaged you
+                            <span class="drop-time">5 days ago</span>
+                        </div>
+                    </div>
+                </a>
+                <hr>
             </div>
+            <div class="red-counter d-none d-md-block text-center">12</div>
         </div>
         <a href="#" class="sign d-none d-md-block mr-4"><span>John Doe</span>&nbsp;&nbsp;<img src="images/profile.png"/></a>
     </nav>
@@ -102,33 +245,12 @@
                                 <div class="col-6 text-right pl-1">30,594</div>
                                 <div class="col-6 pr-1"><img src="images/bio_like.png"/> Likes</div>
                                 <div class="col-6 text-right pl-1">2,843</div>
-                                <div class="col-6 pr-1"><img src="images/fan_base.png"/> Fan Of</div>
+                                <div class="col-6 pr-1"><a class="plug-btn-metrics" href="#"><img src="images/fan_base.png"/> Fan Of</a></div>
                                 <div class="col-6 text-right pl-1">621</div>
-                                <div class="col-6 pr-1"><img src="images/fan_of.png"/> Fan Base</div>
+                                <div class="col-6 pr-1"><a class="plug-btn-metrics" href="#"><img src="images/fan_of.png"/> Fan Base</a></div>
                                 <div class="col-6 text-right pl-1">231</div>
                             </div>
                         </div>
-                        <!-- <hr>
-                        <div class="col-12 bio-rating">
-                            <div class="row">
-                                <div class="col-6 col-md-12 col-lg-6 text-md-center text-lg-left">Achievements</div>
-                                <div class="col-6 col-md-12 col-lg-6 text-right text-md-center text-lg-right">
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-6 col-md-12 col-lg-6 text-md-center text-lg-left">Opportunities</div>
-                                <div class="col-6 col-md-12 col-lg-6 text-right text-md-center text-lg-right">
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div> -->
                         <hr>
                         <div class="col-12">
                             <div class="row">
@@ -516,11 +638,15 @@
                     </div>
                     <!-- Footer -->
                     <footer>
-                        <nav class="nav d-none d-md-flex nav-fill py-2">
+                        <nav class="nav d-none d-md-flex nav-fill">
                             <a class="nav-item nav-link" href="#">Terms & Conditions</a>
                             <a class="nav-item nav-link" href="#">Privacy Policy</a>
+                        </nav>
+                        <nav class="nav d-none d-md-flex nav-fill">
+                            <a class="nav-item nav-link" href="#">Our Blog</a>
                             <a class="nav-item nav-link" href="#">About PlugMe</a>
-                            <a class="nav-item nav-link" href="#">Blog</a>
+                        </nav>
+                        <nav class="nav d-none d-md-flex nav-fill mb-3">
                             <a class="nav-item nav-link" href="#">&copy 2018, PlugMe</a>
                         </nav>
                     </footer>

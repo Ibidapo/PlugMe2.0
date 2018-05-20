@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PlugMe | Messaging</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="overflow-x: hidden;">
+<!-- Navigation with Search accross all viewports -->
+<nav class="navbar fixed-top">
+    <a href="index.html" class="plugme-logo ml-md-4"><img src="images/logo.png"/></a>
+    <div class="input-group input-group-sm ml-auto mr-0 mx-md-auto">
+            <span class="input-group-btn">
+                <button class="btn pt-2 pb-1 px-3" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </span>
+        <input type="text" class="form-control" placeholder="Plug Me to..." aria-label="Plug Me to...">
+    </div>
+    <div class="dropdown">
+        <a class="sign d-none d-md-block dropdown-toggle" href="#" role="button" id="dropdownNote" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <img src="images/notification.png">
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownNote">
+            <h5>Recent</h5>
+            <a class="dropdown-item" href="#">
+                <div class="row">
+                    <div class="col-4 pr-1">
+                        <div class="media">
+                            <img class="align-self-center mr-1" src="images/user.png" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <span class="drop-name">Adewale</span>
+                                <span class="drop-desc">Fashion Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 pl-1">
+                        posted a content
+                        <span class="drop-time">5 days ago</span>
+                    </div>
+                </div>
+            </a>
+            <hr>
+            <a class="dropdown-item" href="#">
+                <div class="row">
+                    <div class="col-4 pr-1">
+                        <div class="media">
+                            <img class="align-self-center mr-1" src="images/user.png" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <span class="drop-name">Adewale</span>
+                                <span class="drop-desc">Fashion Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 pl-1">
+                        commented on your content
+                        <span class="drop-time">5 days ago</span>
+                    </div>
+                </div>
+            </a>
+            <hr>
+            <a class="dropdown-item" href="#">
+                <div class="row">
+                    <div class="col-4 pr-1">
+                        <div class="media">
+                            <img class="align-self-center mr-1" src="images/user.png" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <span class="drop-name">Adewale</span>
+                                <span class="drop-desc">Fashion Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 pl-1">
+                        liked your content
+                        <span class="drop-time">5 days ago</span>
+                    </div>
+                </div>
+            </a>
+            <hr>
+            <a class="dropdown-item" href="#">
+                <div class="row">
+                    <div class="col-4 pr-1">
+                        <div class="media">
+                            <img class="align-self-center mr-1" src="images/user.png" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <span class="drop-name">Adewale</span>
+                                <span class="drop-desc">Fashion Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 pl-1">
+                        is now a fan of yours
+                        <span class="drop-time">5 days ago</span>
+                    </div>
+                </div>
+            </a>
+            <hr>
+        </div>
+        <div class="red-counter d-none d-md-block text-center">54</div>
+    </div>
+    <div class="dropdown">
+        <a class="sign d-none d-md-block dropdown-toggle" href="#" role="button" id="dropdownMsg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="images/massage.png">
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMsg">
+            <h5>Recent</h5>
+            <a href="#" class="btn bg-yellow plug-btn">+</a>
+            <a class="dropdown-item" href="#">
+                <div class="row">
+                    <div class="col-4 pr-1">
+                        <div class="media">
+                            <img class="align-self-center mr-1" src="images/user.png" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <span class="drop-name">Adewale</span>
+                                <span class="drop-desc">Fashion Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 pl-1">
+                        messaged you
+                        <span class="drop-time">5 days ago</span>
+                    </div>
+                </div>
+            </a>
+            <hr>
+            <a class="dropdown-item" href="#">
+                <div class="row">
+                    <div class="col-4 pr-1">
+                        <div class="media">
+                            <img class="align-self-center mr-1" src="images/user.png" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <span class="drop-name">Adewale</span>
+                                <span class="drop-desc">Fashion Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 pl-1">
+                        messaged you
+                        <span class="drop-time">5 days ago</span>
+                    </div>
+                </div>
+            </a>
+            <hr>
+            <a class="dropdown-item" href="#">
+                <div class="row">
+                    <div class="col-4 pr-1">
+                        <div class="media">
+                            <img class="align-self-center mr-1" src="images/user.png" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <span class="drop-name">Adewale</span>
+                                <span class="drop-desc">Fashion Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 pl-1">
+                        messaged you
+                        <span class="drop-time">5 days ago</span>
+                    </div>
+                </div>
+            </a>
+            <hr>
+            <a class="dropdown-item" href="#">
+                <div class="row">
+                    <div class="col-4 pr-1">
+                        <div class="media">
+                            <img class="align-self-center mr-1" src="images/user.png" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <span class="drop-name">Adewale</span>
+                                <span class="drop-desc">Fashion Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 pl-1">
+                        messaged you
+                        <span class="drop-time">5 days ago</span>
+                    </div>
+                </div>
+            </a>
+            <hr>
+        </div>
+        <div class="red-counter d-none d-md-block text-center">12</div>
+    </div>
+    <a href="#" class="sign d-none d-md-block mr-4"><span>John Doe</span>&nbsp;&nbsp;<img src="images/profile.png"/></a>
+</nav>
+<!-- Application Navigation for Medium to Extra large Viewports -->
+<nav class="nav px-0 px-lg-3 d-none d-md-flex py-2" id="plugMe-tab2">
+    <a class="btn plug-btn-sm s-0875 white bg-yellow ml-3" href="index.html"><i class="fa fa-caret-left" aria-hidden="true"></i> Back</a>
+</nav>
+<!-- Main Body of Application -->
+<div class="container-fluid main-page no-ads">
+    <div class="container py-4" id="about">
+        <div class="row">
+            <div class="col-12 page-header text-center mt-5 mb-3">
+                <h3 class="d-none d-md-block">About Us</h3>
+                <h4 class="d-block d-md-none">About Us</h4>
+                <span class="intro">We plug creative individuals to opportunities in their local</span>
+                <span class="intro">environments and around the Globe.</span>
+                <span class="caption">"Where Creatives meet Opportunity"</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 d-none d-md-flex">
+                <div class="about-sign-up pl-3">
+                    <h6 class="text-center text-sm-left">Sign Up</h6>
+                    <p>Create a PlugMe account and update your portfolio.</p>
+                </div>
+                <div class="about-connect pl-3">
+                    <h6 class="text-center text-sm-left">Get Connected</h6>
+                    <p>Plug into opportunities that match your talent, interests, and rub minds with other creatives in your field.</p>
+                </div>
+            </div>
+            <div class="col-10 col-md-6 mx-auto about-graphic pb-3">
+                <img src="images/about_bg.png">
+            </div>
+            <div class="col-md-3 d-none d-md-flex">
+                <div class="about-fanbase pl-3">
+                    <h6 class="text-center text-sm-left">Expand your Fan-base</h6>
+                    <p>Build a loyal fan-base by letting your work do the talking.</p>
+                </div>
+                <div class="about-creatvt pl-3">
+                    <h6 class="text-center text-sm-left">Boost your creativity</h6>
+                    <p>Use PlugMe's exclusive features, and watch your career take off</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 my-5 text-center">
+                <span>"The platform that enables interaction between creatives and industry stakeholders, on all levels.</span>
+                <span> Take advantage of all our unique features to build and keep track of your career."</span>
+            </div>
+        </div>
+        <div class="row pb-5">
+            <div class="col-10 col-md-4">
+                <figure class="figure">
+                    <img src="images/about_trend.png" class="figure-img rounded" alt="">
+                    <figcaption class="figure-caption mt-3">
+                        <h5>Creativity</h5>
+                        <p class="text-justify">A platform where you can freely express your creativity and interest(s). PlugMe
+                            was designed for a wide scope of creatives within various fields(tags).<br>
+                            You create? We are the Plug.
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-10 col-md-4">
+                <figure class="figure">
+                    <img src="images/about_opp.png" class="figure-img rounded" alt="">
+                    <figcaption class="figure-caption mt-3">
+                        <h5>Opportunity</h5>
+                        <p class="text-justify">Finding creative services or talent(s) for a project or particular job has been
+                            made seamless. With our 'Opportunities' feature, notify creatives in any desired location and
+                            select the perfect match for the job.
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-10 col-md-4">
+                <figure class="figure">
+                    <img src="images/about_reach.png" class="figure-img rounded" alt="">
+                    <figcaption class="figure-caption mt-3">
+                        <h5>Community</h5>
+                        <p class="text-justify">PlugMe is a platform where creative talents, content creators and content
+                            lovers can connect.Feel free to reach out, share ideas and collaborate with talent in and outside
+                            your field.
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Bottom Footer on Mobile Viewports -->
+<nav class="nav nav-fill fixed-bottom d-flex d-md-none magenta s-0875 py-2">
+    <a class="nav-item nav-link" href="#">Gallery</a>
+    <a class="nav-item nav-link" href="#">Trending</a>
+    <a class="nav-item nav-link" href="profile.html">Profile</a>
+</nav>
+<!-- Required Jquery, Popper & Bootstrap scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

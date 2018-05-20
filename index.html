@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body style="overflow-x: hidden;">
-    <!-- Navigation with Search accross all viewports -->
+    <!-- Navigation with Search across all viewports -->
     <nav class="navbar fixed-top">
-        <a href="index.html" class="plugme-logo ml-md-4"><img src="images/logo.png"/></a>
+        <a href="index.html" class="plugme-logo ml-md-4"><img src="images/logo-orange.png"/></a>
         <div class="input-group input-group-sm ml-auto mr-0 mx-md-auto">
             <span class="input-group-btn">
                 <button class="btn pt-2 pb-1 px-3" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
@@ -40,11 +40,11 @@
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#Ads-Banner" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#Ads-Banner" role="button" data-slide="next">
-                        <span class="carousel-control-next-" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
@@ -105,12 +105,14 @@
                                         </div> -->
                                         <div class="col-12 plug-metrics magenta">
                                             <div class="row">
-                                                <div class="col-6 icon"><img src="images/bio_views.png"> Views</div>
+                                                <div class="col-6 icon mb-1 pr-0"><a class="plug-btn-metrics" href="#"><img src="images/bio_views.png"> Views</a></div>
                                                 <div class="col-6 text-right value">30,594</div>
-                                                <div class="col-6 icon"><img src="images/bio_like.png"> Likes</div>
+                                                <div class="col-6 icon mb-1 pr-0"><a class="plug-btn-metrics" href="#"><img src="images/bio_like.png"> Likes</a></div>
                                                 <div class="col-6 text-right value">2,843</div>
-                                                <div class="col-6 icon"><img src="images/feedback.png"> Feedback</div>
+                                                <div class="col-6 icon pr-0"><a class="plug-btn-metrics" href="#"><img src="images/feedback.png"> Feedback</a></div>
                                                 <div class="col-6 text-right value">621</div>
+                                                <div class="col-6 icon pr-0"><a class="plug-btn-metrics" href="#"><img src="images/share.png"> Share</a></div>
+                                                <div class="col-6 text-right value"><a class="plug-btn-metrics" href="#"><img src="images/flag.png"> Flag</a></div>
                                             </div>
                                         </div>
                                         <hr class="my-0 mx-auto">
@@ -213,8 +215,11 @@
                                                 <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
                                             </div>
                                             <hr>
-                                            <span class="likes">Likes</span>
-                                            <span class="views text-right">Views</span>
+                                            <div class="row plug-metrics">
+                                                <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                                <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                                <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -227,8 +232,11 @@
                                                 <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
                                             </div>
                                             <hr>
-                                            <span class="likes">Likes</span>
-                                            <span class="views text-right">Views</span>
+                                            <div class="row plug-metrics">
+                                                <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                                <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                                <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -241,8 +249,45 @@
                                                 <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
                                             </div>
                                             <hr>
-                                            <span class="likes">Likes</span>
-                                            <span class="views text-right">Views</span>
+                                            <div class="row plug-metrics">
+                                                <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                                <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                                <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <div class="row plug-metrics">
+                                            <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                            <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                            <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="col-sm-6 col-lg-4 col-xl-3">
+                                    <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                        <div class="plug-caption px-3 py-1">
+                                            <a href="#" class="plug-name">Max Payne</a>
+                                            <div class="plug-details d-none">
+                                                <a href="#" class="plugger-name">John Doe</a><br>
+                                                <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                            </div>
+                                            <hr>
+                                            <div class="row plug-metrics">
+                                                <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                                <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                                <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -255,8 +300,45 @@
                                                 <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
                                             </div>
                                             <hr>
-                                            <span class="likes">Likes</span>
-                                            <span class="views text-right">Views</span>
+                                            <div class="row plug-metrics">
+                                                <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                                <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                                <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <div class="row plug-metrics">
+                                            <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                            <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                            <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="col-sm-6 col-lg-4 col-xl-3">
+                                    <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                        <div class="plug-caption px-3 py-1">
+                                            <a href="#" class="plug-name">Max Payne</a>
+                                            <div class="plug-details d-none">
+                                                <a href="#" class="plugger-name">John Doe</a><br>
+                                                <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                            </div>
+                                            <hr>
+                                            <div class="row plug-metrics">
+                                                <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                                <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                                <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -269,54 +351,11 @@
                                                 <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
                                             </div>
                                             <hr>
-                                            <span class="likes">Likes</span>
-                                            <span class="views text-right">Views</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-lg-4 col-xl-3">
-                                    <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
-                                        <div class="plug-caption px-3 py-1">
-                                            <a href="#" class="plug-name">Max Payne</a>
-                                            <div class="plug-details d-none">
-                                                <a href="#" class="plugger-name">John Doe</a><br>
-                                                <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                            <div class="row plug-metrics">
+                                                <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                                <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                                <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
                                             </div>
-                                            <hr>
-                                            <span class="likes">Likes</span>
-                                            <span class="views text-right">Views</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-lg-4 col-xl-3">
-                                    <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
-                                        <div class="plug-caption px-3 py-1">
-                                            <a href="#" class="plug-name">Max Payne</a>
-                                            <div class="plug-details d-none">
-                                                <a href="#" class="plugger-name">John Doe</a><br>
-                                                <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
-                                            </div>
-                                            <hr>
-                                            <span class="likes">Likes</span>
-                                            <span class="views text-right">Views</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-lg-4 col-xl-3">
-                                    <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
-                                        <div class="plug-caption px-3 py-1">
-                                            <a href="#" class="plug-name">Max Payne</a>
-                                            <div class="plug-details d-none">
-                                                <a href="#" class="plugger-name">John Doe</a><br>
-                                                <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
-                                            </div>
-                                            <hr>
-                                            <div class="row">
-<div class="col-4"><img src=""images/views_grey.png/></div>
-<div class="col-4"><img src=""images/views_grey.png/></div>
-<div class="col-4"><img src=""images/views_grey.png/></div>
-</div>
-                                            <span class="views text-right">Views</span>
                                         </div>
                                     </div>
                                 </div>
@@ -343,9 +382,9 @@
                                         </div>
                                         <hr>
                                         <div class="row plug-metrics">
-                                            <div class="col-4 pr-0"><img src="images/views_grey.png"/></div>
-                                            <div class="col-4 px-1 text-center"><img src="images/likes_icon.png"/></div>
-                                            <div class="col-4 pl-0 text-right"><img src="images/fdbk_grey.png"/></div>
+                                            <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                            <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                            <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
                                         </div>
                                     </div>
                                 </div>
@@ -360,9 +399,9 @@
                                         </div>
                                         <hr>
                                         <div class="row plug-metrics">
-                                            <div class="col-4 pr-0"><img src="images/views_grey.png"/></div>
-                                            <div class="col-4 px-1 text-center"><img src="images/likes_icon.png"/></div>
-                                            <div class="col-4 pl-0 text-right"><img src="images/fdbk_grey.png"/></div>
+                                            <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                            <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                            <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
                                         </div>
                                     </div>
                                 </div>
@@ -377,9 +416,9 @@
                                         </div>
                                         <hr>
                                         <div class="row plug-metrics">
-                                            <div class="col-4 pr-0"><img src="images/views_grey.png"/></div>
-                                            <div class="col-4 px-1 text-center"><img src="images/likes_icon.png"/></div>
-                                            <div class="col-4 pl-0 text-right"><img src="images/fdbk_grey.png"/></div>
+                                            <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                            <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                            <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
                                         </div>
                                     </div>
                                 </div>
@@ -393,8 +432,11 @@
                                             <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
                                         </div>
                                         <hr>
-                                        <span class="likes">Likes</span>
-                                        <span class="views text-right">Views</span>
+                                        <div class="row plug-metrics">
+                                            <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                            <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                            <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -407,8 +449,42 @@
                                             <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
                                         </div>
                                         <hr>
-                                        <span class="likes">Likes</span>
-                                        <span class="views text-right">Views</span>
+                                        <div class="row plug-metrics">
+                                            <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                            <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                            <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card sgt mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption activated px-3 py-1">
+                                        <a href="#" class="plug-name">#Art</a>
+                                        <hr>
+                                        <div class="row plug-metrics">
+                                            <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                            <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                            <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="plug-btn sgt bg-yellow white d-block text-center mx-auto mb-3 mb-md-0">Follow</a>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 col-xl-3">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
+                                        <a href="#" class="plug-name">Max Payne</a>
+                                        <div class="plug-details d-none">
+                                            <a href="#" class="plugger-name">John Doe</a><br>
+                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        </div>
+                                        <hr>
+                                        <div class="row plug-metrics">
+                                            <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                            <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                            <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -421,8 +497,11 @@
                                             <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
                                         </div>
                                         <hr>
-                                        <span class="likes">Likes</span>
-                                        <span class="views text-right">Views</span>
+                                        <div class="row plug-metrics">
+                                            <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                            <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                            <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -435,8 +514,11 @@
                                             <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
                                         </div>
                                         <hr>
-                                        <span class="likes">Likes</span>
-                                        <span class="views text-right">Views</span>
+                                        <div class="row plug-metrics">
+                                            <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                            <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                            <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -449,8 +531,11 @@
                                             <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
                                         </div>
                                         <hr>
-                                        <span class="likes">Likes</span>
-                                        <span class="views text-right">Views</span>
+                                        <div class="row plug-metrics">
+                                            <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                            <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                            <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -463,8 +548,11 @@
                                             <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
                                         </div>
                                         <hr>
-                                        <span class="likes">Likes</span>
-                                        <span class="views text-right">Views</span>
+                                        <div class="row plug-metrics">
+                                            <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                            <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                            <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -477,8 +565,11 @@
                                             <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
                                         </div>
                                         <hr>
-                                        <span class="likes">Likes</span>
-                                        <span class="views text-right">Views</span>
+                                        <div class="row plug-metrics">
+                                            <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                            <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                            <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -491,8 +582,11 @@
                                             <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
                                         </div>
                                         <hr>
-                                        <span class="likes">Likes</span>
-                                        <span class="views text-right">Views</span>
+                                        <div class="row plug-metrics">
+                                            <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                            <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                            <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -505,8 +599,11 @@
                                             <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
                                         </div>
                                         <hr>
-                                        <span class="likes">Likes</span>
-                                        <span class="views text-right">Views</span>
+                                        <div class="row plug-metrics">
+                                            <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                            <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                            <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -519,8 +616,11 @@
                                             <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
                                         </div>
                                         <hr>
-                                        <span class="likes">Likes</span>
-                                        <span class="views text-right">Views</span>
+                                        <div class="row plug-metrics">
+                                            <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                            <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                            <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -533,8 +633,11 @@
                                             <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
                                         </div>
                                         <hr>
-                                        <span class="likes">Likes</span>
-                                        <span class="views text-right">Views</span>
+                                        <div class="row plug-metrics">
+                                            <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                            <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                            <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -547,8 +650,11 @@
                                             <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
                                         </div>
                                         <hr>
-                                        <span class="likes">Likes</span>
-                                        <span class="views text-right">Views</span>
+                                        <div class="row plug-metrics">
+                                            <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                            <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                            <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -561,8 +667,11 @@
                                             <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
                                         </div>
                                         <hr>
-                                        <span class="likes">Likes</span>
-                                        <span class="views text-right">Views</span>
+                                        <div class="row plug-metrics">
+                                            <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                            <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                            <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -575,8 +684,11 @@
                                             <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
                                         </div>
                                         <hr>
-                                        <span class="likes">Likes</span>
-                                        <span class="views text-right">Views</span>
+                                        <div class="row plug-metrics">
+                                            <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                            <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                            <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -589,36 +701,11 @@
                                             <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
                                         </div>
                                         <hr>
-                                        <span class="likes">Likes</span>
-                                        <span class="views text-right">Views</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4 col-xl-3">
-                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
-                                    <div class="plug-caption px-3 py-1">
-                                        <a href="#" class="plug-name">Max Payne</a>
-                                        <div class="plug-details d-none">
-                                            <a href="#" class="plugger-name">John Doe</a><br>
-                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
+                                        <div class="row plug-metrics">
+                                            <div class="col-4 pr-0"><img class="w-0-75" src="images/views_grey.png"/> 1,532</div>
+                                            <div class="col-4 px-1 text-center"><img class="w-0-75" src="images/likes_icon.png"/> 185</div>
+                                            <div class="col-4 pl-0 text-right"><img class="w-0-75" src="images/fdbk_grey.png"/> 92</div>
                                         </div>
-                                        <hr>
-                                        <span class="likes">Likes</span>
-                                        <span class="views text-right">Views</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4 col-xl-3">
-                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
-                                    <div class="plug-caption px-3 py-1">
-                                        <a href="#" class="plug-name">Max Payne</a>
-                                        <div class="plug-details d-none">
-                                            <a href="#" class="plugger-name">John Doe</a><br>
-                                            <a href="#" class="plug-categories mt-1">#GraphicDesign #Animation #VideoProduction</a>
-                                        </div>
-                                        <hr>
-                                        <span class="likes">Likes</span>
-                                        <span class="views text-right">Views</span>
                                     </div>
                                 </div>
                             </div>
@@ -627,7 +714,88 @@
                     <!-- 1/4 of page (housing tags and opportunities) -->
                     <div class="col-lg-3 col-md-4 mt-0 mt-md-2 mx-0 order-1 order-md-2">
                         <!-- Collection of Tags -->
-                        <div class="row plug-list mx-0 mt-5">
+                        <div id="accordion" class="mt-4 mb-3 d-md-none">
+                            <div class="row plug-list card mx-3">
+                                <div class="card-header col-12 text-center white pt-3 pb-1 bg-yellow" id="headingOne">
+                                    <a data-toggle="collapse" href="#tags" role="button" aria-expanded="false" aria-controls="tags">
+                                        <h5>Tags</h5>
+                                    </a>
+                                </div>
+                                <div id="tags" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body py-0">
+                                        <div class="col-12 text-center text-lg-left">
+                                            <a href="#" class="row pt-3 pb-2">
+                                                <div class="col-12 op-name mb-1">#Art </div>
+                                                <div class="col-4 pr-0"><img src="images/views_grey.png"/> 30,594</div>
+                                                <div class="col-4 px-2"><img src="images/likes_icon.png"/> 2,843</div>
+                                                <div class="col-4 pl-0"><img src="images/fdbk_grey.png"/> 11,556</div>
+                                            </a>
+                                        </div>
+                                        <hr class="my-0 mx-auto">
+                                        <div class="col-12 text-center text-lg-left">
+                                            <a href="#" class="row py-2">
+                                                <div class="col-12 op-name mb-1">#Fashion</div>
+                                                <div class="col-4 pr-0"><img src="images/views_grey.png"/> 30,594</div>
+                                                <div class="col-4 px-2"><img src="images/likes_icon.png"/> 2,843</div>
+                                                <div class="col-4 pl-0"><img src="images/fdbk_grey.png"/> 11,556</div>
+                                            </a>
+                                        </div>
+                                        <hr class="my-0 mx-auto">
+                                        <div class="col-12 text-center text-lg-left">
+                                            <a href="#" class="row py-2">
+                                                <div class="col-12 op-name mb-1">#Design</div>
+                                                <div class="col-4 pr-0"><img src="images/views_grey.png"/> 30,594</div>
+                                                <div class="col-4 px-2"><img src="images/likes_icon.png"/> 2,843</div>
+                                                <div class="col-4 pl-0"><img src="images/fdbk_grey.png"/> 11,556</div>
+                                            </a>
+                                        </div>
+                                        <hr class="my-0 mx-auto">
+                                        <div class="col-12 text-center text-lg-left">
+                                            <a href="#" class="row py-2">
+                                                <div class="col-12 op-name mb-1">#Photography</div>
+                                                <div class="col-4 pr-0"><img src="images/views_grey.png"/> 30,594</div>
+                                                <div class="col-4 px-2"><img src="images/likes_icon.png"/> 2,843</div>
+                                                <div class="col-4 pl-0"><img src="images/fdbk_grey.png"/> 11,556</div>
+                                            </a>
+                                        </div>
+                                        <hr class="my-0 mx-auto">
+                                        <div class="col-12 text-center text-lg-left">
+                                            <a href="#" class="row py-2">
+                                                <div class="col-12 op-name mb-1">#Technology</div>
+                                                <div class="col-4 pr-0"><img src="images/views_grey.png"/> 30,594</div>
+                                                <div class="col-4 px-2"><img src="images/likes_icon.png"/> 2,843</div>
+                                                <div class="col-4 pl-0"><img src="images/fdbk_grey.png"/> 11,556</div>
+                                            </a>
+                                        </div>
+                                        <hr class="my-0 mx-auto">
+                                        <div class="col-12 text-center text-lg-left">
+                                            <a href="#" class="row py-2">
+                                                <div class="col-12 op-name mb-1">#Craft </div>
+                                                <div class="col-4 pr-0"><img src="images/views_grey.png"/> 30,594</div>
+                                                <div class="col-4 px-2"><img src="images/likes_icon.png"/> 2,843</div>
+                                                <div class="col-4 pl-0"><img src="images/fdbk_grey.png"/> 11,556</div>
+                                            </a>
+                                        </div>
+                                        <hr class="my-0 mx-auto">
+                                        <div class="col-12 text-center text-lg-left">
+                                            <a href="#" class="row pt-2 pb-3">
+                                                <div class="col-12 op-name mb-1">#AudioVisuals</div>
+                                                <div class="col-4 pr-0"><img src="images/views_grey.png"/> 30,594</div>
+                                                <div class="col-4 px-2"><img src="images/likes_icon.png"/> 2,843</div>
+                                                <div class="col-4 pl-0"><img src="images/fdbk_grey.png"/> 11,556</div>
+                                            </a>
+                                        </div>
+                                        <hr class="my-0 mx-auto">
+                                        <div class="col-12 text-center">
+                                            <a href="#" class="row py-2">
+                                                <div class="col-12 op-name mb-1">See More</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row plug-list mx-0 mt-5 d-none d-md-flex">
                             <div class="col-12 text-center white pt-3 pb-1 bg-yellow">
                                 <h5>Tags</h5>
                             </div>
@@ -693,9 +861,15 @@
                                     <div class="col-4 pl-0"><img src="images/fdbk_grey.png"/> 11,556</div>
                                 </a>
                             </div>
+                            <hr class="my-0 mx-auto">
+                            <div class="col-12 text-center">
+                                <a href="#" class="row py-2">
+                                    <div class="col-12 op-name mb-1">See More</div>
+                                </a>
+                            </div>
                         </div>
                         <!-- Collection of Opportunities -->
-                        <div class="row plug-list mx-0 my-4">
+                        <div class="row plug-list mx-0 my-4 d-none d-md-flex">
                             <div class="col-12 text-center white pt-3 pb-1 bg-yellow">
                                 <h5>Opportunities</h5>
                             </div>
@@ -770,11 +944,15 @@
                         </div>
                         <!-- Footer -->
                         <footer>
-                            <nav class="nav d-none d-md-flex nav-fill py-2">
+                            <nav class="nav d-none d-md-flex nav-fill">
                                 <a class="nav-item nav-link" href="#">Terms & Conditions</a>
                                 <a class="nav-item nav-link" href="#">Privacy Policy</a>
+                            </nav>
+                            <nav class="nav d-none d-md-flex nav-fill">
+                                <a class="nav-item nav-link" href="#">Our Blog</a>
                                 <a class="nav-item nav-link" href="#">About PlugMe</a>
-                                <a class="nav-item nav-link" href="#">Blog</a>
+                            </nav>
+                            <nav class="nav d-none d-md-flex nav-fill mb-3">
                                 <a class="nav-item nav-link" href="#">&copy 2018, PlugMe</a>
                             </nav>
                         </footer>
