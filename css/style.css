@@ -599,7 +599,7 @@ a.link-yellow, a.link-yellow:hover {
 }
 
 /*Styling for Buttons*/
-.plug-btn, .plug-btn-sm, .plug-btn-metrics {
+.plug-btn, .plug-btn-sm {
     padding: .25rem 1rem;
     border-radius: .5rem .125rem .5rem .125rem;
     cursor: pointer;
@@ -613,8 +613,7 @@ a.link-yellow, a.link-yellow:hover {
 }
 .plug-btn-metrics:hover {
     color: inherit;
-    background-color: #e1e1e1;
-    box-shadow: 0 0 5px #e1e1e1;
+    text-decoration: underline !important;
 }
 .plug-btn-sm img {
     height: 12px;
@@ -692,11 +691,11 @@ a.link-yellow, a.link-yellow:hover {
     vertical-align: text-bottom;
 }
 .plug-metrics img, .plug-list img {
-    width: 1rem;
+    width: 0.875rem;
     vertical-align: baseline;
 }
 .plug-tag, .sign-page .form-check-label, .plug-info .input-group, .plug-feedback, .plug-feedback .media-body .name,
-.card-body .bio-info .location,.bio-info .location, .plug-btn-metrics {
+.card-body .bio-info .location,.bio-info .location, .s-075 {
     font-size: 0.75rem;
 }
 .plug-tag span, .plug-feedback .fa-close, .plug-list .op-name {
