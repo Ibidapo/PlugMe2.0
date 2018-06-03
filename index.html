@@ -65,17 +65,50 @@
                     <div class="modal-body">
                         <div class="container-fluid">
                             <div class="row mb-4">
+                                <!-- Back Button to escape content view -->
                                 <div class="col-12 mb-4">
                                     <button type="button" class="btn plug-btn bg-yellow white" data-dismiss="modal">
                                         <i class="fa fa-caret-left" aria-hidden="true"></i> Back
                                     </button>
                                 </div>
+                                <!-- Plug Content Section -->
                                 <div class="col-12 col-md-8 mb-4">
                                     <div class="plug-content">
-
+                                        <div id="entryGallery" class="carousel slide" data-ride="carousel" data-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block" src="images/cubic_sphere-wallpaper-1366x768.jpg" alt="First slide">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block" src="images/the_three_balls-wallpaper-1366x768.jpg" alt="Second slide">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block" src="images/wall_of_rocks-wallpaper-1366x768.jpg" alt="Third slide">
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#entryGallery" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#entryGallery" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                        <div class="plug-description p-3 d-none">
+                                            Art is part of our human soul. It is dreams emerging from a part of ourselves, a way to 
+                                            communicate with the deeper self of both the artist and others. The same piece invokes 
+                                            different emotions depending on the person, their mood, their time of life. Art is pictures;
+                                            art is sculpture; art is the creative word; art is music. We are all artists in our various
+                                            ways, all born to be creative.
+                                            <a class="float-left plug-btn-sm btn bg-yellow white mt-3" href="#"><img src="images/share.png" height="24px"/> Share</a>
+                                            <a class="float-right plug-btn-sm btn bg-yellow white mt-3" href="#"><img src="images/flag.png" height="24px"/> Flag</a>
+                                        </div>
                                     </div>
                                 </div>
+                                <!-- Plug Bio Section -->
                                 <div class="col-12 col-md-4 mb-4 pl-2">
+                                    <!-- Plug Info Section -->
                                     <div class="row plug-info mx-0 py-3">
                                         <div class="col-12">
                                             <figure class="figure text-center mb-0">
@@ -89,31 +122,15 @@
                                             </figure>
                                         </div>
                                         <hr class="my-0 mx-auto">
-                                        <!-- <div class="col-12 plug-metrics magenta">
-                                            <div class="row text-center">
-                                                <div class="col-4 align-self-center pr-2">
-                                                    <img src="images/bio_views.png"/> 30,594
-                                                </div>
-                                                <div class="col-4 px-0">
-                                                    <a href="#" class="btn plug-btn-sm bg-grey magenta px-2">
-                                                        <img src="images/bio_like.png"/> 2,843
-                                                    </a>
-                                                </div>
-                                                <div class="col-4 align-self-center pl-2">
-                                                    <img src="images/feedback.png"/> 621
-                                                </div>
-                                            </div>
-                                        </div> -->
                                         <div class="col-12 plug-metrics magenta s-075">
                                             <div class="row">
                                                 <div class="col-6 icon mb-1 pr-0"><a class="plug-btn-metrics" href="#"><img src="images/bio_views.png"> Views</a></div>
                                                 <div class="col-6 text-right value">30,594</div>
                                                 <div class="col-6 icon mb-1 pr-0"><a class="plug-btn-metrics" href="#"><img src="images/bio_like.png"> Likes</a></div>
                                                 <div class="col-6 text-right value">2,843</div>
-                                                <div class="col-6 icon pr-0"><a class="plug-btn-metrics" href="#"><img src="images/feedback.png"> Feedback</a></div>
+                                                <div class="col-6 icon pr-0"><a class="plug-btn-metrics" id="fdbk_trigger" href="#"><img src="images/feedback.png"> Feedback</a></div>
                                                 <div class="col-6 text-right value">621</div>
-                                                <div class="col-6 icon pr-0"><a class="plug-btn-metrics" href="#"><img src="images/share.png"> Share</a></div>
-                                                <div class="col-6 text-right value"><a class="plug-btn-metrics" href="#"><img src="images/flag.png"> Flag</a></div>
+                                                <div class="col-12 text-center"><a class="plug-btn-metrics" href="#" id="desc_trigger">See Description</a></div>
                                             </div>
                                         </div>
                                         <hr class="my-0 mx-auto">
@@ -125,10 +142,12 @@
                                         </div>
                                         <div class="col-12 plug-date text-right">Posted: Dec 14, 2017.</div>
                                     </div>
-                                    <!-- <div class="row plug-feedback no-gutters pr-0">
-                                        <i class="fa fa-close" aria-hidden="true"></i>
-                                        <div style="overflow-y: scroll; height: 300px; width: 100%">
-                                            <div class="col-12 p-0">
+                                    <!-- Plug Feedback Section -->
+                                    <div class="row plug-feedback mx-0 d-none">
+                                        <a href="#" id="fdbk_cancel"><img src="images/remove.png" /></a>
+                                        <div class="col-12 text-center white py-1 bg-yellow" style="height: 32px;">Feedbacks</div>
+                                        <div style="overflow-y: scroll; height: inherit; width: 100%; height: 300px">
+                                            <div class="col-12 ">
                                                 <div class="media">
                                                     <img class="align-self-center mr-2" src="images/user.png" alt="Generic placeholder image">
                                                     <div class="media-body mt-1">
@@ -136,11 +155,10 @@
                                                         <a href="#" class="desc">Fashion Designer</a>
                                                     </div>
                                                 </div>
-                                                <p>Awesome job... would like to work with you</p>
-                                                <span class="fd-time">5 Days ago</span>
-                                                <hr>
+                                                <p class="my-1 s-075">Awesome job... would like to work with you</p>
                                             </div>
-                                            <div class="col-12 p-0">
+                                            <hr>
+                                            <div class="col-12 ">
                                                 <div class="media">
                                                     <img class="align-self-center mr-2" src="images/user.png" alt="Generic placeholder image">
                                                     <div class="media-body mt-1">
@@ -148,11 +166,10 @@
                                                         <a href="#" class="desc">Fashion Designer</a>
                                                     </div>
                                                 </div>
-                                                <p>Awesome job... would like to work with you</p>
-                                                <span class="fd-time">5 Days ago</span>
-                                                <hr>
+                                                <p class="my-1 s-075">Awesome job... would like to work with you</p>
                                             </div>
-                                            <div class="col-12 p-0">
+                                            <hr>
+                                            <div class="col-12 ">
                                                 <div class="media">
                                                     <img class="align-self-center mr-2" src="images/user.png" alt="Generic placeholder image">
                                                     <div class="media-body mt-1">
@@ -160,11 +177,10 @@
                                                         <a href="#" class="desc">Fashion Designer</a>
                                                     </div>
                                                 </div>
-                                                <p>Awesome job... would like to work with you</p>
-                                                <span class="fd-time">5 Days ago</span>
-                                                <hr>
+                                                <p class="my-1 s-075">Awesome job... would like to work with you</p>
                                             </div>
-                                            <div class="col-12 p-0">
+                                            <hr>
+                                            <div class="col-12 ">
                                                 <div class="media">
                                                     <img class="align-self-center mr-2" src="images/user.png" alt="Generic placeholder image">
                                                     <div class="media-body mt-1">
@@ -172,11 +188,10 @@
                                                         <a href="#" class="desc">Fashion Designer</a>
                                                     </div>
                                                 </div>
-                                                <p>Awesome job... would like to work with you</p>
-                                                <span class="fd-time">5 Days ago</span>
-                                                <hr>
+                                                <p class="my-1 s-075">Awesome job... would like to work with you</p>
                                             </div>
-                                            <div class="col-12 p-0">
+                                            <hr>
+                                            <div class="col-12 ">
                                                 <div class="media">
                                                     <img class="align-self-center mr-2" src="images/user.png" alt="Generic placeholder image">
                                                     <div class="media-body mt-1">
@@ -184,16 +199,15 @@
                                                         <a href="#" class="desc">Fashion Designer</a>
                                                     </div>
                                                 </div>
-                                                <p>Awesome job... would like to work with you</p>
-                                                <span class="fd-time">5 Days ago</span>
-                                                <hr>
+                                                <p class="my-1 s-075">Awesome job... would like to work with you</p>
                                             </div>
+                                            <hr>
                                         </div>
                                         <div class="col-12 feed">
                                             <form>
                                                 <div class="form-row">
                                                     <div class="col pl-0">
-                                                        <textarea class="form-control-plaintext" id="comment" placeholder="Write your comment" rows="2"></textarea>
+                                                        <textarea class="form-control-plaintext s-075" id="comment" placeholder="Write your comment" rows="2"></textarea>
                                                     </div>
                                                     <div class="col-auto">
                                                        <a class="btn plug-btn-sm bg-yellow mt-3 mr-2" href="#">Post</a>
@@ -201,7 +215,7 @@
                                                 </div>
                                             </form>
                                         </div>
-                                    </div> -->
+                                    </div>
                                 </div>
                             </div>
                             <div class="row page-content">
@@ -441,8 +455,8 @@
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-4 col-xl-3">
-                                <div class="plug-card sgt mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
-                                    <div class="plug-caption activated px-3 py-1">
+                                <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
+                                    <div class="plug-caption px-3 py-1">
                                         <a href="#" class="plug-name">#Art</a>
                                         <hr>
                                         <div class="row plug-metrics">
@@ -452,7 +466,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <a class="plug-btn sgt bg-yellow white d-block text-center mx-auto mb-3 mb-md-0">Follow</a>
                             </div>
                             <div class="col-sm-6 col-lg-4 col-xl-3">
                                 <div class="plug-card mt-2 mb-3 mx-auto" data-toggle="modal" data-target="#plugModal">
@@ -696,18 +709,18 @@
                     </div>
                     <!-- 1/4 of page (housing tags and opportunities) -->
                     <div class="col-lg-3 col-md-4 mt-0 mt-md-2 mx-0 order-1 order-md-2">
-                        <!-- Collection of Tags -->
+                        <!-- Collection of Tags on Mobile Viewports only -->
                         <div id="accordion" class="mt-4 mb-3 d-md-none">
                             <div class="row plug-list card mx-1">
-                                <div class="card-header col-12 text-center white pt-3 pb-1 bg-yellow" id="headingOne">
+                                <div class="card-header col-12 text-center white py-2 px-0 bg-yellow" id="headingOne">
                                     <a data-toggle="collapse" href="#tags" role="button" aria-expanded="false" aria-controls="tags">
-                                        <h5>Tags</h5>
+                                        <h5 class="mb-0">Tags</h5>
                                     </a>
                                 </div>
                                 <div id="tags" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                                     <div class="card-body py-0 px-0">
                                         <div class="col-12 text-center text-lg-left">
-                                            <a href="#" class="row pt-3 pb-2">
+                                            <a href="#" class="row py-2">
                                                 <div class="col-12 op-name mb-1">#Art </div>
                                                 <div class="col-4 pr-0"><img src="images/views_grey.png"/> 30,594</div>
                                                 <div class="col-4 px-2"><img src="images/likes_icon.png"/> 2,843</div>
@@ -778,12 +791,13 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Collection of Tags on Medium and Larger Viewports -->
                         <div class="row plug-list mx-0 mt-5 d-none d-md-flex">
-                            <div class="col-12 text-center white pt-3 pb-1 bg-yellow">
-                                <h5>Tags</h5>
+                            <div class="col-12 text-center white py-2 bg-yellow">
+                                <h5 class="mb-0">Tags</h5>
                             </div>
                             <div class="col-12 text-center text-lg-left">
-                                <a href="#" class="row pt-3 pb-2">
+                                <a href="#" class="row py-2">
                                     <div class="col-12 op-name mb-1">#Art </div>
                                     <div class="col-4 pr-0"><img src="images/views_grey.png"/> 30,594</div>
                                     <div class="col-4 px-2"><img src="images/likes_icon.png"/> 2,843</div>
@@ -851,13 +865,13 @@
                                 </a>
                             </div>
                         </div>
-                        <!-- Collection of Opportunities -->
+                        <!-- Collection of Opportunities for Medium and Larger Viewports -->
                         <div class="row plug-list mx-0 my-4 d-none d-md-flex">
-                            <div class="col-12 text-center white pt-3 pb-1 bg-yellow">
-                                <h5>Opportunities</h5>
+                            <div class="col-12 text-center white py-2 bg-yellow">
+                                <h5 class="mb-0">Opportunities</h5>
                             </div>
                             <div class="col-12 text-center text-lg-left">
-                                <a href="op_achieved.html" class="row pt-3 pb-2">
+                                <a href="op_achieved.html" class="row py-2">
                                     <div class="col-12 op-name">Bill board Advert</div>
                                     <div class="col-12 op-location">#Photography #Technology #AudioVisual</div>
                                     <div class="col-12 op-location">Lagos, Nigeria</div>

@@ -36,7 +36,7 @@ nav.navbar .sign span, nav.navbar .sign:hover, nav.navbar .dropdown-menu .dropdo
 #about figure h5, nav.navbar .dropdown-menu .dropdown-item .media {
     color: #fdc242;
 }
-nav.navbar .dropdown-toggle::after, .plug-feedback, .add-exp, .plug-card .plug-action {
+nav.navbar .dropdown-toggle::after, .add-exp, .plug-card .plug-action {
     display: none;
 }
 nav.navbar .dropdown-menu {
@@ -132,9 +132,10 @@ nav.navbar .input-group-sm>.input-group-btn>.btn:hover {
     height: 100%;
 }
 
+
 /*Styling for Content Area Navbar*/
 #plugMe-tab, #mobile-plugMe-tab, .plugger-bio, .bio-gallery, .bio-opportunity, .bio-achievement, .bio-msg, .no-decor.add, .vid-url,
-.plug-feedback .col-12 {
+.plug-feedback, .modal-body .plug-content {
     position: relative;
 }
 #plugMe-tab, #plugMe-tab2 , #mobile-plugMe-tab {
@@ -156,6 +157,7 @@ nav.navbar .input-group-sm>.input-group-btn>.btn:hover {
 #plugMe-tab .nav-link.active, #plugMe-tab2 .nav-link.active, #mobile-plugMe-tab, #profileTab .nav-link.active {
     font-weight: 400;
 }
+
 
 /*Styling for Mobile Application Navigation*/
 nav#mobile-plugMe-tab {
@@ -226,6 +228,7 @@ nav#mobile-plugMe-tab {
     margin-top: 111px;
 }
 
+
 /*Styling for Content Area*/
 .main-page {
     background: url(../images/wallpaper.png) no-repeat center;
@@ -236,6 +239,7 @@ nav#mobile-plugMe-tab {
     color: #5d3c9c;
     font-weight: 500;
 }
+
 
 /*Styling for Plug Cards*/
 .plug-card {
@@ -266,7 +270,7 @@ nav#mobile-plugMe-tab {
     transition: max-height 1.5s ease !important;
     -webkit-transition: max-height 1.5s ease; /* Safari */
 }
-.plug-caption, .plug-caption.active, .plug-caption.activated {
+.plug-caption, .plug-caption.active, .plug-caption.activated, .plug-description {
     box-shadow: 0 0 5px #73747799;
 }
 .plug-name, .plugger-bio .bio-rating, .plugger-bio .bio-header, .plug-metrics, .plug-date, #opportunityTab .nav-lnk,
@@ -366,7 +370,7 @@ nav#mobile-plugMe-tab {
     width: 100%;
     height: 100%;
 }
-nav.navbar .dropdown-menu hr, .plug-list hr {
+nav.navbar .dropdown-menu hr, .plug-list hr, .plug-feedback hr {
     width: 80%;
 }
 
@@ -376,7 +380,7 @@ nav.navbar .dropdown-menu hr, .plug-list hr {
     width: 100%;
 }
 .about-sign-up, .about-connect, .about-fanbase, .about-creatvt, .add-sym, .add-exp, .red-counter, .drop-time, nav.navbar .dropdown-menu .btn,
-.msg-status, .plug-card .plug-cancel, .plug-card .plug-action, .fd-time, .plug-feedback .fa-close, .plug-feedback {
+.msg-status, .plug-card .plug-cancel, .plug-card .plug-action {
     position: absolute;
 }
 .about-sign-up, .about-connect, .plug-card .plug-cancel {
@@ -694,7 +698,7 @@ a.link-yellow, a.link-yellow:hover {
     width: 0.875rem;
     vertical-align: baseline;
 }
-.plug-tag, .sign-page .form-check-label, .plug-info .input-group, .plug-feedback, .plug-feedback .media-body .name,
+.plug-tag, .sign-page .form-check-label, .plug-info .input-group, .plug-feedback .media-body .name,
 .card-body .bio-info .location,.bio-info .location, .s-075 {
     font-size: 0.75rem;
 }
@@ -726,19 +730,27 @@ a.link-yellow, a.link-yellow:hover {
 .fd-time, .drop-time {
     font-size: 0.5rem;
 }
-.plug-feedback .fa-close {
-    padding: .5rem;
-    top: 1rem;
-    right: 1.5rem;
-    z-index: 1;
-    cursor: pointer;
+#fdbk_cancel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+#fdbk_cancel img {
+    height: 2rem;
+}
+.plug-description {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,.7);
+    color: #cfd0d1;
 }
 
 /*Styling for Bio Message Page*/
 .bio-msg .form-control-plaintext, .plug-feedback textarea, .add-sym {
     width: 100%;
 }
-.bio-msg textarea.form-control-plaintext, .plug-feedback textarea, .modal-body .plug-content, .sub-card, .plug-list {
+.bio-msg textarea.form-control-plaintext, .plug-feedback textarea, .modal-body .plug-content, .sub-card, .plug-list, .plug-feedback {
     overflow: hidden;
 }
 
