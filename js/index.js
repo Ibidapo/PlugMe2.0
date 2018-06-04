@@ -48,8 +48,14 @@ $(document).ready(function(){
     $('#desc_trigger').click(function(){
         $('.plug-description').toggleClass('d-none');
     })
+    
+    $('#footer-menu').click(function(){
+        $(this).children('i').toggleClass('d-none');
+        $('div.extra').toggleClass('d-none');
 
-    $('.bio-opportunity .plug-card').mouseenter(function(){
+    })
+
+    $('.bio-opportunity .plug-card, .plug-card.tag').mouseenter(function(){
         $(this).children('.plug-action').fadeIn();
     }).mouseleave(function(){
         $(this).children('.plug-action').fadeOut();

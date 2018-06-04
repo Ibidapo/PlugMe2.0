@@ -48,6 +48,9 @@ nav.navbar .dropdown-menu {
     width: 375px;
     line-height: 1;
 }
+nav.navbar .dropdown-menu.bio {
+    width: 100px;
+}
 nav.navbar .dropdown-menu .btn {
     top: 0.875rem;
     right: 0.875rem;
@@ -60,7 +63,7 @@ nav.navbar .dropdown-menu .dropdown-item {
     font-size: 0.875rem;
     font-weight: 300;
 }
-nav.navbar .dropdown-menu img, nav.fixed-bottom img {
+nav.navbar .dropdown-menu img {
     height: 1.75rem;
 }
 nav.navbar .dropdown-menu .dropdown-item:focus, nav.navbar .dropdown-menu .dropdown-item:hover {
@@ -88,7 +91,7 @@ nav.navbar .dropdown-menu hr, .plug-feedback hr {
 
 
 /*Styling for Input Groups*/
-nav.navbar .input-group .form-control {
+nav.navbar .input-group .form-control, footer.about .input-group-sm .form-control {
     background-color: white;
     font-size: 0.875rem;
     border: #737477;
@@ -97,7 +100,7 @@ nav.navbar .input-group .form-control {
 .input-group .form-control:focus {
     box-shadow: none;
 }
-nav.navbar .input-group-sm>.input-group-btn>.btn {
+nav.navbar .input-group-sm>.input-group-btn>.btn, footer.about .input-group-sm>.input-group-btn>.btn {
     background-image: linear-gradient(to bottom, #f7f7f7 0%, #bcbaba 100%);
     cursor: pointer;
     color: #5d3c9c;
@@ -246,6 +249,7 @@ nav#mobile-plugMe-tab {
     position: relative;
     background-color: white;
     height: 250px;
+    max-width: 225px;
     cursor: pointer;
     overflow: hidden;
 }
@@ -365,6 +369,9 @@ nav#mobile-plugMe-tab {
 .plug-card .plug-action {
     top: 2.5rem
 }
+.plug-card.tag .plug-action {
+    top: 6rem
+}
 .plug-card > img {
     object-fit: cover;
     width: 100%;
@@ -379,7 +386,7 @@ nav.navbar .dropdown-menu hr, .plug-list hr, .plug-feedback hr {
     object-fit: cover;
     width: 100%;
 }
-.about-sign-up, .about-connect, .about-fanbase, .about-creatvt, .add-sym, .add-exp, .red-counter, .drop-time, nav.navbar .dropdown-menu .btn,
+.about-sign-up, .about-connect, .about-fanbase, .about-creatvt, .add-sym, .add-exp, .red-counter, .drop-time, nav.navbar .dropdown-menu .btn.add,
 .msg-status, .plug-card .plug-cancel, .plug-card .plug-action {
     position: absolute;
 }
@@ -448,7 +455,7 @@ nav.navbar .dropdown-menu hr, .plug-list hr, .plug-feedback hr {
 .plugger-bio hr, .bio-opportunity hr, .bio-achievement hr, .bio-msg hr {
     margin: 1rem auto;
 }
-.plug-msg img, .plug-action img {
+.plug-msg img, .plug-action img, nav.fixed-bottom img {
     height: 1.25rem !important;
 }
 .bio-gallery .form-control, .bio-opportunity .form-control, .bio-gallery .form-control:focus, .bio-opportunity .form-control:focus {
@@ -612,18 +619,18 @@ a.link-yellow, a.link-yellow:hover {
     box-shadow: 0 0 5px #73747766;
 }
 .plug-btn:hover, .plug-btn-sm:hover {
-    color: inherit;
+    color: #5d3c9c;
     box-shadow: 0 0 10px #73747780;
 }
-.plug-btn-metrics:hover {
-    color: inherit;
+.plug-btn-metrics:hover, footer nav .nav-link:hover {
+    color: #86275d;
     text-decoration: underline !important;
 }
 .plug-btn-sm img {
     height: 12px;
     vertical-align: baseline;
 }
-.plug-btn[data-toggle="collapse"] i {
+.plug-btn[data-toggle="collapse"] i, #footer-menu i {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
@@ -631,7 +638,7 @@ a.link-yellow, a.link-yellow:hover {
     transform: rotate(0deg);
     transition: .5s ease-in-out;
 }
-.plug-btn[data-toggle="collapse"] i.active {
+.plug-btn[data-toggle="collapse"] i.active, #footer-menu i.active {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
@@ -677,7 +684,7 @@ a.link-yellow, a.link-yellow:hover {
     line-height: 1;
 }
 .plug-info .name, .plugger-bio .bio-info .name, #plugMe-tab .nav-link, nav.flex-column.side-nav a, .op-name, .sign-caption .hd,
-#profileTab .nav-link, .card-body .bio-info .name, .bio-msg .bio-info .name, .sub-head, .sub-body, .fa-search, #plugMe-tab2 .nav-link {
+#profileTab .nav-link, .card-body .bio-info .name, .bio-msg .bio-info .name, .sub-head, .fa-search, #plugMe-tab2 .nav-link {
     font-size: 1.125rem;
 }
 .plug-metrics .value, .op-profile-value, a.link-yellow, .msg-status {
@@ -702,7 +709,7 @@ a.link-yellow, a.link-yellow:hover {
 .card-body .bio-info .location,.bio-info .location, .s-075 {
     font-size: 0.75rem;
 }
-.plug-tag span, .plug-feedback .fa-close, .plug-list .op-name {
+.plug-tag span, .plug-feedback .fa-close, .plug-list .op-name, footer nav.connect .nav-link i, #footer-menu i {
     font-size: 1rem;
 }
 .plugger-info .plug-msg img{
@@ -742,7 +749,7 @@ a.link-yellow, a.link-yellow:hover {
 .plug-description {
     position: absolute;
     bottom: 0;
-    background: rgba(0,0,0,.7);
+    background: rgba(0,0,0,.85);
     color: #cfd0d1;
 }
 
@@ -769,6 +776,50 @@ footer, .sign-caption p, #plugMe-tab .nav-link, #plugMe-tab2 .nav-link, #profile
 footer nav .nav-link {
     color: #86275d;
     font-size: 0.75rem;
+}
+footer nav.connect .nav-link {
+    color: white;
+    font-size: 0.875rem;
+    padding: .5rem 1rem .5rem 0;
+}
+footer.about {
+    background-color: #363435;
+    color: white;
+    font-size: 0.875rem;
+}
+footer.about .input-group .form-control{
+    border-radius: .5rem 0 0 .125rem;
+}
+footer.about .input-group-sm>.input-group-btn>.btn {
+    border-radius: 0 .125rem .5rem 0 ;
+}
+footer.about .social img, .logo-orange img {
+    height: 65px;
+}
+footer.about nav.bottom {
+    background-color: #191919;
+}
+footer.about nav.bottom .nav-link {
+    color: white;
+    font-size: 0.75rem;
+    padding: 0 1rem;
+}
+footer.about nav.bottom .nav-link:nth-child(2), footer.about nav.bottom .nav-link:nth-child(3) {
+    border-right: 1px solid white;
+}
+footer.about nav .nav-link.copyright {
+    position: absolute;
+    left: 1.5rem;
+}
+footer .input-group.input-group-sm {
+    width: auto;
+    max-width: 350px;
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+    footer.about .social img{
+        height: 50px;
+    }
 }
 
 @media (min-width: 576px) {
@@ -829,6 +880,9 @@ footer nav .nav-link {
     .plug-metrics {
         font-size: 0.75rem;
     }
+    footer .social img{
+        height: 40px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -850,11 +904,10 @@ footer nav .nav-link {
     .plugger-bio {
         max-width: 300px;
     }
-    footer nav .nav-link {
+    footer.about nav .nav-link {
         border: none !important;
-        padding: .5rem 1rem;
     }
-    footer .social img{
+    footer.about .social img{
         height: 55px;
     }
 }
@@ -869,7 +922,7 @@ footer nav .nav-link {
     .plug-card, .plug-btn.sgt {
         width: 250px
     }
-    footer .social img{
+    footer.about .social img{
         height: 65px;
     }
 }

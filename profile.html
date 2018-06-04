@@ -107,7 +107,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMsg">
                 <h5>Recent</h5>
-                <a href="#" class="btn bg-yellow plug-btn">+</a>
+                <a href="#" class="btn bg-yellow plug-btn add">+</a>
                 <a class="dropdown-item" href="#">
                     <div class="row">
                         <div class="col-4 pr-1">
@@ -183,7 +183,16 @@
             </div>
             <div class="red-counter d-none d-md-block text-center">12</div>
         </div>
-        <a href="#" class="sign d-none d-md-block mr-4"><span>John Doe</span>&nbsp;&nbsp;<img src="images/profile.png" style="height: 25px"/></a>
+        <div class="dropdown">
+            <a href="#" class="sign d-none d-md-block mr-4 dropdown-toggle" href="#" role="button" id="dropdownBio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span>Chukwuemeka</span>&nbsp;&nbsp;<img src="images/profile.png" style="height: 25px"/>
+            </a>
+            <div class="dropdown-menu bio" aria-labelledby="dropdownBio">
+                <div class="dropdown-item text-center" href="#">
+                    <a class="link-yellow" href="#">Sign Out</a>
+                </div>
+            </div>
+        </div>
     </nav>
     <!-- Advertisement Banner across all viewports -->
     <div class="container-fluid Ads">
@@ -218,13 +227,13 @@
         <a class="btn plug-btn-sm s-0875 white bg-yellow ml-3" href="index.html"><i class="fa fa-caret-left" aria-hidden="true"></i> Back</a>
     </nav>
     <!-- Main Body of Application -->
-    <div class="container-fluid main-page">
+    <div class="container-fluid main-page pb-5 pb-md-0">
         <!-- User Bio and Plug collection -->
         <div class="container">
             <!-- Tab Content holding information for various tabs -->
-            <div class="row py-5">
+            <div class="row py-0 py-md-5">
                 <!-- User Bio -->
-                <div class="col-12 col-md-3 my-4 mt-md-0 pl-md-0 pt-2">
+                <div class="col-12 col-md-3 my-4 mt-md-0 pl-md-0 pt-2 order-1 order-md-1">
                     <div class="row plugger-bio no-gutters mx-auto">
                         <!-- Msg images appear when looking at a third parties profile -->
                         <div class="col-12">
@@ -245,9 +254,9 @@
                                 <div class="col-6 text-right pl-1">30,594</div>
                                 <div class="col-6 pr-1"><img src="images/bio_like.png"/> Likes</div>
                                 <div class="col-6 text-right pl-1">2,843</div>
-                                <div class="col-6 pr-1"><a class="plug-btn-metrics" href="#"><img src="images/fan_base.png"/> Fan Of</a></div>
+                                <div class="col-6 pr-1"><a class="plug-btn-metrics" href="#"><img src="images/fan_base.png"/> Followers</a></div>
                                 <div class="col-6 text-right pl-1">621</div>
-                                <div class="col-6 pr-1"><a class="plug-btn-metrics" href="#"><img src="images/fan_of.png"/> Fan Base</a></div>
+                                <div class="col-6 pr-1"><a class="plug-btn-metrics" href="#"><img src="images/fan_of.png"/> Following</a></div>
                                 <div class="col-6 text-right pl-1">231</div>
                                 <div class="col-12 text-center">
                                     <a href="#" class="btn bg-yellow plug-btn-sm mt-2 white mx-auto">Be a fan</a>
@@ -294,14 +303,12 @@
                         <!-- The Edit button is visible only when account owner, is view own account -->
                         <div class="col-12 bio-edit text-center mb-3">
                             <a href="#" class="btn bg-yellow plug-btn white">Edit</a>
-                        </div>
-                        <div class="col-12 bio-member text-center">
-                            Joined: Nov 17, 2017.
+                            <div class="bio-member text-center mt-2">Joined: Nov 17, 2017.</div>
                         </div>
                     </div>
                 </div>
                 <!-- User Content Gallery -->
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 order-3 order-md-2">
                     <div class="row px-2">
                         <a href="uploads.html" class="col-12 col-sm-6 col-xl-4 px-2" style="text-decoration: none">
                             <div class="plug-card mt-2 mb-3 mx-auto text-center pt-3 add">
@@ -368,9 +375,91 @@
                     </div>
                 </div>
                 <!-- Opportunities and Achievements -->
-                <div class="col-12 col-md-3 pr-3 pr-md-0 pt-2">
-                    <!-- Collection of Opportunities -->
-                    <div class="row plug-list mx-0 mb-4">
+                <div class="col-12 col-md-3 pr-3 pr-md-0 pt-2 order-2 order-md-3">
+                    <!-- Collection of Opportunities on Mobile viewports-->
+                    <div id="accordion-opp" class="mb-3 d-md-none">
+                        <div class="row plug-list card mx-1">
+                            <div class="card-header col-12 text-center white py-2 px-0 bg-yellow" id="accd-opp">
+                                <a data-toggle="collapse" href="#opps" role="button" aria-expanded="false" aria-controls="opps">
+                                    <h5 class="mb-0 white">Opportunities</h5>
+                                </a>
+                            </div>
+                            <div id="opps" class="collapse" aria-labelledby="accd-opp" data-parent="#accordion-opp">
+                                <div class="card-body py-0 px-0">
+                                    <div class="col-12 text-center text-lg-left">
+                                        <a href="#" class="row pt-3 pb-2">
+                                            <div class="col-12 op-name">Bill board Advert</div>
+                                            <div class="col-12 op-location">#Photography #Technology #AudioVisual</div>
+                                            <div class="col-12 op-location">Lagos, Nigeria</div>
+                                            <div class="col-12 op-time">5 days ago</div>
+                                        </a>
+                                    </div>
+                                    <hr class="my-0 mx-auto">
+                                    <div class="col-12 text-center text-lg-left">
+                                        <a href="#" class="row py-2">
+                                            <div class="col-12 op-name">Bill board Advert</div>
+                                            <div class="col-12 op-location">#Photography #Technology #AudioVisual</div>
+                                            <div class="col-12 op-location">Lagos, Nigeria</div>
+                                            <div class="col-12 op-time">5 days ago</div>
+                                        </a>
+                                    </div>
+                                    <hr class="my-0 mx-auto">
+                                    <div class="col-12 text-center text-lg-left">
+                                        <a href="#" class="row py-2">
+                                            <div class="col-12 op-name">Bill board Advert</div>
+                                            <div class="col-12 op-location">#Photography #Technology #AudioVisual</div>
+                                            <div class="col-12 op-location">Lagos, Nigeria</div>
+                                            <div class="col-12 op-time">5 days ago</div>
+                                        </a>
+                                    </div>
+                                    <hr class="my-0 mx-auto">
+                                    <div class="col-12 text-center text-lg-left">
+                                        <a href="#" class="row py-2">
+                                            <div class="col-12 op-name">Bill board Advert</div>
+                                            <div class="col-12 op-location">#Photography #Technology #AudioVisual</div>
+                                            <div class="col-12 op-location">Lagos, Nigeria</div>
+                                            <div class="col-12 op-time">5 days ago</div>
+                                        </a>
+                                    </div>
+                                    <hr class="my-0 mx-auto">
+                                    <div class="col-12 text-center text-lg-left">
+                                        <a href="#" class="row py-2">
+                                            <div class="col-12 op-name">Bill board Advert</div>
+                                            <div class="col-12 op-location">#Photography #Technology #AudioVisual</div>
+                                            <div class="col-12 op-location">Lagos, Nigeria</div>
+                                            <div class="col-12 op-time">5 days ago</div>
+                                        </a>
+                                    </div>
+                                    <hr class="my-0 mx-auto">
+                                    <div class="col-12 text-center text-lg-left">
+                                        <a href="#" class="row py-2">
+                                            <div class="col-12 op-name">Bill board Advert</div>
+                                            <div class="col-12 op-location">#Photography #Technology #AudioVisual</div>
+                                            <div class="col-12 op-location">Lagos, Nigeria</div>
+                                            <div class="col-12 op-time">5 days ago</div>
+                                        </a>
+                                    </div>
+                                    <hr class="my-0 mx-auto">
+                                    <div class="col-12 text-center text-lg-left">
+                                        <a href="#" class="row py-2">
+                                            <div class="col-12 op-name">Bill board Advert</div>
+                                            <div class="col-12 op-location">#Photography #Technology #AudioVisual</div>
+                                            <div class="col-12 op-location">Lagos, Nigeria</div>
+                                            <div class="col-12 op-time">5 days ago</div>
+                                        </a>
+                                    </div>
+                                    <hr class="my-0 mx-auto">
+                                    <div class="col-12 text-center">
+                                        <a href="profile_opp.html" class="row py-2">
+                                            <div class="col-12 op-name mb-1">See More</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Collection of Opportunities on Medium and above viewports -->
+                    <div class="row plug-list mx-0 mb-4 d-none d-md-flex">
                         <div class="col-12 text-center white py-2 bg-yellow">
                             <h5 class="mb-0">Opportunities</h5>
                         </div>
@@ -443,8 +532,125 @@
                             </a>
                         </div>
                     </div>
+                    <!-- Collection of Opportunities on Mobile viewports-->
+                    <div id="accordion-opp" class="mt-4 mb-3 d-md-none">
+                            <div class="row plug-list card mx-1">
+                                <div class="card-header col-12 text-center white py-2 px-0 bg-yellow" id="accd-opp">
+                                    <a data-toggle="collapse" href="#opps" role="button" aria-expanded="false" aria-controls="opps">
+                                        <h5 class="mb-0 white">Achievements</h5>
+                                    </a>
+                                </div>
+                                <div id="opps" class="collapse" aria-labelledby="accd-opp" data-parent="#accordion-opp">
+                                    <div class="card-body py-0 px-0">
+                                        <div class="col-12 text-center text-lg-left">
+                                                <a href="op_achieved.html" class="row pt-3 pb-2">
+                                                    <div class="col-12 op-name">Bill board Advert</div>
+                                                    <div class="col-12 op-rating">
+                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="col-12 op-location">Lagos, Nigeria</div>
+                                                </a>
+                                        </div>
+                                        <hr class="my-0 mx-auto">
+                                        <div class="col-12 text-center text-lg-left">
+                                            <a href="op_achieved.html" class="row py-2">
+                                                <div class="col-12 op-name">Bill board Advert</div>
+                                                <div class="col-12 op-rating">
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="col-12 op-location">Lagos, Nigeria</div>
+                                            </a>
+                                        </div>
+                                        <hr class="my-0 mx-auto">
+                                        <div class="col-12 text-center text-lg-left">
+                                            <a href="op_achieved.html" class="row py-2">
+                                                <div class="col-12 op-name">Bill board Advert</div>
+                                                <div class="col-12 op-rating">
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="col-12 op-location">Lagos, Nigeria</div>
+                                            </a>
+                                        </div>
+                                        <hr class="my-0 mx-auto">
+                                        <div class="col-12 text-center text-lg-left">
+                                            <a href="op_achieved.html" class="row py-2">
+                                                <div class="col-12 op-name">Bill board Advert</div>
+                                                <div class="col-12 op-rating">
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="col-12 op-location">Lagos, Nigeria</div>
+                                            </a>
+                                        </div>
+                                        <hr class="my-0 mx-auto">
+                                        <div class="col-12 text-center text-lg-left">
+                                            <a href="op_achieved.html" class="row py-2">
+                                                <div class="col-12 op-name">Bill board Advert</div>
+                                                <div class="col-12 op-rating">
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="col-12 op-location">Lagos, Nigeria</div>
+                                            </a>
+                                        </div>
+                                        <hr class="my-0 mx-auto">
+                                        <div class="col-12 text-center text-lg-left">
+                                            <a href="op_achieved.html" class="row py-2">
+                                                <div class="col-12 op-name">Bill board Advert</div>
+                                                <div class="col-12 op-rating">
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="col-12 op-location">Lagos, Nigeria</div>
+                                            </a>
+                                        </div>
+                                        <hr class="my-0 mx-auto">
+                                        <div class="col-12 text-center text-lg-left">
+                                            <a href="op_achieved.html" class="row py-2">
+                                                <div class="col-12 op-name">Bill board Advert</div>
+                                                <div class="col-12 op-rating">
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="col-12 op-location">Lagos, Nigeria</div>
+                                            </a>
+                                        </div>
+                                        <hr class="my-0 mx-auto">
+                                        <div class="col-12 text-center">
+                                            <a href="profile_opp.html" class="row py-2">
+                                                <div class="col-12 op-name mb-1">See More</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
                     <!-- Collection of Achievements -->
-                    <div class="row plug-list mx-0 mt-4">
+                    <div class="row plug-list mx-0 mt-4 d-none d-md-flex">
                         <div class="col-12 text-center white py-2 bg-yellow">
                             <h5 class="mb-0">Achievements</h5>
                         </div>
