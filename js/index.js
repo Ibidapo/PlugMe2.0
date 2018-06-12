@@ -52,7 +52,7 @@ $(document).ready(function(){
     $('#footer-menu').click(function(){
         $(this).children('i').toggleClass('d-none');
         $('div.extra').toggleClass('d-none');
-
+        
     })
 
     $('.bio-opportunity .plug-card, .plug-card.tag').mouseenter(function(){

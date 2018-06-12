@@ -256,6 +256,10 @@ nav#mobile-plugMe-tab {
 .plug-card.sgt {
     height: 200px
 }
+.plug-card-sm {
+    height: 150px;
+    max-width: 125px;
+}
 .plug-card, .plug-list, .plugger-bio .bio-img, .sub-card {
     border-radius: 1rem .25rem;
 }
