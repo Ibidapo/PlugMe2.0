@@ -253,8 +253,8 @@ nav#mobile-plugMe-tab {
     cursor: pointer;
     overflow: hidden;
 }
-.plug-card.sgt {
-    height: 200px
+.plug-card-tag {
+    height: 205px
 }
 .plug-card-sm {
     height: 150px;
@@ -278,7 +278,7 @@ nav#mobile-plugMe-tab {
     transition: max-height 1.5s ease !important;
     -webkit-transition: max-height 1.5s ease; /* Safari */
 }
-.plug-caption, .plug-caption.active, .plug-caption.activated, .plug-description {
+.plug-caption, .plug-caption.active, .plug-description {
     box-shadow: 0 0 5px #73747799;
 }
 .plug-name, .plugger-bio .bio-rating, .plugger-bio .bio-header, .plug-metrics, .plug-date, #opportunityTab .nav-lnk,
@@ -543,7 +543,8 @@ input.vid-url::placeholder {
 input.vid-url:focus {
     box-shadow: inset 0 0 5px #ced4da;
 }
-input.vid-url:focus, .bio-msg .form-control-plaintext:focus, .plug-feedback textarea:focus {
+input.vid-url:focus, .bio-msg .form-control-plaintext:focus, .plug-feedback textarea:focus, input.op-profile-value:focus,
+textarea.op-profile-value:focus {
     outline: none;
 }
 .cr {
@@ -611,6 +612,17 @@ a.link-yellow, a.link-yellow:hover {
 .sign-ads, .sign-ads .link-yellow {
     font-size: 2.5rem;
     line-height: 1;
+}
+
+/*Styling for Error Page*/
+.error-bg {
+    background: url('../images/error-bg.jpg') no-repeat center;
+    background-size: cover;
+    height: 700px;
+}
+.error-hd {
+    color: white;
+    font-weight: 300;
 }
 
 /*Styling for Buttons*/
@@ -908,6 +920,10 @@ footer .input-group.input-group-sm {
     .plugger-bio {
         max-width: 300px;
     }
+    .error-bg {
+        height: 450px;
+        margin-top: 50px;
+    }
     footer.about nav .nav-link {
         border: none !important;
     }
@@ -923,8 +939,8 @@ footer .input-group.input-group-sm {
     nav.navbar .input-group {
         width: 55%;
     }
-    .plug-card, .plug-btn.sgt {
-        width: 250px
+    .tag-btn {
+        width: 225px !important;
     }
     footer.about .social img{
         height: 65px;

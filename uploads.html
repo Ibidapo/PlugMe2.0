@@ -17,9 +17,9 @@
     <nav class="navbar fixed-top">
         <a href="index.html" class="plugme-logo ml-md-4"><img src="images/logo.png"/></a>
         <div class="input-group input-group-sm ml-auto mr-0 mx-md-auto">
-                            <span class="input-group-btn">
-                                <button class="btn pt-2 pb-1 px-3" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
-                            </span>
+                <span class="input-group-btn">
+                    <button class="btn pt-2 pb-1 px-3" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </span>
             <input type="text" class="form-control" placeholder="Plug Me to..." aria-label="Plug Me to...">
         </div>
         <div class="dropdown show">
@@ -178,7 +178,7 @@
                                             </div>
                                         </div>
                                         <div class="col-12 text-center mt-3 mb-4">
-                                            <button type="submit" class="btn bg-yellow plug-btn">Publish</button>
+                                            <button type="submit" class="btn bg-yellow plug-btn white">Publish</button>
                                         </div>
                                     </div>
                                 </form>
@@ -213,7 +213,7 @@
                                             </div>
                                         </div>
                                         <div class="col-12 text-center mt-3 mb-4">
-                                            <button type="submit" class="btn bg-yellow plug-btn">Publish</button>
+                                            <button type="submit" class="btn bg-yellow plug-btn white">Publish</button>
                                         </div>
                                     </div>
                                 </form>
@@ -240,9 +240,19 @@
     </div>
     <!-- Bottom Footer on Mobile Viewports -->
     <nav class="nav nav-fill fixed-bottom d-flex d-md-none magenta s-0875 py-2">
-        <a class="nav-item nav-link" href="#">Gallery</a>
-        <a class="nav-item nav-link" href="#">Trending</a>
-        <a class="nav-item nav-link" href="profile.html">Profile</a>
+        <a class="nav-item nav-link purple py-1 px-2 align-self-center" href="#"><img src="images/gallery.png"/> Gallery</a>
+        <a class="nav-item nav-link purple py-1 px-2 align-self-center" href="#"><img src="images/tags.png"/> Trending</a>
+        <a class="nav-item nav-link purple py-1 px-2 align-self-center" href="profile.html"><img src="images/achievers.png"/> Profile</a>
+        <a class="nav-item nav-link p-2" href="#" id="footer-menu"><i class="fa fa-bars purple" aria-hidden="true"></i>&nbsp;
+            <i class="fa fa-close purple d-none" aria-hidden="true"></i>
+        </a>
+        <div class="extra w-100 d-none">
+            <nav class="nav nav-fill extra magenta s-0875 py-1">
+                <a class="nav-item nav-link purple py-1 px-2" href="#"> Sign Out</a>
+                <a class="nav-item nav-link purple py-1 px-2" href="message.html"> Inbox</a>
+                <a class="nav-item nav-link purple py-1 px-2" href="#"> Notification</a>
+            </nav>
+        </div>
     </nav>
     <!-- Required Jquery, Popper & Bootstrap scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

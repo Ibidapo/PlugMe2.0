@@ -55,7 +55,7 @@ $(document).ready(function(){
         
     })
 
-    $('.bio-opportunity .plug-card, .plug-card.tag').mouseenter(function(){
+    $('.bio-opportunity .plug-card').mouseenter(function(){
         $(this).children('.plug-action').fadeIn();
     }).mouseleave(function(){
         $(this).children('.plug-action').fadeOut();
