@@ -707,7 +707,7 @@ a.link-yellow, a.link-yellow:hover {
     font-size: 0.875rem;
 }
 .plug-info .view-plugger-location, .plug-date, .op-time, .up-discliamer, .drop-desc, .plug-feedback .media-body .desc, .fd-time,
-.plug-list .icon, .plug-caption .plug-metrics {
+.plug-list .icon, .plug-caption .plug-metrics, .inbox-time {
     font-size: 0.675rem;
 }
 .plug-info hr, .plugger-bio hr, nav.flex-column.side-nav hr, #m-profileTab.form-control, .sub-card hr {
@@ -781,6 +781,14 @@ a.link-yellow, a.link-yellow:hover {
 }
 .msg-me {
     border-radius: 0.5rem 0 0.5rem 0.25rem;
+}
+.plug-list .media img {
+    width: 45px
+}
+.inbox-time {
+    position: absolute;
+    right: 2rem;
+    top: 0.75rem;
 }
 
 /*Styling for Subscription Page*/
